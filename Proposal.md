@@ -65,7 +65,6 @@ Who is a systems engineer and worked on business operations at Amazon.
 
 [LinkedIn link](https://www.linkedin.com/in/ameyabongale/)
  
-and 
  
 ### Yask Srivastava 
 yask123@gmail.com
@@ -75,7 +74,13 @@ Who is a software developer at Shopify.
 
 [GitHub link](https://github.com/yask123)
 
-_*The beta-tester agreement will be sent shortly by email._
+## Supervisor
+### Miguel Garzon
+mgarzon@uottawa.ca
+
+Professor at uOttawa
+Supervisor of SEG4910, SEG4911
+
 
 
 
