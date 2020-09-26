@@ -3,7 +3,7 @@
 ### Cheryl Tollola
 8317298
 BASc Software Engineering (CO-OP)
-**See end for meeting notes**
+
 
 
 ## Roles
@@ -253,8 +253,5 @@ Liability:
 
 ## References
 https://www.thredup.com/resale/
-
-
-## Meeting notes
 
 
