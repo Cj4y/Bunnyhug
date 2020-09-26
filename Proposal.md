@@ -3,7 +3,7 @@
 ### Cheryl Tollola
 8317298
 BASc Software Engineering (CO-OP)
-
+**See end for meeting notes**
 
 
 ## Roles
@@ -91,6 +91,7 @@ Supervisor of SEG4910, SEG4911
 |--------------------|--------------------------------------------------------------------------|
 | Sept. 21           | Project proposal phase Requirements and Elicitation                      |
 | Sept 26            | Programming milestone (Rails app, “Get One Done”)                        |
+| Oct 1              | Status meeting with supervisor                                           |
 | Oct 6              | Project requirements phase Shaping for cycle 1 Programming readjustments |
 | Oct 27             | Programming milestone Evaluation                                         |
 | Nov 10             | Shaping for cycle 2  Programming readjustments                           |
@@ -252,4 +253,8 @@ Liability:
 
 ## References
 https://www.thredup.com/resale/
+
+
+## Meeting notes
+
 
