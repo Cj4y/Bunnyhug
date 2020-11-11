@@ -1,0 +1,77 @@
+Listing_Display
+has_and_belongs_to_many :listings
+
+filters
+
+Listing
+    belongs_to :user # foreign key - user_id
+    has_and_belongs_to_many :listing_displays
+    has_one :transaction
+    has_many :favourites
+    
+    title
+    categories
+    photos
+    details 
+    flagged
+
+    #has_and_belongs_to_many :sugg_listings
+    #has_and_belongs_to_many :sugg_collection_sellers
+
+Favourite:
+has_and_belongs_to_many :users
+has_one :listing
+
+Account:
+    has_one :user, dependent: :destroy
+
+    id
+    password
+    payment info
+    first__name
+    last_name
+    age
+    orders
+    addresses
+  
+    
+User:
+    belongs_to :account
+    has_many_and_belongs_to_many :orders
+    has_many_and_belongs_to_many :listings
+    has_many_and_belongs_to_many :star_ratings
+    has_many_and_belongs_to_many :favourites
+
+    
+    id
+    #public data
+    
+    username
+    location
+    
+    self_description
+    preferred_styles
+
+Transaction
+    belongs_to :order_info
+    has_one :user, through :order
+    has_many :listings
+
+    id
+    seller_id
+    buyer_id
+
+Order_Info #change name from order after
+    belongs_to :user
+    has_one :transaction
+    number
+    timestamp
+    status
+
+Star_rating
+    has_one_and_belongs_to_many :user
+    buyer_id
+    seller_id
+    stars
+    review
+    metric
