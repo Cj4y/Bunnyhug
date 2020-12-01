@@ -3,7 +3,7 @@ class CreateListings < ActiveRecord::Migration[6.0]
     create_table :listings do |t|
       t.string :title
       t.string :categories
-      t.integer :price
+      t.integer :price, precision: 8, scale: 2
       t.string :photos
       t.text :details
       t.boolean :flagged
