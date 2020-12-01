@@ -10,6 +10,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    #  css class has the name of the current controller 
+    <main class='<%= controller.controller_name %>'> 
+      <%= yield %>
+    </main>
   </body>
 </html>

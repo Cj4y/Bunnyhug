@@ -1,6 +1,44 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listings</h1>
+<table>
+  <tfoot>
+    <tr>
+    <td colspan="3">
+      <%= link_to 'New Listing', new_listing_path %>
+    </td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <% @listings.each do |listing| %>
+      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+        <td class="image">
+          <%= image_tag(listing.photos, class: 'list_photos') %>
+        </td>
+      <td class="details">
+        <h1><%= listing.title %></h1>
+        <p>
+          <%= truncate(strip_tags(listing.details), length: 80) %>
+          <%= truncate(strip_tags(listing.colour), length: 20) %>
+          <%= truncate(strip_tags(listing.price), length: 20) %>
+        </p>
+      </td>
+      <td class="actions">
+        <ul>
+         <li><%= link_to 'Show', listing %></li>
+          <li><%= link_to 'Edit', edit_listing_path(listing) %></li>
+          <li>
+            <%= link_to 'Destroy',
+            listing,
+            method: :delete,
+            data: { confirm: 'Are you sure?' } %>
+          </li>
+        </ul>
+      </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
 <table>
   <thead>
