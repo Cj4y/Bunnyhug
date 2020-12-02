@@ -1,6 +1,18 @@
 require 'test_helper'
 
 class ListingTest < ActiveSupport::TestCase
+  fixtures :listings
+  test "listing is not valid without a unique title - i18n" do
+    listing = Listing.new(title: listings(:t-shirt).title,
+    details: "A t-shirt I bought in Japan but never wore.",
+    category: t-shirt,
+    price: 8.00,
+    colour: blue,
+    photos: "fuji.jpg")
+    assert product.invalid?
+    assert_equal [I18n.translate('errors.messages.taken')],
+    product.errors[:title]
+    end
   test "listing attributes must not be empty" do
     listing = Listing.new
     assert listing.invalid?
@@ -28,6 +40,8 @@ class ListingTest < ActiveSupport::TestCase
       listing.errors[:price]
       listing.price = 1
       assert listing.valid?
+      assert_equal [I18n.translate('errors.messages.taken')],
+        listing.errors[:title]
     end
     
     def new_listing(photos)
