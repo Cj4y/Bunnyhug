@@ -1,5 +1,5 @@
 class ListingsController < ApplicationController
-  skip_before_action :authorize
+  skip_before_action :authorize, only: [:show]
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
 
   # GET /listings

@@ -10,7 +10,29 @@
   </head>
 
   <body>
-    #  css class has the name of the current controller 
+
+  <--!<header class="main">
+    <%= image_tag 'logo.svg', alt: 'Bunnyhug' %>
+    
+  </header>
+  -->
+  
+<section cl
+
+  <nav class="side_nav">
+
+  <% if session[:user_id] %>
+          <nav class="logged_in_nav">
+            <ul>
+              <!-- unimplemented: <li><%= link_to 'Orders',   orders_path   %></li>-->
+              <li><%= link_to 'My listings', listings_path %></li>
+              <li><%= link_to 'Users',    users_path    %></li>
+              <li><%= button_to 'Logout', logout_path, method: :delete   %></li>
+            </ul>
+          </nav>
+        <% end %>
+      </nav>
+    <!--  css class has the name of the current controller -->
     <main class='<%= controller.controller_name %>'> 
       <%= yield %>
     </main>

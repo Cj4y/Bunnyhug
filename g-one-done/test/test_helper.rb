@@ -13,7 +13,7 @@ class ActiveSupport::TestCase
 end
 
 module AuthenticationHelpers
-  def login_as(user)
+  def login_as(user) #only called if defined
     if respond_to? :visit
       visit login_url
       fill_in :name, with: user.username
