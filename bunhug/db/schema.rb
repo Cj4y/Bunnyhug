@@ -12,6 +12,20 @@
 
 ActiveRecord::Schema.define(version: 0) do
 
+  create_table "listings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "title"
+    t.string "categories"
+    t.integer "price"
+    t.string "photos"
+    t.text "details"
+    t.boolean "flagged"
+    t.integer "favourites"
+    t.integer "user_id"
+    t.integer "favourite_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "user_name"
     t.string "location"
