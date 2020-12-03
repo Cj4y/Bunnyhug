@@ -1,43 +1,83 @@
 {
-  "application.js": "/packs/js/application-e28af272ed3ae10762a9.js",
-  "application.js.map": "/packs/js/application-e28af272ed3ae10762a9.js.map",
-  "components/Listing.js": "/packs/js/components/Listing-fd992a96752d55794402.js",
-  "components/Listing.js.map": "/packs/js/components/Listing-fd992a96752d55794402.js.map",
-  "components/ListingApp.js": "/packs/js/components/ListingApp-992ef20b3ccd5de6f928.js",
-  "components/ListingApp.js.map": "/packs/js/components/ListingApp-992ef20b3ccd5de6f928.js.map",
-  "components/Listings.js": "/packs/js/components/Listings-f17e8d876169536ecd0d.js",
-  "components/Listings.js.map": "/packs/js/components/Listings-f17e8d876169536ecd0d.js.map",
+  "application.js": "/packs/js/application-7eb2922db605c88c9424.js",
+  "application.js.map": "/packs/js/application-7eb2922db605c88c9424.js.map",
+  "components/AxiosHeaders.js": "/packs/js/components/AxiosHeaders-39af6c03e576fa0758d5.js",
+  "components/AxiosHeaders.js.map": "/packs/js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map",
+  "components/ErrorMessage.js": "/packs/js/components/ErrorMessage-bf856a603c08a40b9dc0.js",
+  "components/ErrorMessage.js.map": "/packs/js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map",
+  "components/Listing.js": "/packs/js/components/Listing-a91f727044254cc9a274.js",
+  "components/Listing.js.map": "/packs/js/components/Listing-a91f727044254cc9a274.js.map",
+  "components/ListingApp.js": "/packs/js/components/ListingApp-cad5fe49c2e3f9b2f158.js",
+  "components/ListingApp.js.map": "/packs/js/components/ListingApp-cad5fe49c2e3f9b2f158.js.map",
+  "components/ListingForm.js": "/packs/js/components/ListingForm-c4efa6c1891a2b149112.js",
+  "components/ListingForm.js.map": "/packs/js/components/ListingForm-c4efa6c1891a2b149112.js.map",
+  "components/Listings.js": "/packs/js/components/Listings-2044cd2d9cd113e155ee.js",
+  "components/Listings.js.map": "/packs/js/components/Listings-2044cd2d9cd113e155ee.js.map",
+  "components/Spinner.js": "/packs/js/components/Spinner-b45880d0100e7110300b.js",
+  "components/Spinner.js.map": "/packs/js/components/Spinner-b45880d0100e7110300b.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-e28af272ed3ae10762a9.js"
+        "/packs/js/application-7eb2922db605c88c9424.js"
       ],
       "js.map": [
-        "/packs/js/application-e28af272ed3ae10762a9.js.map"
+        "/packs/js/application-7eb2922db605c88c9424.js.map"
+      ]
+    },
+    "components/AxiosHeaders": {
+      "js": [
+        "/packs/js/components/AxiosHeaders-39af6c03e576fa0758d5.js"
+      ],
+      "js.map": [
+        "/packs/js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map"
+      ]
+    },
+    "components/ErrorMessage": {
+      "js": [
+        "/packs/js/components/ErrorMessage-bf856a603c08a40b9dc0.js"
+      ],
+      "js.map": [
+        "/packs/js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map"
       ]
     },
     "components/Listing": {
       "js": [
-        "/packs/js/components/Listing-fd992a96752d55794402.js"
+        "/packs/js/components/Listing-a91f727044254cc9a274.js"
       ],
       "js.map": [
-        "/packs/js/components/Listing-fd992a96752d55794402.js.map"
+        "/packs/js/components/Listing-a91f727044254cc9a274.js.map"
       ]
     },
     "components/ListingApp": {
       "js": [
-        "/packs/js/components/ListingApp-992ef20b3ccd5de6f928.js"
+        "/packs/js/components/ListingApp-cad5fe49c2e3f9b2f158.js"
       ],
       "js.map": [
-        "/packs/js/components/ListingApp-992ef20b3ccd5de6f928.js.map"
+        "/packs/js/components/ListingApp-cad5fe49c2e3f9b2f158.js.map"
+      ]
+    },
+    "components/ListingForm": {
+      "js": [
+        "/packs/js/components/ListingForm-c4efa6c1891a2b149112.js"
+      ],
+      "js.map": [
+        "/packs/js/components/ListingForm-c4efa6c1891a2b149112.js.map"
       ]
     },
     "components/Listings": {
       "js": [
-        "/packs/js/components/Listings-f17e8d876169536ecd0d.js"
+        "/packs/js/components/Listings-2044cd2d9cd113e155ee.js"
       ],
       "js.map": [
-        "/packs/js/components/Listings-f17e8d876169536ecd0d.js.map"
+        "/packs/js/components/Listings-2044cd2d9cd113e155ee.js.map"
+      ]
+    },
+    "components/Spinner": {
+      "js": [
+        "/packs/js/components/Spinner-b45880d0100e7110300b.js"
+      ],
+      "js.map": [
+        "/packs/js/components/Spinner-b45880d0100e7110300b.js.map"
       ]
     }
   }

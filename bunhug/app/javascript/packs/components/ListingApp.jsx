@@ -8,7 +8,7 @@ import Listing from './Listing'
 import ListingForm from './ListingForm'
 import Spinner from './Spinner'
 import ErrorMessage from './ErrorMessage'
-class Listing extends React.Component {
+class ListingApp extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -37,7 +37,7 @@ class Listing extends React.Component {
                 this.clearErrors()
                 this.setState({ isLoading: true })
                 const listings = response.data  //bind to the data
-                this.setState({ listings})
+                this.setState({ listings })
                 this.setState({ isLoading: false })
             })
             .catch(error => {

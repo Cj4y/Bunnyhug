@@ -41,7 +41,7 @@ class Listings  extends React.Component {
   }
 }
 export default Listings
-TodoItems.propTypes = {
+Listings.propTypes = {
   toggleInactiveListings: PropTypes.func.isRequired,
   hideCompletedTodoItems: PropTypes.bool.isRequired,
 }

@@ -1,10 +1,19 @@
 #first version of the api
 class Api::V1::ListingsController < ApplicationController
+    before_action :authenticate_user!
     before_action :set_listing, only: [:show, :edit, :update, :destroy]
     def index
-        @listings = Listing.all
+        @listings = current_user.listings.all
     end
+
     def show
+      if authorized?
+        respond_to do |format|
+          format.json { render :show }
+        end
+      else
+        handle_unauthorized
+      end
     end
 
     def create

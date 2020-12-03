@@ -98,6 +98,61 @@ handleDestroy() {
             id={`listing__title-${listing.id}`}
           />
         </td>
+        <td>
+          <input
+                type="text"
+                defaultValue={listing.category}
+                disabled={this.state.active}
+                onChange={this.handleChange} //toggle change handling when text is selected and changed
+                ref={this.inputRef}
+                className="form-control"
+                id={`listing__category-${listing.id}`}
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                defaultValue={listing.image_url}
+                disabled={this.state.active}
+                onChange={this.handleChange} //toggle change handling when text is selected and changed
+                ref={this.inputRef}
+                className="form-control"
+                id={`image_url-${listing.id}`}
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                defaultValue={listing.details}
+                disabled={this.state.active}
+                onChange={this.handleChange} //toggle change handling when text is selected and changed
+                ref={this.inputRef}
+                className="form-control"
+                id={`listing__details-${listing.id}`}
+              />
+            <td>
+              <input
+                type="text"
+                defaultValue={listing.colour}
+                disabled={this.state.active}
+                onChange={this.handleChange} //toggle change handling when text is selected and changed
+                ref={this.inputRef}
+                className="form-control"
+                id={`listing__colour-${listing.id}`}
+              /> 
+            </td>
+            <td>
+              <input
+                type="text"
+                defaultValue={listing.price}
+                disabled={this.state.active}
+                onChange={this.handleChange} //toggle change handling when text is selected and changed
+                ref={this.inputRef}
+                className="form-control"
+                id={`listing__price-${listing.id}`}
+              />
+            </td>
+            </td>
         <td className="text-right">
           <div className="form-check form-check-inline">
             <input

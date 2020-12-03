@@ -16,7 +16,7 @@ class ListingForm extends React.Component {
       .post('/api/v1/listings', {
         listing: {
           title: this.titleRef.current.value, //create to access input data
-          active: false, //user will not add an inactive listing 
+          active: true, //user will not add an inactive listing 
         },
       })
       .then(response => {
@@ -43,7 +43,52 @@ class ListingForm extends React.Component {
               required
               className="form-control"
               id="title"
-              placeholder="Listing title here..."
+              placeholder="Listing title..."
+            />
+            <input
+              type="text"
+              name="category"
+              ref={this.titleRef}
+              required
+              className="form-control"
+              id="category"
+              placeholder="Category"
+            />
+            <input
+              type="text"
+              name="image_url"
+              ref={this.titleRef}
+              required
+              className="form-control"
+              id="image_url"
+              placeholder="Image_url"
+            />
+            <input
+              type="details"
+              name="price"
+              ref={this.titleRef}
+              required
+              className="form-control"
+              id="details"
+              placeholder="Details"
+            />
+            <input
+              type="text"
+              name="colour"
+              ref={this.titleRef}
+              required
+              className="form-control"
+              id="colour"
+              placeholder="Colour"
+            /> 
+            <input
+              type="text"
+              name="price"
+              ref={this.titleRef}
+              required
+              className="form-control"
+              id="price"
+              placeholder="Price"
             />
           </div>
           <div className="form-group col-md-4">
