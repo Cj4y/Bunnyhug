@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     delete 'logout' => :destroy
   end
 
+  root to: "home#index"
 
   get 'admin/index'
   get 'sessions/new'
