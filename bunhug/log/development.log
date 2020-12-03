@@ -3441,3 +3441,36 @@ SyntaxError (/home/fluffle/code/Bunnyhug/bunhug/app/controllers/api/v1/listings_
 app/controllers/api/v1/listings_controller.rb:81: syntax error, unexpected symbol literal, expecting ')'
 app/controllers/api/v1/listings_controller.rb:81: syntax error, unexpected symbol literal, expecting ')'
 app/controllers/api/v1/listings_controller.rb:81: syntax error, unexpected symbol literal, expecting ')'
+Started GET "/" for ::1 at 2020-12-03 18:51:33 +0100
+  [1m[35m (1.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.5ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 1.7ms | Allocations: 317)
+  Rendered shared/_flash.html.erb (Duration: 0.6ms | Allocations: 163)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.0ms | Allocations: 9198)
+
+
+Started GET "/api/v1/listings" for ::1 at 2020-12-03 18:51:34 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 1.1ms | Allocations: 211)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.7ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 46.2ms | Allocations: 11884)
+Completed 200 OK in 64ms (Views: 46.2ms | ActiveRecord: 4.7ms | Allocations: 19542)
+
+
