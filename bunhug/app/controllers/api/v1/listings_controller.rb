@@ -6,9 +6,10 @@ class Api::V1::ListingsController < ApplicationController
     end
     def show
     end
+
     def create
         #instance of listing made from the current user
-        @listing = current_user.todo_items.build(listing_params)
+        @listing = current_user.listings.build(listing_params)
       if authorized?
         respond_to do |format|
             #post if success
@@ -23,9 +24,30 @@ class Api::V1::ListingsController < ApplicationController
         handle_unauthorized
       end
     end
+
     def update
+        if authorized?
+            respond_to do |format|
+              if @listing.update(listing_params)
+                format.json { render :show, status: :ok, location: api_v1_listing_path(@listing) }
+              else
+                format.json { render json: @listing.errors, status: :unprocessable_entity }
+              end
+            end
+        else
+            handle_unauthorized
+        end
     end
+
     def destroy
+        if authorized?
+            @listing.destroy
+            respond_to do |format|
+              format.json { head :no_content }
+            end
+        else
+            handle_unauthorized
+        end
     end
 
     #find listing by ID contained in URL
