@@ -1,75 +1,46 @@
-<p id="notice"><%= notice %></p>
+<% if notice %>
+  <aside id="notice"><%= notice %></aside>
+<% end %>
 
-<h1>Listings</h1>
+<h1>listings</h1>
+
 <table>
   <tfoot>
     <tr>
-    <td colspan="3">
-      <%= link_to 'New Listing', new_listing_path %>
-    </td>
+      <td colspan="3">
+        <%= link_to 'New Listing', new_listing_path %>
+      </td>
     </tr>
   </tfoot>
   <tbody>
     <% @listings.each do |listing| %>
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
-        <td class="image">
-          <%= image_tag(listing.photos, class: 'list_photos') %>
+
+        <td class="photo">
+          <%= photo_tag(listing.photo_url, class: 'list_photo') %>
         </td>
-      <td class="details">
-        <h1><%= listing.title %></h1>
-        <p>
-          <%= truncate(strip_tags(listing.details), length: 80) %>
-          <%= truncate(strip_tags(listing.colour), length: 20) %>
-          <%= truncate(strip_tags(listing.price), length: 20) %>
-        </p>
-      </td>
-      <td class="actions">
-        <ul>
-         <li><%= link_to 'Show', listing %></li>
-          <li><%= link_to 'Edit', edit_listing_path(listing) %></li>
-          <li>
-            <%= link_to 'Destroy',
-            listing,
-            method: :delete,
-            data: { confirm: 'Are you sure?' } %>
-          </li>
-        </ul>
-      </td>
+
+        <td class="details">
+          <h1><%= listing.title %></h1>
+          <p>
+            <%= truncate(strip_tags(listing.details),
+                         length: 80) %>
+          </p>
+        </td>
+
+        <td class="actions">
+          <ul>
+            <li><%= link_to 'Show', listing %></li>
+            <li><%= link_to 'Edit', edit_listing_path(listing) %></li>
+            <li>
+              <%= link_to 'Destroy',
+                           listing, 
+                          method: :delete,
+                          data: { confirm: 'Are you sure?' } %>
+            </li>
+          </ul>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Category</th>
-      <th>Photos</th>
-      <th>Details</th>
-      <th>Colour</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @listings.each do |listing| %>
-      <tr>
-        <td><%= listing.title %></td>
-        <td><%= listing.category %></td>
-        <td><%= listing.photos %></td>
-        <td><%= listing.details %></td>
-        <td><%= listing.colour %></td>
-        <td><%= listing.price %></td>
-        <td><%= link_to 'Show', listing %></td>
-        <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
-        <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Listing', new_listing_path %>
