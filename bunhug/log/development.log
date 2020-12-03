@@ -1553,3 +1553,305 @@ FOREIGN KEY (`user_id`)
   [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   [1m[35m (10.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `listings`[0m
+Started GET "/api/v1/lisitings" for 127.0.0.1 at 2020-12-03 07:56:10 +0100
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/lisitings"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/listings" for 127.0.0.1 at 2020-12-03 07:56:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/listings"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/listings" for 127.0.0.1 at 2020-12-03 07:57:16 +0100
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/listings"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/listings" for 127.0.0.1 at 2020-12-03 07:58:01 +0100
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/listings"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/listings" for 127.0.0.1 at 2020-12-03 08:00:11 +0100
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::V1::ListingsController#index as JSON
+  Rendering api/v1/listings/index.json.builder
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` ORDER BY `listings`.`created_at` DESC LIMIT 11[0m
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` ORDER BY `listings`.`created_at` DESC LIMIT 11[0m
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` ORDER BY `listings`.`created_at` DESC LIMIT 11[0m
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` ORDER BY `listings`.`created_at` DESC LIMIT 11[0m
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` ORDER BY `listings`.`created_at` DESC LIMIT 11[0m
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` ORDER BY `listings`.`created_at` DESC LIMIT 11[0m
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` ORDER BY `listings`.`created_at` DESC LIMIT 11[0m
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` ORDER BY `listings`.`created_at` DESC LIMIT 11[0m
+  Rendered api/v1/listings/index.json.builder (Duration: 277.8ms | Allocations: 164126)
+Completed 500 Internal Server Error in 293ms (ActiveRecord: 7.9ms | Allocations: 168492)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `json' for #<#<Class:0x00007f0c083b03b0>:0x00007f0c083c3e38>
+Did you mean?  JSON):
+    1: #pass listings objects as list into json partial 
+    2: json.array! @listings, partial: "api/v1/listings/listing", as: :listing
+  
+app/views/api/v1/listings/index.json.builder:2
+Started GET "/api/v1/listings" for 127.0.0.1 at 2020-12-03 08:04:26 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::V1::ListingsController#index as JSON
+  Rendering api/v1/listings/index.json.builder
+  Rendered api/v1/listings/index.json.builder (Duration: 5.6ms | Allocations: 2266)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 3.4ms | Allocations: 6633)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check #pass listings objects as list into json partial 
+json = {json.array! @listings, partial: "api/v1/listings/listing", as: :listing}
+
+):
+1:    #pass listings objects as list into json partial 
+2:    json = {json.array! @listings, partial: "api/v1/listings/listing", as: :listing}
+  
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected instance variable, expecting =>
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected instance variable, expecting =>
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected instance variable, expecting =>
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected instance variable, expecting =>
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected instance variable, expecting =>
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected instance variable, expecting =>
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected ',', expecting `end'
+Started GET "/api/v1/listings" for 127.0.0.1 at 2020-12-03 08:08:38 +0100
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::V1::ListingsController#index as JSON
+  Rendering api/v1/listings/index.json.builder
+  Rendered api/v1/listings/index.json.builder (Duration: 3.8ms | Allocations: 2266)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.8ms | Allocations: 6633)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check #pass listings objects as list into json partial 
+json = {} json.array! @listings, partial: "api/v1/listings/listing", as: :listing
+
+):
+1:    #pass listings objects as list into json partial 
+2:    json = {} json.array! @listings, partial: "api/v1/listings/listing", as: :listing
+  
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/api/v1/listings/index.json.builder:2: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/api/v1/listings" for 127.0.0.1 at 2020-12-03 08:12:51 +0100
+  [1m[35m (1.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::V1::ListingsController#index as JSON
+  Rendering api/v1/listings/index.json.jbuilder
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 1.9ms | Allocations: 1397)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.2ms | Allocations: 5764)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check #pass listings objects as list into json partial 
+json = {} json.array! @listings, partial: "api/v1/listings/listing", as: :listing
+
+):
+1:    #pass listings objects as list into json partial 
+2:    json = {} json.array! @listings, partial: "api/v1/listings/listing", as: :listing
+  
+app/views/api/v1/listings/index.json.jbuilder:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/api/v1/listings/index.json.jbuilder:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/api/v1/listings/index.json.jbuilder:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/api/v1/listings/index.json.jbuilder:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/api/v1/listings/index.json.jbuilder:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/api/v1/listings/index.json.jbuilder:2: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/api/v1/listings" for 127.0.0.1 at 2020-12-03 08:13:18 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::V1::ListingsController#index as JSON
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 1.4ms | Allocations: 1588)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 45.4ms | Allocations: 9076)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 6.9ms | Allocations: 13443)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+#render into json as reusable partial
+json.extract! listing, :id, :user_id,  :title, :category, :image_url, :details
+       :active, :flagged, :colour, :price, :created_at, :updated_at
+):
+1:    
+2:    #render into json as reusable partial
+3:    json.extract! listing, :id, :user_id,  :title, :category, :image_url, :details
+4:           :active, :flagged, :colour, :price, :created_at, :updated_at
+  
+app/views/api/v1/listings/_listing.json.jbuilder:4: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/_listing.json.jbuilder:4: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/_listing.json.jbuilder:4: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/_listing.json.jbuilder:4: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/_listing.json.jbuilder:4: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/_listing.json.jbuilder:4: syntax error, unexpected ',', expecting `end'
+app/views/api/v1/listings/index.json.jbuilder:2
+Started GET "/api/v1/listings" for 127.0.0.1 at 2020-12-03 08:14:00 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::V1::ListingsController#index as JSON
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.6ms | Allocations: 131)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 48)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 22.4ms | Allocations: 12631)
+Completed 200 OK in 35ms (Views: 20.7ms | ActiveRecord: 6.1ms | Allocations: 17025)
+
+
