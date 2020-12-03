@@ -1300,3 +1300,103 @@ Migrating to DeviseCreateUsers (20201203041907)
   [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'user-2@example.com' LIMIT 1[0m
   [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('user-2@example.com', '$2a$12$JFdsy74sI.B2FhEVm7Cqkerfz8TKj0YYYdUDHVdVywTcQtxmfgYY6', '2020-12-03 04:25:26.373801', '2020-12-03 04:25:26.373801')[0m
   [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2020-12-03 05:28:56 +0100
+  [1m[35m (2.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 3.2ms | Allocations: 382)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 163)
+Completed 200 OK in 64ms (Views: 55.2ms | ActiveRecord: 0.0ms | Allocations: 8916)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-03 05:48:09 +0100
+  [1m[35m (2.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.8ms | Allocations: 326)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 163)
+Completed 200 OK in 47ms (Views: 44.6ms | ActiveRecord: 0.0ms | Allocations: 8644)
+
+
+Started GET "/login" for 127.0.0.1 at 2020-12-03 05:50:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-12-03 05:50:57 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/devise/sessions/new.html.erb:13
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 587)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.1ms | Allocations: 6939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.3ms | Allocations: 125)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 51ms (Views: 26.3ms | ActiveRecord: 12.3ms | Allocations: 17057)
+
+
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('4189196011473094860', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateTitles (20201203054135)
+  [1m[35m (35.7ms)[0m  [1m[35mCREATE TABLE `titles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint NOT NULL, `category` varchar(255), `image_url` varchar(255), `details` text, `active` tinyint(1) DEFAULT TRUE, `flagged` tinyint(1) DEFAULT FALSE, `colour` varchar(255), `price` decimal(8,2), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL,  INDEX `index_titles_on_user_id`  (`user_id`), CONSTRAINT `fk_rails_4926f23134`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201203054135')[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('4189196011473094860', 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateTitles (20201203054135)
+  [1m[35m (26.2ms)[0m  [1m[35mDROP TABLE `titles`[0m
+  [1m[36mprimary::SchemaMigration Destroy (5.3ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20201203054135'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
