@@ -94,7 +94,7 @@ class Listing extends React.Component {
                                 <Listing
                                     key={listing.id}
                                     listing={listing}
-                                    getListings={this.getListings}
+                                    getListings={this.getListings} //add this prop to the component Listing to update state
                                     hideInactiveListings={
                                         this.state.hideInactiveListings
                                     }

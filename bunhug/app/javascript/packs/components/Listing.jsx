@@ -1,21 +1,66 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import axios from "axios";
+import setAxiosHeaders from "./AxiosHeaders";
 class Listing extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      complete: this.props.listing.complete,
+      active: this.props.listing.active,
+    };
+    this.handleDestroy = this.handleDestroy.bind(this);
+    this.path = `/api/v1/listings/${this.props.listing.id}`;
+    this.handleChange = this.handleChange.bind(this); //editing a listing
+    this.updateListing = this.updateListing.bind(this);
+    this.inputRef = React.createRef();
+    this.activeRef = React.createRef();
+  }
+  
+  //edit/ change a listing
+  handleChange() {
+    this.updateListing();
+  }
+  updateListing() {
+    this.setState({ complete: this.completedRef.current.checked });
+    setAxiosHeaders();
+    axios
+      .put(this.path, {
+        listing: {
+          title: this.inputRef.current.value,
+          active: this.completedRef.current.checked
+        }
+      })
+      .then(response => {})
+      .catch(error => {
+        console.log(error);
+      });
+  }
+
+  //delete a listing
+  handleDestroy() {
+    setAxiosHeaders();
+    const confirmation = confirm("Are you sure?");
+    if (confirmation) {
+      axios
+        .delete(this.path)
+        .then(response => {
+          this.props.getListings();
+        })
+        .catch(error => {
+          console.log(error);
+        });
     }
   }
+
   render() {
     const { listing } = this.props
     return (
-      <tr className={`${this.state.complete ? 'table-light' : ''}`}>
+      <tr className={`${this.state.active ? 'table-light' : ''}`}>
         <td>
           <svg
             className={`bi bi-check-circle ${
-              this.state.complete ? `text-success` : `text-muted`
+              this.state.active ? `text-success` : `text-muted`
             }`}
             width="2em"
             height="2em"
@@ -39,7 +84,9 @@ class Listing extends React.Component {
           <input
             type="text"
             defaultValue={listing.title}
-            disabled={this.state.complete}
+            disabled={this.state.active}
+            onChange={this.handleChange} //toggle change handling when text is selected and changed
+            ref={this.inputRef}
             className="form-control"
             id={`listing__title-${listing.id}`}
           />
@@ -48,10 +95,12 @@ class Listing extends React.Component {
           <div className="form-check form-check-inline">
             <input
               type="boolean"
-              defaultChecked={this.state.complete}
+              defaultChecked={this.state.active}
               type="checkbox"
+              onChange={this.handleChange} //toggle change handling when checkbox is selected and changed
+              ref={this.completedRef}
               className="form-check-input"
-              id={`complete-${listing.id}`}
+              id={`active-${listing.id}`}
             />
             <label
               className="form-check-label"
@@ -60,7 +109,11 @@ class Listing extends React.Component {
               Flag?
             </label>
           </div>
-          <button className="btn btn-outline-danger">Delete</button>
+          
+          
+          <button 
+          onClick={this.handleDestroy}
+          className="btn btn-outline-danger">Delete</button>
         </td>
       </tr>
     )
@@ -71,4 +124,5 @@ export default Listing
 
 Listing.propTypes = {
   listing: PropTypes.object.isRequired,
+  getListings: PropTypes.func.isRequired
 }
