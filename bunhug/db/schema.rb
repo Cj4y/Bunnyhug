@@ -10,20 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_03_041907) do
+ActiveRecord::Schema.define(version: 2020_12_03_054757) do
 
   create_table "listings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title"
-    t.string "categories"
-    t.integer "price"
-    t.string "photos"
+    t.bigint "user_id", null: false
+    t.string "category"
+    t.string "image_url"
     t.text "details"
-    t.boolean "flagged"
-    t.integer "favourites"
-    t.integer "user_id"
-    t.integer "favourite_id"
+    t.boolean "active", default: true
+    t.boolean "flagged", default: false
+    t.string "colour"
+    t.decimal "price", precision: 8, scale: 2
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_listings_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -38,4 +39,5 @@ ActiveRecord::Schema.define(version: 2020_12_03_041907) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "listings", "users"
 end
