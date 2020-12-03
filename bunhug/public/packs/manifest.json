@@ -1,24 +1,44 @@
 {
-  "application.js": "/packs/js/application-edad929ce68ffd7e9b87.js",
-  "application.js.map": "/packs/js/application-edad929ce68ffd7e9b87.js.map",
+  "application.js": "/packs/js/application-edb2ae2146b1faa70d4d.js",
+  "application.js.map": "/packs/js/application-edb2ae2146b1faa70d4d.js.map",
+  "components/Listing.js": "/packs/js/components/Listing-fd992a96752d55794402.js",
+  "components/Listing.js.map": "/packs/js/components/Listing-fd992a96752d55794402.js.map",
+  "components/ListingApp.js": "/packs/js/components/ListingApp-2888e2d8b468c2ef3876.js",
+  "components/ListingApp.js.map": "/packs/js/components/ListingApp-2888e2d8b468c2ef3876.js.map",
+  "components/Listings.js": "/packs/js/components/Listings-f17e8d876169536ecd0d.js",
+  "components/Listings.js.map": "/packs/js/components/Listings-f17e8d876169536ecd0d.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-edad929ce68ffd7e9b87.js"
+        "/packs/js/application-edb2ae2146b1faa70d4d.js"
       ],
       "js.map": [
-        "/packs/js/application-edad929ce68ffd7e9b87.js.map"
+        "/packs/js/application-edb2ae2146b1faa70d4d.js.map"
       ]
     },
-    "hello_react": {
+    "components/Listing": {
       "js": [
-        "/packs/js/hello_react-d480e3148ec7641edb8f.js"
+        "/packs/js/components/Listing-fd992a96752d55794402.js"
       ],
       "js.map": [
-        "/packs/js/hello_react-d480e3148ec7641edb8f.js.map"
+        "/packs/js/components/Listing-fd992a96752d55794402.js.map"
+      ]
+    },
+    "components/ListingApp": {
+      "js": [
+        "/packs/js/components/ListingApp-2888e2d8b468c2ef3876.js"
+      ],
+      "js.map": [
+        "/packs/js/components/ListingApp-2888e2d8b468c2ef3876.js.map"
+      ]
+    },
+    "components/Listings": {
+      "js": [
+        "/packs/js/components/Listings-f17e8d876169536ecd0d.js"
+      ],
+      "js.map": [
+        "/packs/js/components/Listings-f17e8d876169536ecd0d.js.map"
       ]
     }
-  },
-  "hello_react.js": "/packs/js/hello_react-d480e3148ec7641edb8f.js",
-  "hello_react.js.map": "/packs/js/hello_react-d480e3148ec7641edb8f.js.map"
+  }
 }

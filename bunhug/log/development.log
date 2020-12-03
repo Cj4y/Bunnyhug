@@ -2155,3 +2155,87 @@ Error occurred while parsing request parameters.
 Contents:
 
 {"listing":{"title":"","category":"c", "image_url":"wow.jpg", "details":"d", "active":"true", flagged:"false", "colour":"red", "price":"20.00"}}
+Started GET "/users/sign_in" for ::1 at 2020-12-03 09:49:46 +0100
+  [1m[35m (1.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/devise/sessions/new.html.erb:13
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 595)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.5ms | Allocations: 5587)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 7c4c832baeba2ff45a00
+Version: webpack 4.44.2
+Time: 4309ms
+Built at: 12/03/2020 9:49:52 AM
+                                               Asset      Size                 Chunks                         Chunk Names
+              js/application-edb2ae2146b1faa70d4d.js  1.32 MiB            application  [emitted] [immutable]  application
+          js/application-edb2ae2146b1faa70d4d.js.map  1.45 MiB            application  [emitted] [dev]        application
+       js/components/Listing-fd992a96752d55794402.js   130 KiB     components/Listing  [emitted] [immutable]  components/Listing
+   js/components/Listing-fd992a96752d55794402.js.map   142 KiB     components/Listing  [emitted] [dev]        components/Listing
+    js/components/ListingApp-2888e2d8b468c2ef3876.js  1.12 MiB  components/ListingApp  [emitted] [immutable]  components/ListingApp
+js/components/ListingApp-2888e2d8b468c2ef3876.js.map  1.29 MiB  components/ListingApp  [emitted] [dev]        components/ListingApp
+      js/components/Listings-f17e8d876169536ecd0d.js  91.3 KiB    components/Listings  [emitted] [immutable]  components/Listings
+  js/components/Listings-f17e8d876169536ecd0d.js.map  99.8 KiB    components/Listings  [emitted] [dev]        components/Listings
+                                       manifest.json  1.52 KiB                         [emitted]              
+Entrypoint application = js/application-edb2ae2146b1faa70d4d.js js/application-edb2ae2146b1faa70d4d.js.map
+Entrypoint components/Listing = js/components/Listing-fd992a96752d55794402.js js/components/Listing-fd992a96752d55794402.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-2888e2d8b468c2ef3876.js js/components/ListingApp-2888e2d8b468c2ef3876.js.map
+Entrypoint components/Listings = js/components/Listings-f17e8d876169536ecd0d.js js/components/Listings-f17e8d876169536ecd0d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 847 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 55 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve './components/TodoApp' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 19:0-31
+
+  Rendered shared/_navigation.html.erb (Duration: 1.3ms | Allocations: 321)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 163)
+Completed 200 OK in 5921ms (Views: 5893.2ms | ActiveRecord: 7.5ms | Allocations: 21045)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-12-03 09:50:52 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"/+EsCDEhV5oNflGuc1XUa5fYMbFBd/r00cTco/AMANTOXe7avZvKzat/sRNkqZ59icz9xr1RGq4HnpMc8x+c/A==", "user"=>{"email"=>"user-1@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'user-1@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 280ms (ActiveRecord: 0.8ms | Allocations: 2406)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"/+EsCDEhV5oNflGuc1XUa5fYMbFBd/r00cTco/AMANTOXe7avZvKzat/sRNkqZ59icz9xr1RGq4HnpMc8x+c/A==", "user"=>{"email"=>"user-1@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/devise/sessions/new.html.erb:13
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 1756)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 292ms (Views: 21.9ms | ActiveRecord: 0.8ms | Allocations: 5790)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-12-03 09:50:57 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"kLGaAogRL9XTdSYccNKi1M9yBu5nGel1YHjJqFhZmLyhDVjQBKuygnV0xqFnLujC0WbKmZs/CS+2IoYXW0oElA==", "user"=>{"email"=>"user-1@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'user-1@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 283ms (ActiveRecord: 0.9ms | Allocations: 4613)
+
+
+Started GET "/" for ::1 at 2020-12-03 09:50:57 +0100
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.8ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 106)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 21)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 4492)
+
+
