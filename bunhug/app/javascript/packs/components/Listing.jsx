@@ -1,62 +1,69 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import _ from "lodash";
 import axios from "axios";
 import setAxiosHeaders from "./AxiosHeaders";
 class Listing extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      active: this.props.listing.active,
-    };
-    this.handleDestroy = this.handleDestroy.bind(this);
-    this.path = `/api/v1/listings/${this.props.listing.id}`;
-    this.handleChange = this.handleChange.bind(this); //editing a listing
-    this.updateListing = this.updateListing.bind(this);
-    this.inputRef = React.createRef();
-    this.activeRef = React.createRef();
-  }
-  
-  //edit/ change a listing
-  handleChange() {
-    this.updateListing();
-  }
-  updateListing() {
-    this.setState({ complete: this.completedRef.current.checked });
-    setAxiosHeaders();
+        active: this.props.listing.active,
+    }
+    this.handleDestroy = this.handleDestroy.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+    this.updateListing = this.updateListing.bind(this)
+    this.inputRef = React.createRef()
+    this.InactiveRef = React.createRef()
+    this.path = `/api/v1/listings/${this.props.listing.id}`
+}
+handleChange() {
+    this.setState({
+        active: this.inactiveRef.current.checked,
+    })
+    this.updateListing()
+}
+updateListing = _.debounce(() => {
+    setAxiosHeaders()
     axios
-      .put(this.path, {
-        listing: {
-          title: this.inputRef.current.value,
-          active: this.completedRef.current.checked
-        }
-      })
-      .then(response => {})
-      .catch(error => {
-        console.log(error);
-      });
-  }
-
-  //delete a listing
-  handleDestroy() {
-    setAxiosHeaders();
-    const confirmation = confirm("Are you sure?");
-    if (confirmation) {
-      axios
-        .delete(this.path)
-        .then(response => {
-          this.props.getListings();
+        .put(this.path, {
+            listing: {
+                title: this.inputRef.current.value,
+                active: this.inactiveRef.current.checked,
+            },
+        })
+        .then(() => {
+            this.props.clearErrors()
         })
         .catch(error => {
-          console.log(error);
-        });
+            this.props.handleErrors(error)
+        })
+}, 1000)
+handleDestroy() {
+    setAxiosHeaders()
+    const confirmation = confirm('Are you sure?')
+    if (confirmation) {
+        axios
+            .delete(this.path)
+            .then(response => {
+                this.props.getTodoItems()
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
-  }
-
+}
   render() {
     const { listing } = this.props
     return (
-      <tr className={`${this.state.active ? 'table-light' : ''}`}>
+      //ternary operator to either show OR hide listing depending on hideInactiveListings and props is true/ false
+      <tr
+        className={`${
+          this.state.active && this.props.hideInactiveListings
+              ? `d-none`
+              : ''
+      } ${this.state.active ? 'table-light' : ''}`}>
+        
         <td>
           <svg
             className={`bi bi-check-circle ${
@@ -98,7 +105,7 @@ class Listing extends React.Component {
               defaultChecked={this.state.active}
               type="checkbox"
               onChange={this.handleChange} //toggle change handling when checkbox is selected and changed
-              ref={this.completedRef}
+              ref={this.activeRef}
               className="form-check-input"
               id={`active-${listing.id}`}
             />
