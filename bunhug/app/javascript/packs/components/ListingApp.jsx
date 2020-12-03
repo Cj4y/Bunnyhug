@@ -32,7 +32,7 @@ class Listing extends React.Component {
       
     //if successful, load data into state
         axios
-            .get('/api/v1/listings')
+            .get('/api/v1/listings') //or "/broken-end-point"
             .then(response => { 
                 this.clearErrors()
                 this.setState({ isLoading: true })

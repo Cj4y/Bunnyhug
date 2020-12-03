@@ -14,7 +14,7 @@ class Listing extends React.Component {
     this.handleChange = this.handleChange.bind(this)
     this.updateListing = this.updateListing.bind(this)
     this.inputRef = React.createRef()
-    this.InactiveRef = React.createRef()
+    this.inactiveRef = React.createRef()
     this.path = `/api/v1/listings/${this.props.listing.id}`
 }
 handleChange() {
@@ -46,7 +46,7 @@ handleDestroy() {
         axios
             .delete(this.path)
             .then(response => {
-                this.props.getTodoItems()
+                this.props.getListings()
             })
             .catch(error => {
                 console.log(error)
@@ -105,13 +105,13 @@ handleDestroy() {
               defaultChecked={this.state.active}
               type="checkbox"
               onChange={this.handleChange} //toggle change handling when checkbox is selected and changed
-              ref={this.activeRef}
+              ref={this.inactiveRef}
               className="form-check-input"
               id={`active-${listing.id}`}
             />
             <label
               className="form-check-label"
-              htmlFor={`flagged-${listing.id}`}
+              htmlFor={`active-${listing.id}`}
             >
               Flag?
             </label>
@@ -131,5 +131,7 @@ export default Listing
 
 Listing.propTypes = {
   listing: PropTypes.object.isRequired,
-  getListings: PropTypes.func.isRequired
+  getListing: PropTypes.func.isRequired,
+  hideInactiveListings: PropTypes.bool.isRequired,
+  clearErrors: PropTypes.func.isRequired,
 }

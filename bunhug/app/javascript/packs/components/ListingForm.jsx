@@ -21,10 +21,11 @@ class ListingForm extends React.Component {
       })
       .then(response => {
         const listing = response.data
-        this.props.createListing(listing)
+        this.props.createListing(listing);
+        this.props.clearErrors();
       })
       .catch(error => {
-        console.log(error)
+        this.props.handleErrors(error);
       })
     e.target.reset()
   }
@@ -52,6 +53,7 @@ class ListingForm extends React.Component {
           </div>
         </div>
       </form>
+      
     )
   }
 }
@@ -60,4 +62,6 @@ export default ListingForm
 
 ListingForm.propTypes = {
   createListing: PropTypes.func.isRequired,
+  handleErrors: PropTypes.func.isRequired,
+  clearErrors: PropTypes.func.isRequired
 }
