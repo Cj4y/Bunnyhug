@@ -3474,3 +3474,343 @@ Processing by Api::V1::ListingsController#index as JSON
 Completed 200 OK in 64ms (Views: 46.2ms | ActiveRecord: 4.7ms | Allocations: 19542)
 
 
+Started GET "/" for ::1 at 2020-12-03 18:58:21 +0100
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.7ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 2.5ms | Allocations: 317)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 163)
+Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 0.0ms | Allocations: 9203)
+
+
+Started GET "/api/v1/listings" for ::1 at 2020-12-03 18:58:21 +0100
+  
+SyntaxError (/home/fluffle/code/Bunnyhug/bunhug/app/controllers/api/v1/listings_controller.rb:83: syntax error, unexpected symbol literal, expecting ')'
+        :active, :flagged, :colour, :p...
+        ^
+):
+  
+app/controllers/api/v1/listings_controller.rb:83: syntax error, unexpected symbol literal, expecting ')'
+app/controllers/api/v1/listings_controller.rb:83: syntax error, unexpected symbol literal, expecting ')'
+app/controllers/api/v1/listings_controller.rb:83: syntax error, unexpected symbol literal, expecting ')'
+Started GET "/" for ::1 at 2020-12-03 18:58:41 +0100
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.5ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 3.5ms | Allocations: 317)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 163)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.0ms | Allocations: 9198)
+
+
+Started GET "/api/v1/listings" for ::1 at 2020-12-03 18:58:41 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.5ms | Allocations: 129)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 22.5ms | Allocations: 10515)
+Completed 200 OK in 45ms (Views: 22.5ms | ActiveRecord: 8.3ms | Allocations: 18169)
+
+
+Started PUT "/api/v1/listings/10" for ::1 at 2020-12-03 18:59:04 +0100
+Processing by Api::V1::ListingsController#update as JSON
+  Parameters: {"listing"=>{"title"=>"19.0", "active"=>false}, "id"=>"10"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`id` = 10 ORDER BY `listings`.`created_at` DESC LIMIT 1[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:66:in `set_listing'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:70:in `authorized?'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  [1m[36mListing Update (1.1ms)[0m  [1m[33mUPDATE `listings` SET `listings`.`title` = '19.0', `listings`.`active` = FALSE, `listings`.`updated_at` = '2020-12-03 17:59:04.386443' WHERE `listings`.`id` = 10[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  Rendering api/v1/listings/show.json.jbuilder
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered api/v1/listings/show.json.jbuilder (Duration: 1.9ms | Allocations: 475)
+Completed 200 OK in 31ms (Views: 3.4ms | ActiveRecord: 8.4ms | Allocations: 7079)
+
+
+Started PUT "/api/v1/listings/10" for ::1 at 2020-12-03 18:59:11 +0100
+Processing by Api::V1::ListingsController#update as JSON
+  Parameters: {"listing"=>{"title"=>"19.0", "active"=>true}, "id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`id` = 10 ORDER BY `listings`.`created_at` DESC LIMIT 1[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:66:in `set_listing'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:70:in `authorized?'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  [1m[36mListing Update (1.0ms)[0m  [1m[33mUPDATE `listings` SET `listings`.`active` = TRUE, `listings`.`updated_at` = '2020-12-03 17:59:11.464072' WHERE `listings`.`id` = 10[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  Rendering api/v1/listings/show.json.jbuilder
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 34)
+  Rendered api/v1/listings/show.json.jbuilder (Duration: 1.3ms | Allocations: 264)
+Completed 200 OK in 34ms (Views: 2.7ms | ActiveRecord: 8.8ms | Allocations: 6482)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-12-03 19:53:15 +0100
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sVwhs2hb2REM33OZDTSzyLeLoHMOOdtf1Hcrvqu9Gk5UJPCnQ5/WFhGeeieI9Inlq4GcvYo1SeQETdUmMhFa2g=="}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 59ms (ActiveRecord: 10.0ms | Allocations: 9500)
+
+
+Started GET "/" for ::1 at 2020-12-03 19:53:15 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 336)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/fluffle/code/Bunnyhug/bunhug/public/packs
+[Webpacker] Hash: 7fb9ffbc536049858513
+Version: webpack 4.44.2
+Time: 3903ms
+Built at: 12/03/2020 7:53:21 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-2425665f395e9caf45ae.js  3.03 MiB              application  [emitted] [immutable]  application
+            js/application-2425665f395e9caf45ae.js.map  3.42 MiB              application  [emitted] [dev]        application
+    js/components/AxiosHeaders-39af6c03e576fa0758d5.js  61.4 KiB  components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map  61.2 KiB  components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+    js/components/ErrorMessage-bf856a603c08a40b9dc0.js   658 KiB  components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map   778 KiB  components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+         js/components/Listing-3e5b7042ba7476566ebc.js   728 KiB       components/Listing  [emitted] [immutable]  components/Listing
+     js/components/Listing-3e5b7042ba7476566ebc.js.map   842 KiB       components/Listing  [emitted] [dev]        components/Listing
+      js/components/ListingApp-cc86f0c643b921947bd4.js  1.72 MiB    components/ListingApp  [emitted] [immutable]  components/ListingApp
+  js/components/ListingApp-cc86f0c643b921947bd4.js.map  1.97 MiB    components/ListingApp  [emitted] [dev]        components/ListingApp
+     js/components/ListingForm-c4efa6c1891a2b149112.js   189 KiB   components/ListingForm  [emitted] [immutable]  components/ListingForm
+ js/components/ListingForm-c4efa6c1891a2b149112.js.map   201 KiB   components/ListingForm  [emitted] [dev]        components/ListingForm
+        js/components/Listings-2044cd2d9cd113e155ee.js   129 KiB      components/Listings  [emitted] [immutable]  components/Listings
+    js/components/Listings-2044cd2d9cd113e155ee.js.map   141 KiB      components/Listings  [emitted] [dev]        components/Listings
+         js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB       components/Spinner  [emitted] [immutable]  components/Spinner
+     js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB       components/Spinner  [emitted] [dev]        components/Spinner
+                                         manifest.json  3.13 KiB                           [emitted]              
+Entrypoint application = js/application-2425665f395e9caf45ae.js js/application-2425665f395e9caf45ae.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-39af6c03e576fa0758d5.js js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-bf856a603c08a40b9dc0.js js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map
+Entrypoint components/Listing = js/components/Listing-3e5b7042ba7476566ebc.js js/components/Listing-3e5b7042ba7476566ebc.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-cc86f0c643b921947bd4.js js/components/ListingApp-cc86f0c643b921947bd4.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-c4efa6c1891a2b149112.js js/components/ListingForm-c4efa6c1891a2b149112.js.map
+Entrypoint components/Listings = js/components/Listings-2044cd2d9cd113e155ee.js js/components/Listings-2044cd2d9cd113e155ee.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 897 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 60 hidden modules
+
+  Rendered shared/_navigation.html.erb (Duration: 1.2ms | Allocations: 299)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 165)
+Completed 200 OK in 5407ms (Views: 5405.2ms | ActiveRecord: 0.0ms | Allocations: 12460)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-12-03 19:53:25 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/devise/sessions/new.html.erb:13
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 591)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 121)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.6ms | Allocations: 9221)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-12-03 19:53:37 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"5UMd7dALCFviM8KWkISgsQ8mUEeMhFcGm9AYE7h/lLRD5mmTUASXJ/37+Q2Enw7KYBZPhGaKH/wj4uSNH2mDrA==", "user"=>{"email"=>"user-1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'user-1@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 297ms (ActiveRecord: 0.9ms | Allocations: 5890)
+
+
+Started GET "/" for ::1 at 2020-12-03 19:53:37 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.9ms | Allocations: 76)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 105)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 21)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 4068)
+
+
+Started GET "/api/v1/listings" for ::1 at 2020-12-03 19:53:37 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.6ms | Allocations: 123)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 26.0ms | Allocations: 10523)
+Completed 200 OK in 41ms (Views: 26.3ms | ActiveRecord: 4.0ms | Allocations: 17372)
+
+
+Started PUT "/api/v1/listings/10" for ::1 at 2020-12-03 19:54:01 +0100
+Processing by Api::V1::ListingsController#update as JSON
+  Parameters: {"listing"=>{"title"=>"19.0", "active"=>false}, "id"=>"10"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`id` = 10 ORDER BY `listings`.`created_at` DESC LIMIT 1[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:66:in `set_listing'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:70:in `authorized?'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  [1m[36mListing Update (0.8ms)[0m  [1m[33mUPDATE `listings` SET `listings`.`active` = FALSE, `listings`.`updated_at` = '2020-12-03 18:54:02.003966' WHERE `listings`.`id` = 10[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  Rendering api/v1/listings/show.json.jbuilder
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 1.0ms | Allocations: 93)
+  Rendered api/v1/listings/show.json.jbuilder (Duration: 3.9ms | Allocations: 475)
+Completed 200 OK in 37ms (Views: 8.3ms | ActiveRecord: 7.7ms | Allocations: 6974)
+
+
+Started PUT "/api/v1/listings/10" for ::1 at 2020-12-03 19:54:05 +0100
+Processing by Api::V1::ListingsController#update as JSON
+  Parameters: {"listing"=>{"title"=>"19.0", "active"=>true}, "id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`id` = 10 ORDER BY `listings`.`created_at` DESC LIMIT 1[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:66:in `set_listing'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:70:in `authorized?'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  [1m[36mListing Update (0.8ms)[0m  [1m[33mUPDATE `listings` SET `listings`.`active` = TRUE, `listings`.`updated_at` = '2020-12-03 18:54:05.595845' WHERE `listings`.`id` = 10[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/listings_controller.rb:40:in `block in update'
+  Rendering api/v1/listings/show.json.jbuilder
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 34)
+  Rendered api/v1/listings/show.json.jbuilder (Duration: 0.8ms | Allocations: 264)
+Completed 200 OK in 29ms (Views: 1.7ms | ActiveRecord: 7.6ms | Allocations: 6476)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-12-05 04:19:41 +0100
+  [1m[35m (2.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LPiSbt+fkgvYQAgXgzfCsVdx2JwpnQPMyAXC3j+jlUo7SlTek4T8cy5jHMwPio03BU7fNsnapR/oZCish6FMcg=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (ActiveRecord: 5.0ms | Allocations: 9487)
+
+
+Started GET "/" for ::1 at 2020-12-05 04:19:41 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 249)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.8ms | Allocations: 299)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 165)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 9191)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-12-05 04:19:58 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/devise/sessions/new.html.erb:13
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 591)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3776)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 121)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 0.6ms | Allocations: 9219)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-12-05 04:20:17 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"o+8QajaJGSfsHYRflfTJ7ju4fux9Dlx5ei9qhGOprRBcmMFLXKh8C6sRwqTQ1S8Y8k9uc6tMxFGacsM6ezHdJw==", "user"=>{"email"=>"dsddsfd@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 429)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"o+8QajaJGSfsHYRflfTJ7ju4fux9Dlx5ei9qhGOprRBcmMFLXKh8C6sRwqTQ1S8Y8k9uc6tMxFGacsM6ezHdJw==", "user"=>{"email"=>"dsddsfd@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/devise/sessions/new.html.erb:13
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1758)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 1.9ms | Allocations: 5906)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-12-05 04:20:41 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 195)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 118)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.5ms | Allocations: 121)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 6708)
+
+
+Started POST "/users" for ::1 at 2020-12-05 04:21:07 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"zh4MGwRLPGqjVAqmehN25GDyCc3Jd/xZz7HFZW369KhRGQ8qFtCCzZWL5ur/u0Z6Jle+pWO1OuTvbT2G9nnulw==", "user"=>{"email"=>"cttt@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'cttt@gmail.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 366)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1427)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 307ms (Views: 12.8ms | ActiveRecord: 3.7ms | Allocations: 13544)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-12-05 04:23:28 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/devise/sessions/new.html.erb:13
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1750)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.6ms | Allocations: 121)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 22ms (Views: 15.7ms | ActiveRecord: 2.2ms | Allocations: 5983)
+
+

@@ -168,7 +168,7 @@ handleDestroy() {
               className="form-check-label"
               htmlFor={`active-${listing.id}`}
             >
-              Flag?
+              Active?
             </label>
           </div>
           
