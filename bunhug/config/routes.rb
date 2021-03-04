@@ -13,4 +13,11 @@ Rails.application.routes.draw do
     end
   end
 
+  resource :listing_display, only: [:index, :show]
+  resource :about, only:[:show]
+  resource :contact, only:[:show]
+
+#  match '/home' => 'pages#home'
+#match '/about' => 'pages#about'
+#match '/contact' => 'pages#contact'
 end

@@ -3474,3 +3474,1976 @@ Processing by Api::V1::ListingsController#index as JSON
 Completed 200 OK in 64ms (Views: 46.2ms | ActiveRecord: 4.7ms | Allocations: 19542)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-03 08:56:50 +0100
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 267)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 7310fdb9a510956f1aae
+Version: webpack 4.44.2
+Time: 4644ms
+Built at: 03/03/2021 8:56:56 AM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-7eb2922db605c88c9424.js  3.03 MiB              application  [emitted] [immutable]  application
+            js/application-7eb2922db605c88c9424.js.map  3.42 MiB              application  [emitted] [dev]        application
+           js/components/About-f727e3667d8bcf12451b.js  3.92 KiB         components/About  [emitted] [immutable]  components/About
+       js/components/About-f727e3667d8bcf12451b.js.map  3.54 KiB         components/About  [emitted] [dev]        components/About
+    js/components/AxiosHeaders-39af6c03e576fa0758d5.js  61.4 KiB  components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map  61.2 KiB  components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+         js/components/Contact-f7a11f4394ee799bbd0e.js  86.8 KiB       components/Contact  [emitted] [immutable]  components/Contact
+     js/components/Contact-f7a11f4394ee799bbd0e.js.map  99.1 KiB       components/Contact  [emitted] [dev]        components/Contact
+           js/components/Error-31324740411cc55a9e82.js  86.8 KiB         components/Error  [emitted] [immutable]  components/Error
+       js/components/Error-31324740411cc55a9e82.js.map  99.1 KiB         components/Error  [emitted] [dev]        components/Error
+    js/components/ErrorMessage-bf856a603c08a40b9dc0.js   658 KiB  components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map   778 KiB  components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+            js/components/Home-4216ad1776faeb4b8f59.js  86.8 KiB          components/Home  [emitted] [immutable]  components/Home
+        js/components/Home-4216ad1776faeb4b8f59.js.map  99.1 KiB          components/Home  [emitted] [dev]        components/Home
+         js/components/Listing-a91f727044254cc9a274.js   728 KiB       components/Listing  [emitted] [immutable]  components/Listing
+     js/components/Listing-a91f727044254cc9a274.js.map   842 KiB       components/Listing  [emitted] [dev]        components/Listing
+      js/components/ListingApp-cad5fe49c2e3f9b2f158.js  1.72 MiB    components/ListingApp  [emitted] [immutable]  components/ListingApp
+  js/components/ListingApp-cad5fe49c2e3f9b2f158.js.map  1.97 MiB    components/ListingApp  [emitted] [dev]        components/ListingApp
+     js/components/ListingForm-c4efa6c1891a2b149112.js   189 KiB   components/ListingForm  [emitted] [immutable]  components/ListingForm
+ js/components/ListingForm-c4efa6c1891a2b149112.js.map   201 KiB   components/ListingForm  [emitted] [dev]        components/ListingForm
+        js/components/Listings-2044cd2d9cd113e155ee.js   129 KiB      components/Listings  [emitted] [immutable]  components/Listings
+    js/components/Listings-2044cd2d9cd113e155ee.js.map   141 KiB      components/Listings  [emitted] [dev]        components/Listings
+             js/components/Nav-a1b8ff8b4274fc965186.js  87.4 KiB           components/Nav  [emitted] [immutable]  components/Nav
+         js/components/Nav-a1b8ff8b4274fc965186.js.map  99.3 KiB           components/Nav  [emitted] [dev]        components/Nav
+         js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB       components/Spinner  [emitted] [immutable]  components/Spinner
+     js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB       components/Spinner  [emitted] [dev]        components/Spinner
+     js/components/application-df4543f3d01e6737d019.js  3.03 MiB   components/application  [emitted] [immutable]  components/application
+ js/components/application-df4543f3d01e6737d019.js.map  3.42 MiB   components/application  [emitted] [dev]        components/application
+         js/components/aroutes-a0a2f9dc99582bf3d855.js   247 KiB       components/aroutes  [emitted] [immutable]  components/aroutes
+     js/components/aroutes-a0a2f9dc99582bf3d855.js.map   250 KiB       components/aroutes  [emitted] [dev]        components/aroutes
+                                         manifest.json  5.74 KiB                           [emitted]              
+Entrypoint application = js/application-7eb2922db605c88c9424.js js/application-7eb2922db605c88c9424.js.map
+Entrypoint components/About = js/components/About-f727e3667d8bcf12451b.js js/components/About-f727e3667d8bcf12451b.js.map
+Entrypoint components/application = js/components/application-df4543f3d01e6737d019.js js/components/application-df4543f3d01e6737d019.js.map
+Entrypoint components/aroutes = js/components/aroutes-a0a2f9dc99582bf3d855.js js/components/aroutes-a0a2f9dc99582bf3d855.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-39af6c03e576fa0758d5.js js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map
+Entrypoint components/Contact = js/components/Contact-f7a11f4394ee799bbd0e.js js/components/Contact-f7a11f4394ee799bbd0e.js.map
+Entrypoint components/Error = js/components/Error-31324740411cc55a9e82.js js/components/Error-31324740411cc55a9e82.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-bf856a603c08a40b9dc0.js js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map
+Entrypoint components/Home = js/components/Home-4216ad1776faeb4b8f59.js js/components/Home-4216ad1776faeb4b8f59.js.map
+Entrypoint components/Listing = js/components/Listing-a91f727044254cc9a274.js js/components/Listing-a91f727044254cc9a274.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-cad5fe49c2e3f9b2f158.js js/components/ListingApp-cad5fe49c2e3f9b2f158.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-c4efa6c1891a2b149112.js js/components/ListingForm-c4efa6c1891a2b149112.js.map
+Entrypoint components/Listings = js/components/Listings-2044cd2d9cd113e155ee.js js/components/Listings-2044cd2d9cd113e155ee.js.map
+Entrypoint components/Nav = js/components/Nav-a1b8ff8b4274fc965186.js js/components/Nav-a1b8ff8b4274fc965186.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} {components/application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} {components/application} [built]
+[./app/javascript/packs/application.js] 897 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 88 hidden modules
+
+ERROR in ./app/javascript/packs/components/Contact.js
+Module not found: Error: Can't resolve './Contact.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Contact.js 3:0-23
+
+ERROR in ./app/javascript/packs/components/Error.js
+Module not found: Error: Can't resolve './Error.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Error.js 3:0-21
+
+ERROR in ./app/javascript/packs/components/Home.js
+Module not found: Error: Can't resolve './Home.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Home.js 3:0-20
+
+ERROR in ./app/javascript/packs/components/Nav.js
+Module not found: Error: Can't resolve './Nav.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Nav.js 3:0-19
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/About' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 26:0-39 85:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Contact' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 27:0-43 94:19-26
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Error' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 28:0-39 102:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Home' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 25:0-37 75:19-23
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Navigation' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 29:0-49 59:42-52
+
+ERROR in ../node_modules/mini-create-react-context/dist/esm/index.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/mini-create-react-context/dist/esm'
+ @ ../node_modules/mini-create-react-context/dist/esm/index.js 1:0-41 101:4-13 164:4-13 173:12-17
+ @ ../node_modules/react-router/esm/react-router.js
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router-dom/esm/react-router-dom.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router-dom/esm'
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js 4:0-26 33:24-29 40:2-7 78:24-29 85:2-7 112:17-22 159:22-27 178:22-27 200:24-29 223:19-24 260:22-27 291:24-29
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router/esm/react-router.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router/esm'
+ @ ../node_modules/react-router/esm/react-router.js 2:0-26 92:24-29 99:20-25 106:2-7 142:24-29 149:2-7 191:2-7 201:22-27 205:24-29 274:22-27 289:24-29 396:9-14 421:24-29 442:26-31 444:214-219 449:2-7 586:24-29 593:2-7 623:24-29 631:6-11 632:42-47 640:34-39 648:2-7 673:24-29 675:26-31 693:17-22
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+  Rendered shared/_navigation.html.erb (Duration: 1.0ms | Allocations: 300)
+  Rendered shared/_flash.html.erb (Duration: 2.8ms | Allocations: 163)
+Completed 200 OK in 6292ms (Views: 6287.9ms | ActiveRecord: 0.0ms | Allocations: 10720)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-03-03 08:57:11 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/devise/sessions/new.html.erb:13
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 591)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 5434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 121)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 42ms (Views: 19.0ms | ActiveRecord: 10.8ms | Allocations: 15704)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-03-03 08:57:30 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"TRHy2JRo+CmHz5gRLJVhfhCccvSzH4rjYCVHQgelyFQK6gbPF6mPcEpHilbYiOrYbkF/DF0jb6FVY/tGe4h4kw==", "user"=>{"email"=>"user-1@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'user-1@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (4.7ms)[0m  [1m[33mUPDATE `users` SET `users`.`remember_created_at` = '2021-03-03 07:57:31', `users`.`updated_at` = '2021-03-03 07:57:31.049509' WHERE `users`.`id` = 1[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 323ms (ActiveRecord: 12.1ms | Allocations: 9855)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 08:57:31 +0100
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.6ms | Allocations: 76)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 105)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 21)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 4240)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 08:57:32 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 1.7ms | Allocations: 123)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 32.3ms | Allocations: 10492)
+Completed 200 OK in 68ms (Views: 32.7ms | ActiveRecord: 7.1ms | Allocations: 17445)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 08:58:09 +0100
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.5ms | Allocations: 102)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 4016)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 08:58:09 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.7ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 12.7ms | Allocations: 3536)
+Completed 200 OK in 24ms (Views: 13.5ms | ActiveRecord: 1.7ms | Allocations: 5753)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 09:10:15 +0100
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.9ms | Allocations: 187)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 7310fdb9a510956f1aae
+Version: webpack 4.44.2
+Time: 4128ms
+Built at: 03/03/2021 9:10:21 AM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-7eb2922db605c88c9424.js  3.03 MiB              application  [emitted] [immutable]  application
+            js/application-7eb2922db605c88c9424.js.map  3.42 MiB              application  [emitted] [dev]        application
+           js/components/About-f727e3667d8bcf12451b.js  3.92 KiB         components/About  [emitted] [immutable]  components/About
+       js/components/About-f727e3667d8bcf12451b.js.map  3.54 KiB         components/About  [emitted] [dev]        components/About
+    js/components/AxiosHeaders-39af6c03e576fa0758d5.js  61.4 KiB  components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map  61.2 KiB  components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+         js/components/Contact-f7a11f4394ee799bbd0e.js  86.8 KiB       components/Contact  [emitted] [immutable]  components/Contact
+     js/components/Contact-f7a11f4394ee799bbd0e.js.map  99.1 KiB       components/Contact  [emitted] [dev]        components/Contact
+           js/components/Error-31324740411cc55a9e82.js  86.8 KiB         components/Error  [emitted] [immutable]  components/Error
+       js/components/Error-31324740411cc55a9e82.js.map  99.1 KiB         components/Error  [emitted] [dev]        components/Error
+    js/components/ErrorMessage-bf856a603c08a40b9dc0.js   658 KiB  components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map   778 KiB  components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+            js/components/Home-4216ad1776faeb4b8f59.js  86.8 KiB          components/Home  [emitted] [immutable]  components/Home
+        js/components/Home-4216ad1776faeb4b8f59.js.map  99.1 KiB          components/Home  [emitted] [dev]        components/Home
+         js/components/Listing-a91f727044254cc9a274.js   728 KiB       components/Listing  [emitted] [immutable]  components/Listing
+     js/components/Listing-a91f727044254cc9a274.js.map   842 KiB       components/Listing  [emitted] [dev]        components/Listing
+      js/components/ListingApp-cad5fe49c2e3f9b2f158.js  1.72 MiB    components/ListingApp  [emitted] [immutable]  components/ListingApp
+  js/components/ListingApp-cad5fe49c2e3f9b2f158.js.map  1.97 MiB    components/ListingApp  [emitted] [dev]        components/ListingApp
+     js/components/ListingForm-c4efa6c1891a2b149112.js   189 KiB   components/ListingForm  [emitted] [immutable]  components/ListingForm
+ js/components/ListingForm-c4efa6c1891a2b149112.js.map   201 KiB   components/ListingForm  [emitted] [dev]        components/ListingForm
+        js/components/Listings-2044cd2d9cd113e155ee.js   129 KiB      components/Listings  [emitted] [immutable]  components/Listings
+    js/components/Listings-2044cd2d9cd113e155ee.js.map   141 KiB      components/Listings  [emitted] [dev]        components/Listings
+             js/components/Nav-a1b8ff8b4274fc965186.js  87.4 KiB           components/Nav  [emitted] [immutable]  components/Nav
+         js/components/Nav-a1b8ff8b4274fc965186.js.map  99.3 KiB           components/Nav  [emitted] [dev]        components/Nav
+         js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB       components/Spinner  [emitted] [immutable]  components/Spinner
+     js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB       components/Spinner  [emitted] [dev]        components/Spinner
+     js/components/application-df4543f3d01e6737d019.js  3.03 MiB   components/application  [emitted] [immutable]  components/application
+ js/components/application-df4543f3d01e6737d019.js.map  3.42 MiB   components/application  [emitted] [dev]        components/application
+         js/components/aroutes-a0a2f9dc99582bf3d855.js   247 KiB       components/aroutes  [emitted] [immutable]  components/aroutes
+     js/components/aroutes-a0a2f9dc99582bf3d855.js.map   250 KiB       components/aroutes  [emitted] [dev]        components/aroutes
+                                         manifest.json  5.74 KiB                           [emitted]              
+Entrypoint application = js/application-7eb2922db605c88c9424.js js/application-7eb2922db605c88c9424.js.map
+Entrypoint components/About = js/components/About-f727e3667d8bcf12451b.js js/components/About-f727e3667d8bcf12451b.js.map
+Entrypoint components/application = js/components/application-df4543f3d01e6737d019.js js/components/application-df4543f3d01e6737d019.js.map
+Entrypoint components/aroutes = js/components/aroutes-a0a2f9dc99582bf3d855.js js/components/aroutes-a0a2f9dc99582bf3d855.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-39af6c03e576fa0758d5.js js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map
+Entrypoint components/Contact = js/components/Contact-f7a11f4394ee799bbd0e.js js/components/Contact-f7a11f4394ee799bbd0e.js.map
+Entrypoint components/Error = js/components/Error-31324740411cc55a9e82.js js/components/Error-31324740411cc55a9e82.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-bf856a603c08a40b9dc0.js js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map
+Entrypoint components/Home = js/components/Home-4216ad1776faeb4b8f59.js js/components/Home-4216ad1776faeb4b8f59.js.map
+Entrypoint components/Listing = js/components/Listing-a91f727044254cc9a274.js js/components/Listing-a91f727044254cc9a274.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-cad5fe49c2e3f9b2f158.js js/components/ListingApp-cad5fe49c2e3f9b2f158.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-c4efa6c1891a2b149112.js js/components/ListingForm-c4efa6c1891a2b149112.js.map
+Entrypoint components/Listings = js/components/Listings-2044cd2d9cd113e155ee.js js/components/Listings-2044cd2d9cd113e155ee.js.map
+Entrypoint components/Nav = js/components/Nav-a1b8ff8b4274fc965186.js js/components/Nav-a1b8ff8b4274fc965186.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} {components/application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} {components/application} [built]
+[./app/javascript/packs/application.js] 897 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 88 hidden modules
+
+ERROR in ./app/javascript/packs/components/Contact.js
+Module not found: Error: Can't resolve './Contact.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Contact.js 3:0-23
+
+ERROR in ./app/javascript/packs/components/Error.js
+Module not found: Error: Can't resolve './Error.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Error.js 3:0-21
+
+ERROR in ./app/javascript/packs/components/Home.js
+Module not found: Error: Can't resolve './Home.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Home.js 3:0-20
+
+ERROR in ./app/javascript/packs/components/Nav.js
+Module not found: Error: Can't resolve './Nav.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Nav.js 3:0-19
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/About' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 26:0-39 85:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Contact' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 27:0-43 94:19-26
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Error' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 28:0-39 102:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Home' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 25:0-37 75:19-23
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Navigation' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 29:0-49 59:42-52
+
+ERROR in ../node_modules/mini-create-react-context/dist/esm/index.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/mini-create-react-context/dist/esm'
+ @ ../node_modules/mini-create-react-context/dist/esm/index.js 1:0-41 101:4-13 164:4-13 173:12-17
+ @ ../node_modules/react-router/esm/react-router.js
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router-dom/esm/react-router-dom.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router-dom/esm'
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js 4:0-26 33:24-29 40:2-7 78:24-29 85:2-7 112:17-22 159:22-27 178:22-27 200:24-29 223:19-24 260:22-27 291:24-29
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router/esm/react-router.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router/esm'
+ @ ../node_modules/react-router/esm/react-router.js 2:0-26 92:24-29 99:20-25 106:2-7 142:24-29 149:2-7 191:2-7 201:22-27 205:24-29 274:22-27 289:24-29 396:9-14 421:24-29 442:26-31 444:214-219 449:2-7 586:24-29 593:2-7 623:24-29 631:6-11 632:42-47 640:34-39 648:2-7 673:24-29 675:26-31 693:17-22
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+  Rendered shared/_navigation.html.erb (Duration: 2.1ms | Allocations: 317)
+  Rendered shared/_flash.html.erb (Duration: 1.0ms | Allocations: 163)
+Completed 200 OK in 5811ms (Views: 5808.6ms | ActiveRecord: 0.0ms | Allocations: 10643)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 09:10:24 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.6ms | Allocations: 128)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 23.3ms | Allocations: 10497)
+Completed 200 OK in 51ms (Views: 22.0ms | ActiveRecord: 8.5ms | Allocations: 18186)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 10:11:34 +0100
+  [1m[35m (3.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 267)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: ee9ba0259789a9f5ae78
+Version: webpack 4.44.2
+Time: 4871ms
+Built at: 03/03/2021 10:11:41 AM
+                                                   Asset      Size                     Chunks                         Chunk Names
+                  js/application-7eb2922db605c88c9424.js  3.03 MiB                application  [emitted] [immutable]  application
+              js/application-7eb2922db605c88c9424.js.map  3.42 MiB                application  [emitted] [dev]        application
+             js/components/About-f727e3667d8bcf12451b.js  3.92 KiB           components/About  [emitted] [immutable]  components/About
+         js/components/About-f727e3667d8bcf12451b.js.map  3.54 KiB           components/About  [emitted] [dev]        components/About
+      js/components/AxiosHeaders-39af6c03e576fa0758d5.js  61.4 KiB    components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+  js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map  61.2 KiB    components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+           js/components/Contact-f7a11f4394ee799bbd0e.js  86.8 KiB         components/Contact  [emitted] [immutable]  components/Contact
+       js/components/Contact-f7a11f4394ee799bbd0e.js.map  99.1 KiB         components/Contact  [emitted] [dev]        components/Contact
+             js/components/Error-31324740411cc55a9e82.js  86.8 KiB           components/Error  [emitted] [immutable]  components/Error
+         js/components/Error-31324740411cc55a9e82.js.map  99.1 KiB           components/Error  [emitted] [dev]        components/Error
+      js/components/ErrorMessage-bf856a603c08a40b9dc0.js   658 KiB    components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+  js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map   778 KiB    components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+              js/components/Home-4216ad1776faeb4b8f59.js  86.8 KiB            components/Home  [emitted] [immutable]  components/Home
+          js/components/Home-4216ad1776faeb4b8f59.js.map  99.1 KiB            components/Home  [emitted] [dev]        components/Home
+           js/components/Listing-a91f727044254cc9a274.js   728 KiB         components/Listing  [emitted] [immutable]  components/Listing
+       js/components/Listing-a91f727044254cc9a274.js.map   842 KiB         components/Listing  [emitted] [dev]        components/Listing
+        js/components/ListingApp-cad5fe49c2e3f9b2f158.js  1.72 MiB      components/ListingApp  [emitted] [immutable]  components/ListingApp
+    js/components/ListingApp-cad5fe49c2e3f9b2f158.js.map  1.97 MiB      components/ListingApp  [emitted] [dev]        components/ListingApp
+    js/components/ListingDisplay-f711592dd957c2bdf845.js  7.26 KiB  components/ListingDisplay  [emitted] [immutable]  components/ListingDisplay
+js/components/ListingDisplay-f711592dd957c2bdf845.js.map  3.55 KiB  components/ListingDisplay  [emitted] [dev]        components/ListingDisplay
+       js/components/ListingForm-c4efa6c1891a2b149112.js   189 KiB     components/ListingForm  [emitted] [immutable]  components/ListingForm
+   js/components/ListingForm-c4efa6c1891a2b149112.js.map   201 KiB     components/ListingForm  [emitted] [dev]        components/ListingForm
+          js/components/Listings-2044cd2d9cd113e155ee.js   129 KiB        components/Listings  [emitted] [immutable]  components/Listings
+      js/components/Listings-2044cd2d9cd113e155ee.js.map   141 KiB        components/Listings  [emitted] [dev]        components/Listings
+               js/components/Nav-c470538ad518e9dfa906.js  87.6 KiB             components/Nav  [emitted] [immutable]  components/Nav
+           js/components/Nav-c470538ad518e9dfa906.js.map  99.3 KiB             components/Nav  [emitted] [dev]        components/Nav
+           js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB         components/Spinner  [emitted] [immutable]  components/Spinner
+       js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB         components/Spinner  [emitted] [dev]        components/Spinner
+       js/components/application-df4543f3d01e6737d019.js  3.03 MiB     components/application  [emitted] [immutable]  components/application
+   js/components/application-df4543f3d01e6737d019.js.map  3.42 MiB     components/application  [emitted] [dev]        components/application
+           js/components/aroutes-159d71970266b3b4e202.js   248 KiB         components/aroutes  [emitted] [immutable]  components/aroutes
+       js/components/aroutes-159d71970266b3b4e202.js.map   250 KiB         components/aroutes  [emitted] [dev]        components/aroutes
+                                           manifest.json  6.16 KiB                             [emitted]              
+Entrypoint application = js/application-7eb2922db605c88c9424.js js/application-7eb2922db605c88c9424.js.map
+Entrypoint components/About = js/components/About-f727e3667d8bcf12451b.js js/components/About-f727e3667d8bcf12451b.js.map
+Entrypoint components/application = js/components/application-df4543f3d01e6737d019.js js/components/application-df4543f3d01e6737d019.js.map
+Entrypoint components/aroutes = js/components/aroutes-159d71970266b3b4e202.js js/components/aroutes-159d71970266b3b4e202.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-39af6c03e576fa0758d5.js js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map
+Entrypoint components/Contact = js/components/Contact-f7a11f4394ee799bbd0e.js js/components/Contact-f7a11f4394ee799bbd0e.js.map
+Entrypoint components/Error = js/components/Error-31324740411cc55a9e82.js js/components/Error-31324740411cc55a9e82.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-bf856a603c08a40b9dc0.js js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map
+Entrypoint components/Home = js/components/Home-4216ad1776faeb4b8f59.js js/components/Home-4216ad1776faeb4b8f59.js.map
+Entrypoint components/Listing = js/components/Listing-a91f727044254cc9a274.js js/components/Listing-a91f727044254cc9a274.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-cad5fe49c2e3f9b2f158.js js/components/ListingApp-cad5fe49c2e3f9b2f158.js.map
+Entrypoint components/ListingDisplay = js/components/ListingDisplay-f711592dd957c2bdf845.js js/components/ListingDisplay-f711592dd957c2bdf845.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-c4efa6c1891a2b149112.js js/components/ListingForm-c4efa6c1891a2b149112.js.map
+Entrypoint components/Listings = js/components/Listings-2044cd2d9cd113e155ee.js js/components/Listings-2044cd2d9cd113e155ee.js.map
+Entrypoint components/Nav = js/components/Nav-c470538ad518e9dfa906.js js/components/Nav-c470538ad518e9dfa906.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} {components/application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} {components/application} [built]
+[./app/javascript/packs/application.js] 897 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 89 hidden modules
+
+ERROR in ./app/javascript/packs/components/ListingDisplay.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components/ListingDisplay.js: Identifier 'CardMedia' has already been declared (7:7)
+
+   5 | import CardMedia from '@material-ui/core/CardMedia';
+   6 | import CardActions from '@material-ui/core/CardActions';
+>  7 | import CardMedia from "@material-ui/core/CardMedia";
+     |        ^
+   8 | import CardContent from "@material-ui/core/CardContent";
+   9 | import Collapse from '@material-ui/core/Collapse';
+  10 | import Divider from "@material-ui/core/Divider";
+    at Object._raise (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:799:17)
+    at Object.raiseWithData (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:792:17)
+    at Object.raise (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:786:17)
+    at ScopeHandler.checkRedeclarationInScope (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:4906:12)
+    at ScopeHandler.declareName (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:4872:12)
+    at Object.checkLVal (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:9554:22)
+    at Object.parseImportSpecifierLocal (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13044:10)
+    at Object.maybeParseDefaultImportSpecifier (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13148:12)
+    at Object.parseImport (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13009:31)
+    at Object.parseStatementContent (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11677:27)
+    at Object.parseStatement (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11577:17)
+    at Object.parseBlockOrModuleBlockBody (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:12159:25)
+    at Object.parseBlockBody (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:12145:10)
+    at Object.parseTopLevel (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11508:10)
+    at Object.parse (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13328:10)
+    at parse (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13381:38)
+    at parser (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/parser/index.js:54:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transformation/index.js:31:50)
+    at run.next (<anonymous>)
+    at Function.transform (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transform.js:27:41)
+    at transform.next (<anonymous>)
+    at step (/home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:261:32)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:223:11)
+
+ERROR in ./app/javascript/packs/components/Contact.js
+Module not found: Error: Can't resolve './Contact.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Contact.js 3:0-23
+
+ERROR in ./app/javascript/packs/components/Error.js
+Module not found: Error: Can't resolve './Error.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Error.js 3:0-21
+
+ERROR in ./app/javascript/packs/components/Home.js
+Module not found: Error: Can't resolve './Home.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Home.js 3:0-20
+
+ERROR in ./app/javascript/packs/components/Nav.js
+Module not found: Error: Can't resolve './Nav.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Nav.js 3:0-19
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/About' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 28:0-39 97:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Contact' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 30:0-43 106:19-26
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Error' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 31:0-39 114:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Home' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 25:0-37 78:19-23
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/ListingDisplay' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 26:0-51 88:19-27
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Navigation' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 32:0-49 62:42-52
+
+ERROR in ../node_modules/mini-create-react-context/dist/esm/index.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/mini-create-react-context/dist/esm'
+ @ ../node_modules/mini-create-react-context/dist/esm/index.js 1:0-41 101:4-13 164:4-13 173:12-17
+ @ ../node_modules/react-router/esm/react-router.js
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router-dom/esm/react-router-dom.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router-dom/esm'
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js 4:0-26 33:24-29 40:2-7 78:24-29 85:2-7 112:17-22 159:22-27 178:22-27 200:24-29 223:19-24 260:22-27 291:24-29
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router/esm/react-router.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router/esm'
+ @ ../node_modules/react-router/esm/react-router.js 2:0-26 92:24-29 99:20-25 106:2-7 142:24-29 149:2-7 191:2-7 201:22-27 205:24-29 274:22-27 289:24-29 396:9-14 421:24-29 442:26-31 444:214-219 449:2-7 586:24-29 593:2-7 623:24-29 631:6-11 632:42-47 640:34-39 648:2-7 673:24-29 675:26-31 693:17-22
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+  Rendered shared/_navigation.html.erb (Duration: 1.1ms | Allocations: 438)
+  Rendered shared/_flash.html.erb (Duration: 1.5ms | Allocations: 163)
+Completed 200 OK in 6537ms (Views: 6534.6ms | ActiveRecord: 0.0ms | Allocations: 15271)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-03-03 10:11:47 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/devise/sessions/new.html.erb:13
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 591)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.2ms | Allocations: 5428)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 202)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 45ms (Views: 21.8ms | ActiveRecord: 10.9ms | Allocations: 15756)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-03-03 10:11:57 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ykB2R2CnwAyKFmorONBv2wlBtXzLIArEdfkDTMh7YHJoR7+FjZQBOVa966dKdqvn4gQUhw3GICCFxGD/az5Oiw==", "user"=>{"email"=>"user-1@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'user-1@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 307ms (ActiveRecord: 0.8ms | Allocations: 5181)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 10:11:57 +0100
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.5ms | Allocations: 76)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 186)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 21)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 4351)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 10:11:58 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.8ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.6ms | Allocations: 123)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 23.3ms | Allocations: 10492)
+Completed 200 OK in 44ms (Views: 21.2ms | ActiveRecord: 9.1ms | Allocations: 17434)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 10:12:23 +0100
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 183)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 4126)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 10:12:23 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.4ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 9.3ms | Allocations: 3536)
+Completed 200 OK in 17ms (Views: 9.5ms | ActiveRecord: 1.6ms | Allocations: 5704)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 10:12:27 +0100
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.6ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms | Allocations: 4119)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 10:12:27 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 9.2ms | Allocations: 3536)
+Completed 200 OK in 17ms (Views: 9.3ms | ActiveRecord: 1.8ms | Allocations: 5709)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 10:12:31 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.6ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 4120)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 10:12:31 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 7.6ms | Allocations: 3536)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 1.2ms | Allocations: 5716)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 10:12:41 +0100
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 4114)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 10:12:41 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 9.6ms | Allocations: 3536)
+Completed 200 OK in 16ms (Views: 9.7ms | ActiveRecord: 1.6ms | Allocations: 5715)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 10:13:14 +0100
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: fa9c70a9c8d6e5a1bfc5
+Version: webpack 4.44.2
+Time: 4449ms
+Built at: 03/03/2021 10:13:21 AM
+                                                   Asset      Size                     Chunks                         Chunk Names
+                  js/application-7eb2922db605c88c9424.js  3.03 MiB                application  [emitted] [immutable]  application
+              js/application-7eb2922db605c88c9424.js.map  3.42 MiB                application  [emitted] [dev]        application
+             js/components/About-f727e3667d8bcf12451b.js  3.92 KiB           components/About  [emitted] [immutable]  components/About
+         js/components/About-f727e3667d8bcf12451b.js.map  3.54 KiB           components/About  [emitted] [dev]        components/About
+      js/components/AxiosHeaders-39af6c03e576fa0758d5.js  61.4 KiB    components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+  js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map  61.2 KiB    components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+           js/components/Contact-f7a11f4394ee799bbd0e.js  86.8 KiB         components/Contact  [emitted] [immutable]  components/Contact
+       js/components/Contact-f7a11f4394ee799bbd0e.js.map  99.1 KiB         components/Contact  [emitted] [dev]        components/Contact
+             js/components/Error-31324740411cc55a9e82.js  86.8 KiB           components/Error  [emitted] [immutable]  components/Error
+         js/components/Error-31324740411cc55a9e82.js.map  99.1 KiB           components/Error  [emitted] [dev]        components/Error
+      js/components/ErrorMessage-bf856a603c08a40b9dc0.js   658 KiB    components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+  js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map   778 KiB    components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+              js/components/Home-4216ad1776faeb4b8f59.js  86.8 KiB            components/Home  [emitted] [immutable]  components/Home
+          js/components/Home-4216ad1776faeb4b8f59.js.map  99.1 KiB            components/Home  [emitted] [dev]        components/Home
+           js/components/Listing-a91f727044254cc9a274.js   728 KiB         components/Listing  [emitted] [immutable]  components/Listing
+       js/components/Listing-a91f727044254cc9a274.js.map   842 KiB         components/Listing  [emitted] [dev]        components/Listing
+        js/components/ListingApp-cad5fe49c2e3f9b2f158.js  1.72 MiB      components/ListingApp  [emitted] [immutable]  components/ListingApp
+    js/components/ListingApp-cad5fe49c2e3f9b2f158.js.map  1.97 MiB      components/ListingApp  [emitted] [dev]        components/ListingApp
+    js/components/ListingDisplay-f2ba715ccc6898ef672f.js  7.51 KiB  components/ListingDisplay  [emitted] [immutable]  components/ListingDisplay
+js/components/ListingDisplay-f2ba715ccc6898ef672f.js.map  3.55 KiB  components/ListingDisplay  [emitted] [dev]        components/ListingDisplay
+       js/components/ListingForm-c4efa6c1891a2b149112.js   189 KiB     components/ListingForm  [emitted] [immutable]  components/ListingForm
+   js/components/ListingForm-c4efa6c1891a2b149112.js.map   201 KiB     components/ListingForm  [emitted] [dev]        components/ListingForm
+          js/components/Listings-2044cd2d9cd113e155ee.js   129 KiB        components/Listings  [emitted] [immutable]  components/Listings
+      js/components/Listings-2044cd2d9cd113e155ee.js.map   141 KiB        components/Listings  [emitted] [dev]        components/Listings
+               js/components/Nav-5414fb028a784ac21952.js  87.6 KiB             components/Nav  [emitted] [immutable]  components/Nav
+           js/components/Nav-5414fb028a784ac21952.js.map  99.3 KiB             components/Nav  [emitted] [dev]        components/Nav
+           js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB         components/Spinner  [emitted] [immutable]  components/Spinner
+       js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB         components/Spinner  [emitted] [dev]        components/Spinner
+       js/components/application-df4543f3d01e6737d019.js  3.03 MiB     components/application  [emitted] [immutable]  components/application
+   js/components/application-df4543f3d01e6737d019.js.map  3.42 MiB     components/application  [emitted] [dev]        components/application
+           js/components/aroutes-159d71970266b3b4e202.js   248 KiB         components/aroutes  [emitted] [immutable]  components/aroutes
+       js/components/aroutes-159d71970266b3b4e202.js.map   250 KiB         components/aroutes  [emitted] [dev]        components/aroutes
+                                           manifest.json  6.16 KiB                             [emitted]              
+Entrypoint application = js/application-7eb2922db605c88c9424.js js/application-7eb2922db605c88c9424.js.map
+Entrypoint components/About = js/components/About-f727e3667d8bcf12451b.js js/components/About-f727e3667d8bcf12451b.js.map
+Entrypoint components/application = js/components/application-df4543f3d01e6737d019.js js/components/application-df4543f3d01e6737d019.js.map
+Entrypoint components/aroutes = js/components/aroutes-159d71970266b3b4e202.js js/components/aroutes-159d71970266b3b4e202.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-39af6c03e576fa0758d5.js js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map
+Entrypoint components/Contact = js/components/Contact-f7a11f4394ee799bbd0e.js js/components/Contact-f7a11f4394ee799bbd0e.js.map
+Entrypoint components/Error = js/components/Error-31324740411cc55a9e82.js js/components/Error-31324740411cc55a9e82.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-bf856a603c08a40b9dc0.js js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map
+Entrypoint components/Home = js/components/Home-4216ad1776faeb4b8f59.js js/components/Home-4216ad1776faeb4b8f59.js.map
+Entrypoint components/Listing = js/components/Listing-a91f727044254cc9a274.js js/components/Listing-a91f727044254cc9a274.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-cad5fe49c2e3f9b2f158.js js/components/ListingApp-cad5fe49c2e3f9b2f158.js.map
+Entrypoint components/ListingDisplay = js/components/ListingDisplay-f2ba715ccc6898ef672f.js js/components/ListingDisplay-f2ba715ccc6898ef672f.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-c4efa6c1891a2b149112.js js/components/ListingForm-c4efa6c1891a2b149112.js.map
+Entrypoint components/Listings = js/components/Listings-2044cd2d9cd113e155ee.js js/components/Listings-2044cd2d9cd113e155ee.js.map
+Entrypoint components/Nav = js/components/Nav-5414fb028a784ac21952.js js/components/Nav-5414fb028a784ac21952.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} {components/application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} {components/application} [built]
+[./app/javascript/packs/application.js] 897 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 89 hidden modules
+
+ERROR in ./app/javascript/packs/components/ListingDisplay.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components/ListingDisplay.js: Identifier 'CardMedia' has already been declared (7:7)
+
+   5 | import CardMedia from '@material-ui/core/CardMedia';
+   6 | import CardActions from '@material-ui/core/CardActions';
+>  7 | import CardMedia from "@material-ui/core/CardMedia";
+     |        ^
+   8 | import CardContent from "@material-ui/core/CardContent";
+   9 | import Collapse from '@material-ui/core/Collapse';
+  10 | import Divider from "@material-ui/core/Divider";
+    at Object._raise (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:799:17)
+    at Object.raiseWithData (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:792:17)
+    at Object.raise (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:786:17)
+    at ScopeHandler.checkRedeclarationInScope (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:4906:12)
+    at ScopeHandler.declareName (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:4872:12)
+    at Object.checkLVal (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:9554:22)
+    at Object.parseImportSpecifierLocal (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13044:10)
+    at Object.maybeParseDefaultImportSpecifier (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13148:12)
+    at Object.parseImport (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13009:31)
+    at Object.parseStatementContent (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11677:27)
+    at Object.parseStatement (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11577:17)
+    at Object.parseBlockOrModuleBlockBody (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:12159:25)
+    at Object.parseBlockBody (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:12145:10)
+    at Object.parseTopLevel (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11508:10)
+    at Object.parse (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13328:10)
+    at parse (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13381:38)
+    at parser (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/parser/index.js:54:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transformation/index.js:31:50)
+    at run.next (<anonymous>)
+    at Function.transform (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transform.js:27:41)
+    at transform.next (<anonymous>)
+    at step (/home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:261:32)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:223:11)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:189:28
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/gensync-utils/async.js:72:7
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:113:33
+
+ERROR in ./app/javascript/packs/components/Contact.js
+Module not found: Error: Can't resolve './Contact.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Contact.js 3:0-23
+
+ERROR in ./app/javascript/packs/components/Error.js
+Module not found: Error: Can't resolve './Error.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Error.js 3:0-21
+
+ERROR in ./app/javascript/packs/components/Home.js
+Module not found: Error: Can't resolve './Home.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Home.js 3:0-20
+
+ERROR in ./app/javascript/packs/components/Nav.js
+Module not found: Error: Can't resolve './Nav.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Nav.js 3:0-19
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/About' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 28:0-39 97:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Contact' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 30:0-43 106:19-26
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Error' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 31:0-39 114:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Home' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 25:0-37 78:19-23
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/ListingDisplay' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 26:0-51 88:19-27
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Navigation' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 32:0-49 62:42-52
+
+ERROR in ../node_modules/mini-create-react-context/dist/esm/index.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/mini-create-react-context/dist/esm'
+ @ ../node_modules/mini-create-react-context/dist/esm/index.js 1:0-41 101:4-13 164:4-13 173:12-17
+ @ ../node_modules/react-router/esm/react-router.js
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router-dom/esm/react-router-dom.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router-dom/esm'
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js 4:0-26 33:24-29 40:2-7 78:24-29 85:2-7 112:17-22 159:22-27 178:22-27 200:24-29 223:19-24 260:22-27 291:24-29
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router/esm/react-router.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router/esm'
+ @ ../node_modules/react-router/esm/react-router.js 2:0-26 92:24-29 99:20-25 106:2-7 142:24-29 149:2-7 191:2-7 201:22-27 205:24-29 274:22-27 289:24-29 396:9-14 421:24-29 442:26-31 444:214-219 449:2-7 586:24-29 593:2-7 623:24-29 631:6-11 632:42-47 640:34-39 648:2-7 673:24-29 675:26-31 693:17-22
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+  Rendered shared/_navigation.html.erb (Duration: 0.7ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 6163ms (Views: 6161.9ms | ActiveRecord: 0.0ms | Allocations: 5379)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 10:13:30 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.6ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.4ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 16.6ms | Allocations: 3536)
+Completed 200 OK in 28ms (Views: 15.8ms | ActiveRecord: 3.4ms | Allocations: 5706)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 19:12:32 +0100
+  [1m[35m (3.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.5ms | Allocations: 187)
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2021-03-03 19:12:37 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 659820e13a60e7351d8d
+Version: webpack 4.44.2
+Time: 5007ms
+Built at: 03/03/2021 7:12:39 PM
+                                                   Asset      Size                     Chunks                         Chunk Names
+                  js/application-fd01643164ba5bf6088a.js  3.03 MiB                application  [emitted] [immutable]  application
+              js/application-fd01643164ba5bf6088a.js.map  3.42 MiB                application  [emitted] [dev]        application
+             js/components/About-f727e3667d8bcf12451b.js  3.92 KiB           components/About  [emitted] [immutable]  components/About
+         js/components/About-f727e3667d8bcf12451b.js.map  3.54 KiB           components/About  [emitted] [dev]        components/About
+      js/components/AxiosHeaders-39af6c03e576fa0758d5.js  61.4 KiB    components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+  js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map  61.2 KiB    components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+           js/components/Contact-f7a11f4394ee799bbd0e.js  86.8 KiB         components/Contact  [emitted] [immutable]  components/Contact
+       js/components/Contact-f7a11f4394ee799bbd0e.js.map  99.1 KiB         components/Contact  [emitted] [dev]        components/Contact
+             js/components/Error-31324740411cc55a9e82.js  86.8 KiB           components/Error  [emitted] [immutable]  components/Error
+         js/components/Error-31324740411cc55a9e82.js.map  99.1 KiB           components/Error  [emitted] [dev]        components/Error
+      js/components/ErrorMessage-bf856a603c08a40b9dc0.js   658 KiB    components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+  js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map   778 KiB    components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+              js/components/Home-4216ad1776faeb4b8f59.js  86.8 KiB            components/Home  [emitted] [immutable]  components/Home
+          js/components/Home-4216ad1776faeb4b8f59.js.map  99.1 KiB            components/Home  [emitted] [dev]        components/Home
+           js/components/Listing-a91f727044254cc9a274.js   728 KiB         components/Listing  [emitted] [immutable]  components/Listing
+       js/components/Listing-a91f727044254cc9a274.js.map   842 KiB         components/Listing  [emitted] [dev]        components/Listing
+        js/components/ListingApp-014be5a95b5a1062ee5e.js  1.72 MiB      components/ListingApp  [emitted] [immutable]  components/ListingApp
+    js/components/ListingApp-014be5a95b5a1062ee5e.js.map  1.97 MiB      components/ListingApp  [emitted] [dev]        components/ListingApp
+    js/components/ListingDisplay-f711592dd957c2bdf845.js  7.26 KiB  components/ListingDisplay  [emitted] [immutable]  components/ListingDisplay
+js/components/ListingDisplay-f711592dd957c2bdf845.js.map  3.55 KiB  components/ListingDisplay  [emitted] [dev]        components/ListingDisplay
+       js/components/ListingForm-c4efa6c1891a2b149112.js   189 KiB     components/ListingForm  [emitted] [immutable]  components/ListingForm
+   js/components/ListingForm-c4efa6c1891a2b149112.js.map   201 KiB     components/ListingForm  [emitted] [dev]        components/ListingForm
+          js/components/Listings-2044cd2d9cd113e155ee.js   129 KiB        components/Listings  [emitted] [immutable]  components/Listings
+      js/components/Listings-2044cd2d9cd113e155ee.js.map   141 KiB        components/Listings  [emitted] [dev]        components/Listings
+               js/components/Nav-5414fb028a784ac21952.js  87.6 KiB             components/Nav  [emitted] [immutable]  components/Nav
+           js/components/Nav-5414fb028a784ac21952.js.map  99.3 KiB             components/Nav  [emitted] [dev]        components/Nav
+           js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB         components/Spinner  [emitted] [immutable]  components/Spinner
+       js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB         components/Spinner  [emitted] [dev]        components/Spinner
+       js/components/application-e4fdf18159bef407e1e9.js  3.03 MiB     components/application  [emitted] [immutable]  components/application
+   js/components/application-e4fdf18159bef407e1e9.js.map  3.42 MiB     components/application  [emitted] [dev]        components/application
+           js/components/aroutes-159d71970266b3b4e202.js   248 KiB         components/aroutes  [emitted] [immutable]  components/aroutes
+       js/components/aroutes-159d71970266b3b4e202.js.map   250 KiB         components/aroutes  [emitted] [dev]        components/aroutes
+                                           manifest.json  6.16 KiB                             [emitted]              
+Entrypoint application = js/application-fd01643164ba5bf6088a.js js/application-fd01643164ba5bf6088a.js.map
+Entrypoint components/About = js/components/About-f727e3667d8bcf12451b.js js/components/About-f727e3667d8bcf12451b.js.map
+Entrypoint components/application = js/components/application-e4fdf18159bef407e1e9.js js/components/application-e4fdf18159bef407e1e9.js.map
+Entrypoint components/aroutes = js/components/aroutes-159d71970266b3b4e202.js js/components/aroutes-159d71970266b3b4e202.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-39af6c03e576fa0758d5.js js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map
+Entrypoint components/Contact = js/components/Contact-f7a11f4394ee799bbd0e.js js/components/Contact-f7a11f4394ee799bbd0e.js.map
+Entrypoint components/Error = js/components/Error-31324740411cc55a9e82.js js/components/Error-31324740411cc55a9e82.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-bf856a603c08a40b9dc0.js js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map
+Entrypoint components/Home = js/components/Home-4216ad1776faeb4b8f59.js js/components/Home-4216ad1776faeb4b8f59.js.map
+Entrypoint components/Listing = js/components/Listing-a91f727044254cc9a274.js js/components/Listing-a91f727044254cc9a274.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-014be5a95b5a1062ee5e.js js/components/ListingApp-014be5a95b5a1062ee5e.js.map
+Entrypoint components/ListingDisplay = js/components/ListingDisplay-f711592dd957c2bdf845.js js/components/ListingDisplay-f711592dd957c2bdf845.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-c4efa6c1891a2b149112.js js/components/ListingForm-c4efa6c1891a2b149112.js.map
+Entrypoint components/Listings = js/components/Listings-2044cd2d9cd113e155ee.js js/components/Listings-2044cd2d9cd113e155ee.js.map
+Entrypoint components/Nav = js/components/Nav-5414fb028a784ac21952.js js/components/Nav-5414fb028a784ac21952.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} {components/application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} {components/application} [built]
+[./app/javascript/packs/application.js] 897 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 89 hidden modules
+
+ERROR in ./app/javascript/packs/components/ListingDisplay.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components/ListingDisplay.js: Identifier 'CardMedia' has already been declared (7:7)
+
+   5 | import CardMedia from '@material-ui/core/CardMedia';
+   6 | import CardActions from '@material-ui/core/CardActions';
+>  7 | import CardMedia from "@material-ui/core/CardMedia";
+     |        ^
+   8 | import CardContent from "@material-ui/core/CardContent";
+   9 | import Collapse from '@material-ui/core/Collapse';
+  10 | import Divider from "@material-ui/core/Divider";
+    at Object._raise (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:799:17)
+    at Object.raiseWithData (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:792:17)
+    at Object.raise (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:786:17)
+    at ScopeHandler.checkRedeclarationInScope (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:4906:12)
+    at ScopeHandler.declareName (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:4872:12)
+    at Object.checkLVal (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:9554:22)
+    at Object.parseImportSpecifierLocal (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13044:10)
+    at Object.maybeParseDefaultImportSpecifier (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13148:12)
+    at Object.parseImport (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13009:31)
+    at Object.parseStatementContent (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11677:27)
+    at Object.parseStatement (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11577:17)
+    at Object.parseBlockOrModuleBlockBody (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:12159:25)
+    at Object.parseBlockBody (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:12145:10)
+    at Object.parseTopLevel (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11508:10)
+    at Object.parse (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13328:10)
+    at parse (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13381:38)
+    at parser (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/parser/index.js:54:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transformation/index.js:31:50)
+    at run.next (<anonymous>)
+    at Function.transform (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transform.js:27:41)
+    at transform.next (<anonymous>)
+    at step (/home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:261:32)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:223:11)
+
+ERROR in ./app/javascript/packs/components/Contact.js
+Module not found: Error: Can't resolve './Contact.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Contact.js 3:0-23
+
+ERROR in ./app/javascript/packs/components/Error.js
+Module not found: Error: Can't resolve './Error.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Error.js 3:0-21
+
+ERROR in ./app/javascript/packs/components/Home.js
+Module not found: Error: Can't resolve './Home.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Home.js 3:0-20
+
+ERROR in ./app/javascript/packs/components/Nav.js
+Module not found: Error: Can't resolve './Nav.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Nav.js 3:0-19
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/About' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 28:0-39 97:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Contact' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 30:0-43 106:19-26
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Error' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 31:0-39 114:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Home' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 25:0-37 78:19-23
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/ListingDisplay' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 26:0-51 88:19-27
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Navigation' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 32:0-49 62:42-52
+
+ERROR in ../node_modules/mini-create-react-context/dist/esm/index.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/mini-create-react-context/dist/esm'
+ @ ../node_modules/mini-create-react-context/dist/esm/index.js 1:0-41 101:4-13 164:4-13 173:12-17
+ @ ../node_modules/react-router/esm/react-router.js
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router-dom/esm/react-router-dom.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router-dom/esm'
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js 4:0-26 33:24-29 40:2-7 78:24-29 85:2-7 112:17-22 159:22-27 178:22-27 200:24-29 223:19-24 260:22-27 291:24-29
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router/esm/react-router.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router/esm'
+ @ ../node_modules/react-router/esm/react-router.js 2:0-26 92:24-29 99:20-25 106:2-7 142:24-29 149:2-7 191:2-7 201:22-27 205:24-29 274:22-27 289:24-29 396:9-14 421:24-29 442:26-31 444:214-219 449:2-7 586:24-29 593:2-7 623:24-29 631:6-11 632:42-47 640:34-39 648:2-7 673:24-29 675:26-31 693:17-22
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+  Rendered shared/_navigation.html.erb (Duration: 1.1ms | Allocations: 455)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 163)
+Completed 200 OK in 6673ms (Views: 6671.3ms | ActiveRecord: 0.0ms | Allocations: 17814)
+
+
+[Webpacker] Compilation failed:
+Hash: 331946905c8d0c0df493
+Version: webpack 4.44.2
+Time: 4376ms
+Built at: 03/03/2021 7:12:43 PM
+                                                   Asset      Size                     Chunks                         Chunk Names
+                  js/application-fd01643164ba5bf6088a.js  3.03 MiB                application  [emitted] [immutable]  application
+              js/application-fd01643164ba5bf6088a.js.map  3.42 MiB                application  [emitted] [dev]        application
+             js/components/About-f727e3667d8bcf12451b.js  3.92 KiB           components/About  [emitted] [immutable]  components/About
+         js/components/About-f727e3667d8bcf12451b.js.map  3.54 KiB           components/About  [emitted] [dev]        components/About
+      js/components/AxiosHeaders-39af6c03e576fa0758d5.js  61.4 KiB    components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+  js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map  61.2 KiB    components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+           js/components/Contact-f7a11f4394ee799bbd0e.js  86.8 KiB         components/Contact  [emitted] [immutable]  components/Contact
+       js/components/Contact-f7a11f4394ee799bbd0e.js.map  99.1 KiB         components/Contact  [emitted] [dev]        components/Contact
+             js/components/Error-31324740411cc55a9e82.js  86.8 KiB           components/Error  [emitted] [immutable]  components/Error
+         js/components/Error-31324740411cc55a9e82.js.map  99.1 KiB           components/Error  [emitted] [dev]        components/Error
+      js/components/ErrorMessage-bf856a603c08a40b9dc0.js   658 KiB    components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+  js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map   778 KiB    components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+              js/components/Home-4216ad1776faeb4b8f59.js  86.8 KiB            components/Home  [emitted] [immutable]  components/Home
+          js/components/Home-4216ad1776faeb4b8f59.js.map  99.1 KiB            components/Home  [emitted] [dev]        components/Home
+           js/components/Listing-a91f727044254cc9a274.js   728 KiB         components/Listing  [emitted] [immutable]  components/Listing
+       js/components/Listing-a91f727044254cc9a274.js.map   842 KiB         components/Listing  [emitted] [dev]        components/Listing
+        js/components/ListingApp-014be5a95b5a1062ee5e.js  1.72 MiB      components/ListingApp  [emitted] [immutable]  components/ListingApp
+    js/components/ListingApp-014be5a95b5a1062ee5e.js.map  1.97 MiB      components/ListingApp  [emitted] [dev]        components/ListingApp
+    js/components/ListingDisplay-f2ba715ccc6898ef672f.js  7.51 KiB  components/ListingDisplay  [emitted] [immutable]  components/ListingDisplay
+js/components/ListingDisplay-f2ba715ccc6898ef672f.js.map  3.55 KiB  components/ListingDisplay  [emitted] [dev]        components/ListingDisplay
+       js/components/ListingForm-c4efa6c1891a2b149112.js   189 KiB     components/ListingForm  [emitted] [immutable]  components/ListingForm
+   js/components/ListingForm-c4efa6c1891a2b149112.js.map   201 KiB     components/ListingForm  [emitted] [dev]        components/ListingForm
+          js/components/Listings-2044cd2d9cd113e155ee.js   129 KiB        components/Listings  [emitted] [immutable]  components/Listings
+      js/components/Listings-2044cd2d9cd113e155ee.js.map   141 KiB        components/Listings  [emitted] [dev]        components/Listings
+               js/components/Nav-5414fb028a784ac21952.js  87.6 KiB             components/Nav  [emitted] [immutable]  components/Nav
+           js/components/Nav-5414fb028a784ac21952.js.map  99.3 KiB             components/Nav  [emitted] [dev]        components/Nav
+           js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB         components/Spinner  [emitted] [immutable]  components/Spinner
+       js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB         components/Spinner  [emitted] [dev]        components/Spinner
+       js/components/application-e4fdf18159bef407e1e9.js  3.03 MiB     components/application  [emitted] [immutable]  components/application
+   js/components/application-e4fdf18159bef407e1e9.js.map  3.42 MiB     components/application  [emitted] [dev]        components/application
+           js/components/aroutes-159d71970266b3b4e202.js   248 KiB         components/aroutes  [emitted] [immutable]  components/aroutes
+       js/components/aroutes-159d71970266b3b4e202.js.map   250 KiB         components/aroutes  [emitted] [dev]        components/aroutes
+                                           manifest.json  6.16 KiB                             [emitted]              
+Entrypoint application = js/application-fd01643164ba5bf6088a.js js/application-fd01643164ba5bf6088a.js.map
+Entrypoint components/About = js/components/About-f727e3667d8bcf12451b.js js/components/About-f727e3667d8bcf12451b.js.map
+Entrypoint components/application = js/components/application-e4fdf18159bef407e1e9.js js/components/application-e4fdf18159bef407e1e9.js.map
+Entrypoint components/aroutes = js/components/aroutes-159d71970266b3b4e202.js js/components/aroutes-159d71970266b3b4e202.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-39af6c03e576fa0758d5.js js/components/AxiosHeaders-39af6c03e576fa0758d5.js.map
+Entrypoint components/Contact = js/components/Contact-f7a11f4394ee799bbd0e.js js/components/Contact-f7a11f4394ee799bbd0e.js.map
+Entrypoint components/Error = js/components/Error-31324740411cc55a9e82.js js/components/Error-31324740411cc55a9e82.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-bf856a603c08a40b9dc0.js js/components/ErrorMessage-bf856a603c08a40b9dc0.js.map
+Entrypoint components/Home = js/components/Home-4216ad1776faeb4b8f59.js js/components/Home-4216ad1776faeb4b8f59.js.map
+Entrypoint components/Listing = js/components/Listing-a91f727044254cc9a274.js js/components/Listing-a91f727044254cc9a274.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-014be5a95b5a1062ee5e.js js/components/ListingApp-014be5a95b5a1062ee5e.js.map
+Entrypoint components/ListingDisplay = js/components/ListingDisplay-f2ba715ccc6898ef672f.js js/components/ListingDisplay-f2ba715ccc6898ef672f.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-c4efa6c1891a2b149112.js js/components/ListingForm-c4efa6c1891a2b149112.js.map
+Entrypoint components/Listings = js/components/Listings-2044cd2d9cd113e155ee.js js/components/Listings-2044cd2d9cd113e155ee.js.map
+Entrypoint components/Nav = js/components/Nav-5414fb028a784ac21952.js js/components/Nav-5414fb028a784ac21952.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} {components/application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} {components/application} [built]
+[./app/javascript/packs/application.js] 897 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 89 hidden modules
+
+ERROR in ./app/javascript/packs/components/ListingDisplay.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components/ListingDisplay.js: Identifier 'CardMedia' has already been declared (7:7)
+
+   5 | import CardMedia from '@material-ui/core/CardMedia';
+   6 | import CardActions from '@material-ui/core/CardActions';
+>  7 | import CardMedia from "@material-ui/core/CardMedia";
+     |        ^
+   8 | import CardContent from "@material-ui/core/CardContent";
+   9 | import Collapse from '@material-ui/core/Collapse';
+  10 | import Divider from "@material-ui/core/Divider";
+    at Object._raise (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:799:17)
+    at Object.raiseWithData (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:792:17)
+    at Object.raise (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:786:17)
+    at ScopeHandler.checkRedeclarationInScope (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:4906:12)
+    at ScopeHandler.declareName (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:4872:12)
+    at Object.checkLVal (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:9554:22)
+    at Object.parseImportSpecifierLocal (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13044:10)
+    at Object.maybeParseDefaultImportSpecifier (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13148:12)
+    at Object.parseImport (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13009:31)
+    at Object.parseStatementContent (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11677:27)
+    at Object.parseStatement (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11577:17)
+    at Object.parseBlockOrModuleBlockBody (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:12159:25)
+    at Object.parseBlockBody (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:12145:10)
+    at Object.parseTopLevel (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:11508:10)
+    at Object.parse (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13328:10)
+    at parse (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/parser/lib/index.js:13381:38)
+    at parser (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/parser/index.js:54:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transformation/index.js:31:50)
+    at run.next (<anonymous>)
+    at Function.transform (/home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/transform.js:27:41)
+    at transform.next (<anonymous>)
+    at step (/home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:261:32)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:223:11)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:189:28
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/@babel/core/lib/gensync-utils/async.js:72:7
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/gensync/index.js:113:33
+
+ERROR in ./app/javascript/packs/components/Contact.js
+Module not found: Error: Can't resolve './Contact.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Contact.js 3:0-23
+
+ERROR in ./app/javascript/packs/components/Error.js
+Module not found: Error: Can't resolve './Error.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Error.js 3:0-21
+
+ERROR in ./app/javascript/packs/components/Home.js
+Module not found: Error: Can't resolve './Home.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Home.js 3:0-20
+
+ERROR in ./app/javascript/packs/components/Nav.js
+Module not found: Error: Can't resolve './Nav.css' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/Nav.js 3:0-19
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/About' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 28:0-39 97:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Contact' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 30:0-43 106:19-26
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Error' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 31:0-39 114:19-24
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Home' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 25:0-37 78:19-23
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/ListingDisplay' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 26:0-51 88:19-27
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve './components/Navigation' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 32:0-49 62:42-52
+
+ERROR in ../node_modules/mini-create-react-context/dist/esm/index.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/mini-create-react-context/dist/esm'
+ @ ../node_modules/mini-create-react-context/dist/esm/index.js 1:0-41 101:4-13 164:4-13 173:12-17
+ @ ../node_modules/react-router/esm/react-router.js
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router-dom/esm/react-router-dom.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router-dom/esm'
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js 4:0-26 33:24-29 40:2-7 78:24-29 85:2-7 112:17-22 159:22-27 178:22-27 200:24-29 223:19-24 260:22-27 291:24-29
+ @ ./app/javascript/packs/components/aroutes.js
+
+ERROR in ../node_modules/react-router/esm/react-router.js
+Module not found: Error: Can't resolve 'react' in '/home/fluffle/code/Bunnyhug/node_modules/react-router/esm'
+ @ ../node_modules/react-router/esm/react-router.js 2:0-26 92:24-29 99:20-25 106:2-7 142:24-29 149:2-7 191:2-7 201:22-27 205:24-29 274:22-27 289:24-29 396:9-14 421:24-29 442:26-31 444:214-219 449:2-7 586:24-29 593:2-7 623:24-29 631:6-11 632:42-47 640:34-39 648:2-7 673:24-29 675:26-31 693:17-22
+ @ ../node_modules/react-router-dom/esm/react-router-dom.js
+ @ ./app/javascript/packs/components/aroutes.js
+
+  Rendered shared/_navigation.html.erb (Duration: 0.5ms | Allocations: 183)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 6040ms (Views: 6039.3ms | ActiveRecord: 0.0ms | Allocations: 8761)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 19:12:57 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.6ms | Allocations: 128)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 21.6ms | Allocations: 10497)
+Completed 200 OK in 47ms (Views: 20.0ms | ActiveRecord: 10.1ms | Allocations: 18426)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 19:12:59 +0100
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.6ms | Allocations: 183)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 4125)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 19:12:59 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 10.2ms | Allocations: 3536)
+Completed 200 OK in 19ms (Views: 10.5ms | ActiveRecord: 1.5ms | Allocations: 5728)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 19:13:02 +0100
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.4ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4118)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 19:13:02 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.5ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.4ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.4ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.4ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 13.1ms | Allocations: 3536)
+Completed 200 OK in 27ms (Views: 13.9ms | ActiveRecord: 2.6ms | Allocations: 5727)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2021-03-03 19:23:39 +0100
+  [1m[35m (2.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [46 times] (Duration: 15.0ms | Allocations: 6346)
+  Rendered /home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 6.7ms | Allocations: 888)
+  Rendered /home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 26.8ms | Allocations: 11873)
+Completed 200 OK in 38ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 13940)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 19:26:14 +0100
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.6ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 1.2ms | Allocations: 465)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 163)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 9755)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 19:26:14 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.7ms | Allocations: 128)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 20.5ms | Allocations: 10497)
+Completed 200 OK in 39ms (Views: 20.3ms | ActiveRecord: 5.1ms | Allocations: 18177)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-03 19:26:19 +0100
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.7ms | Allocations: 192)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4139)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-03 19:26:20 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.7ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.4ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.4ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 14.9ms | Allocations: 3537)
+Completed 200 OK in 25ms (Views: 15.6ms | ActiveRecord: 1.9ms | Allocations: 5748)
+
+
+Started GET "/contact" for 127.0.0.1 at 2021-03-03 19:26:21 +0100
+  
+ActionController::RoutingError (uninitialized constant ContactsController
+Did you mean?  ActionController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2021-03-03 22:54:13 +0100
+  [1m[35m (2.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (uninitialized constant ContactsController
+Did you mean?  ContactController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2021-03-03 22:54:18 +0100
+  
+ActionController::RoutingError (uninitialized constant ContactsController
+Did you mean?  ContactController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2021-03-03 22:59:19 +0100
+  
+ActionController::RoutingError (uninitialized constant ContactsController
+Did you mean?  ContactController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contacts" for 127.0.0.1 at 2021-03-03 22:59:26 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/contacts"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contacts" for 127.0.0.1 at 2021-03-03 22:59:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/contacts"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2021-03-03 22:59:59 +0100
+  
+ActionController::RoutingError (uninitialized constant ContactsController
+Did you mean?  ContactController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2021-03-03 23:00:34 +0100
+Processing by ContactsController#show as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms | Allocations: 2459)
+
+
+  
+ActionController::MissingExactTemplate (ContactsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2021-03-03 23:00:44 +0100
+Processing by ContactsController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1003)
+
+
+  
+ActionView::MissingTemplate (Missing template contacts/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/fluffle/code/Bunnyhug/bunhug/app/views"
+  * "/home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.7.3/app/views"
+  * "/home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.4/app/views"
+  * "/home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.4/app/views"
+):
+  
+app/controllers/contacts_controller.rb:4:in `show'
+Started GET "/contact" for 127.0.0.1 at 2021-03-03 23:02:01 +0100
+Processing by ContactsController#show as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1745)
+
+
+  
+ActionView::MissingTemplate (Missing template contacts/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/fluffle/code/Bunnyhug/bunhug/app/views"
+  * "/home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.7.3/app/views"
+  * "/home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.4/app/views"
+  * "/home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.4/app/views"
+):
+  
+app/controllers/contacts_controller.rb:4:in `show'
+Started GET "/contact" for 127.0.0.1 at 2021-03-03 23:02:09 +0100
+Processing by ContactsController#show as HTML
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 1646)
+
+
+  
+ActionController::MissingExactTemplate (ContactsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'

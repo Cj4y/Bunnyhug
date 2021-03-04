@@ -12,6 +12,7 @@ class ListingForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault()
+    setAxiosHeaders()
     axios
       .post('/api/v1/listings', {
         listing: {
