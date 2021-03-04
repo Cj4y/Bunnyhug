@@ -13,9 +13,9 @@ Rails.application.routes.draw do
     end
   end
 
-  resource :listing_display, only: [:index, :show]
+  resource :listing_display, only: [:index, :show], as: 'displays'
   resource :about, only:[:show]
-  resource :contact, only:[:show]
+  resource :contacts, only:[:show]
 
 #  match '/home' => 'pages#home'
 #match '/about' => 'pages#about'
