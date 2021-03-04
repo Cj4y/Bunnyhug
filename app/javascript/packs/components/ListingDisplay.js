@@ -4,7 +4,6 @@ import Card from "@material-ui/core/Card";
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActions from '@material-ui/core/CardActions';
-import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Collapse from '@material-ui/core/Collapse';
 import Divider from "@material-ui/core/Divider";
