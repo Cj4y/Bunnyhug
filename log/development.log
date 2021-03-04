@@ -6559,3 +6559,707 @@ Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 297)
   [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
   [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('4189196011473094860', 0)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('4189196011473094860', 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4189196011473094860', 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('4189196011473094860', 0)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('4189196011473094860', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT GET_LOCK('4189196011473094860', 0)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:02:33 +0100
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 3.5ms | Allocations: 188)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e4736a21f6ed33391a49
+Version: webpack 4.44.2
+Time: 10126ms
+Built at: 03/04/2021 10:02:45 AM
+                                                   Asset      Size                     Chunks                         Chunk Names
+                  js/application-b0321f595d6ccc11fbac.js  3.64 MiB                application  [emitted] [immutable]  application
+              js/application-b0321f595d6ccc11fbac.js.map  3.87 MiB                application  [emitted] [dev]        application
+             js/components/About-f727e3667d8bcf12451b.js  3.92 KiB           components/About  [emitted] [immutable]  components/About
+         js/components/About-f727e3667d8bcf12451b.js.map  3.54 KiB           components/About  [emitted] [dev]        components/About
+      js/components/AxiosHeaders-c915910e1659ae3c7fd3.js  62.6 KiB    components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+  js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map  62.1 KiB    components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+           js/components/Contact-7e6653dd8bcf578813c2.js  86.7 KiB         components/Contact  [emitted] [immutable]  components/Contact
+       js/components/Contact-7e6653dd8bcf578813c2.js.map  99.1 KiB         components/Contact  [emitted] [dev]        components/Contact
+             js/components/Error-e8e3e441e8745c473430.js  86.7 KiB           components/Error  [emitted] [immutable]  components/Error
+         js/components/Error-e8e3e441e8745c473430.js.map  99.1 KiB           components/Error  [emitted] [dev]        components/Error
+      js/components/ErrorMessage-ef05e5af42b7f27d6db7.js   660 KiB    components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+  js/components/ErrorMessage-ef05e5af42b7f27d6db7.js.map   780 KiB    components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+              js/components/Home-dd72ae16c6f07854b88b.js  86.7 KiB            components/Home  [emitted] [immutable]  components/Home
+          js/components/Home-dd72ae16c6f07854b88b.js.map  99.1 KiB            components/Home  [emitted] [dev]        components/Home
+           js/components/Listing-104ece46f25487fcc0a2.js   731 KiB         components/Listing  [emitted] [immutable]  components/Listing
+       js/components/Listing-104ece46f25487fcc0a2.js.map   845 KiB         components/Listing  [emitted] [dev]        components/Listing
+        js/components/ListingApp-1b820bf98155927ad725.js  1.72 MiB      components/ListingApp  [emitted] [immutable]  components/ListingApp
+    js/components/ListingApp-1b820bf98155927ad725.js.map  1.97 MiB      components/ListingApp  [emitted] [dev]        components/ListingApp
+    js/components/ListingDisplay-6aac59ac9e3d5c719add.js   1.7 MiB  components/ListingDisplay  [emitted] [immutable]  components/ListingDisplay
+js/components/ListingDisplay-6aac59ac9e3d5c719add.js.map  1.72 MiB  components/ListingDisplay  [emitted] [dev]        components/ListingDisplay
+       js/components/ListingForm-b8ff39aa54695fcf92d6.js   190 KiB     components/ListingForm  [emitted] [immutable]  components/ListingForm
+   js/components/ListingForm-b8ff39aa54695fcf92d6.js.map   202 KiB     components/ListingForm  [emitted] [dev]        components/ListingForm
+          js/components/Listings-7fa81bc020d8583be2ca.js   129 KiB        components/Listings  [emitted] [immutable]  components/Listings
+      js/components/Listings-7fa81bc020d8583be2ca.js.map   141 KiB        components/Listings  [emitted] [dev]        components/Listings
+               js/components/Nav-b50aed6963cc120cc7ed.js  87.5 KiB             components/Nav  [emitted] [immutable]  components/Nav
+           js/components/Nav-b50aed6963cc120cc7ed.js.map  99.3 KiB             components/Nav  [emitted] [dev]        components/Nav
+           js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB         components/Spinner  [emitted] [immutable]  components/Spinner
+       js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB         components/Spinner  [emitted] [dev]        components/Spinner
+       js/components/application-d6fe608570c9dac4d43e.js  3.04 MiB     components/application  [emitted] [immutable]  components/application
+   js/components/application-d6fe608570c9dac4d43e.js.map  3.43 MiB     components/application  [emitted] [dev]        components/application
+           js/components/aroutes-591fca1d112e0f2e404f.js  1.71 MiB         components/aroutes  [emitted] [immutable]  components/aroutes
+       js/components/aroutes-591fca1d112e0f2e404f.js.map  1.72 MiB         components/aroutes  [emitted] [dev]        components/aroutes
+                                           manifest.json  6.16 KiB                             [emitted]              
+Entrypoint application = js/application-b0321f595d6ccc11fbac.js js/application-b0321f595d6ccc11fbac.js.map
+Entrypoint components/About = js/components/About-f727e3667d8bcf12451b.js js/components/About-f727e3667d8bcf12451b.js.map
+Entrypoint components/application = js/components/application-d6fe608570c9dac4d43e.js js/components/application-d6fe608570c9dac4d43e.js.map
+Entrypoint components/aroutes = js/components/aroutes-591fca1d112e0f2e404f.js js/components/aroutes-591fca1d112e0f2e404f.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-c915910e1659ae3c7fd3.js js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map
+Entrypoint components/Contact = js/components/Contact-7e6653dd8bcf578813c2.js js/components/Contact-7e6653dd8bcf578813c2.js.map
+Entrypoint components/Error = js/components/Error-e8e3e441e8745c473430.js js/components/Error-e8e3e441e8745c473430.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-ef05e5af42b7f27d6db7.js js/components/ErrorMessage-ef05e5af42b7f27d6db7.js.map
+Entrypoint components/Home = js/components/Home-dd72ae16c6f07854b88b.js js/components/Home-dd72ae16c6f07854b88b.js.map
+Entrypoint components/Listing = js/components/Listing-104ece46f25487fcc0a2.js js/components/Listing-104ece46f25487fcc0a2.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-1b820bf98155927ad725.js js/components/ListingApp-1b820bf98155927ad725.js.map
+Entrypoint components/ListingDisplay = js/components/ListingDisplay-6aac59ac9e3d5c719add.js js/components/ListingDisplay-6aac59ac9e3d5c719add.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-b8ff39aa54695fcf92d6.js js/components/ListingForm-b8ff39aa54695fcf92d6.js.map
+Entrypoint components/Listings = js/components/Listings-7fa81bc020d8583be2ca.js js/components/Listings-7fa81bc020d8583be2ca.js.map
+Entrypoint components/Nav = js/components/Nav-b50aed6963cc120cc7ed.js js/components/Nav-b50aed6963cc120cc7ed.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} {components/application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} {components/application} [built]
+[./app/javascript/packs/application.js] 938 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 269 hidden modules
+
+ERROR in ./app/javascript/packs/components/aroutes.js
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/aroutes.js 24:0-64 45:46-59 66:43-49 73:42-47 83:43-48 92:43-48 101:43-48 110:43-48
+
+  Rendered shared/_navigation.html.erb (Duration: 25.5ms | Allocations: 479)
+  Rendered shared/_flash.html.erb (Duration: 0.9ms | Allocations: 166)
+Completed 200 OK in 12116ms (Views: 12112.6ms | ActiveRecord: 0.0ms | Allocations: 10822)
+
+
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4189196011473094860', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:04:50 +0100
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.7ms | Allocations: 188)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/fluffle/code/Bunnyhug/bunhug/public/packs
+[Webpacker] Hash: 8567c7ba2e58d23f1bc4
+Version: webpack 4.44.2
+Time: 8657ms
+Built at: 03/04/2021 10:05:00 AM
+                                                   Asset      Size                     Chunks                         Chunk Names
+                  js/application-b0321f595d6ccc11fbac.js  3.64 MiB                application  [emitted] [immutable]  application
+              js/application-b0321f595d6ccc11fbac.js.map  3.87 MiB                application  [emitted] [dev]        application
+             js/components/About-f727e3667d8bcf12451b.js  3.92 KiB           components/About  [emitted] [immutable]  components/About
+         js/components/About-f727e3667d8bcf12451b.js.map  3.54 KiB           components/About  [emitted] [dev]        components/About
+      js/components/AxiosHeaders-c915910e1659ae3c7fd3.js  62.6 KiB    components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+  js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map  62.1 KiB    components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+           js/components/Contact-7e6653dd8bcf578813c2.js  86.7 KiB         components/Contact  [emitted] [immutable]  components/Contact
+       js/components/Contact-7e6653dd8bcf578813c2.js.map  99.1 KiB         components/Contact  [emitted] [dev]        components/Contact
+             js/components/Error-e8e3e441e8745c473430.js  86.7 KiB           components/Error  [emitted] [immutable]  components/Error
+         js/components/Error-e8e3e441e8745c473430.js.map  99.1 KiB           components/Error  [emitted] [dev]        components/Error
+      js/components/ErrorMessage-ef05e5af42b7f27d6db7.js   660 KiB    components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+  js/components/ErrorMessage-ef05e5af42b7f27d6db7.js.map   780 KiB    components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+              js/components/Home-dd72ae16c6f07854b88b.js  86.7 KiB            components/Home  [emitted] [immutable]  components/Home
+          js/components/Home-dd72ae16c6f07854b88b.js.map  99.1 KiB            components/Home  [emitted] [dev]        components/Home
+           js/components/Listing-104ece46f25487fcc0a2.js   731 KiB         components/Listing  [emitted] [immutable]  components/Listing
+       js/components/Listing-104ece46f25487fcc0a2.js.map   845 KiB         components/Listing  [emitted] [dev]        components/Listing
+        js/components/ListingApp-1b820bf98155927ad725.js  1.72 MiB      components/ListingApp  [emitted] [immutable]  components/ListingApp
+    js/components/ListingApp-1b820bf98155927ad725.js.map  1.97 MiB      components/ListingApp  [emitted] [dev]        components/ListingApp
+    js/components/ListingDisplay-6aac59ac9e3d5c719add.js   1.7 MiB  components/ListingDisplay  [emitted] [immutable]  components/ListingDisplay
+js/components/ListingDisplay-6aac59ac9e3d5c719add.js.map  1.72 MiB  components/ListingDisplay  [emitted] [dev]        components/ListingDisplay
+       js/components/ListingForm-b8ff39aa54695fcf92d6.js   190 KiB     components/ListingForm  [emitted] [immutable]  components/ListingForm
+   js/components/ListingForm-b8ff39aa54695fcf92d6.js.map   202 KiB     components/ListingForm  [emitted] [dev]        components/ListingForm
+          js/components/Listings-7fa81bc020d8583be2ca.js   129 KiB        components/Listings  [emitted] [immutable]  components/Listings
+      js/components/Listings-7fa81bc020d8583be2ca.js.map   141 KiB        components/Listings  [emitted] [dev]        components/Listings
+               js/components/Nav-b50aed6963cc120cc7ed.js  87.5 KiB             components/Nav  [emitted] [immutable]  components/Nav
+           js/components/Nav-b50aed6963cc120cc7ed.js.map  99.3 KiB             components/Nav  [emitted] [dev]        components/Nav
+           js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB         components/Spinner  [emitted] [immutable]  components/Spinner
+       js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB         components/Spinner  [emitted] [dev]        components/Spinner
+       js/components/application-d6fe608570c9dac4d43e.js  3.04 MiB     components/application  [emitted] [immutable]  components/application
+   js/components/application-d6fe608570c9dac4d43e.js.map  3.43 MiB     components/application  [emitted] [dev]        components/application
+           js/components/aroutes-b372747f4bde48a6f5e4.js  1.82 MiB         components/aroutes  [emitted] [immutable]  components/aroutes
+       js/components/aroutes-b372747f4bde48a6f5e4.js.map  1.83 MiB         components/aroutes  [emitted] [dev]        components/aroutes
+                                           manifest.json  6.16 KiB                             [emitted]              
+Entrypoint application = js/application-b0321f595d6ccc11fbac.js js/application-b0321f595d6ccc11fbac.js.map
+Entrypoint components/About = js/components/About-f727e3667d8bcf12451b.js js/components/About-f727e3667d8bcf12451b.js.map
+Entrypoint components/application = js/components/application-d6fe608570c9dac4d43e.js js/components/application-d6fe608570c9dac4d43e.js.map
+Entrypoint components/aroutes = js/components/aroutes-b372747f4bde48a6f5e4.js js/components/aroutes-b372747f4bde48a6f5e4.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-c915910e1659ae3c7fd3.js js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map
+Entrypoint components/Contact = js/components/Contact-7e6653dd8bcf578813c2.js js/components/Contact-7e6653dd8bcf578813c2.js.map
+Entrypoint components/Error = js/components/Error-e8e3e441e8745c473430.js js/components/Error-e8e3e441e8745c473430.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-ef05e5af42b7f27d6db7.js js/components/ErrorMessage-ef05e5af42b7f27d6db7.js.map
+Entrypoint components/Home = js/components/Home-dd72ae16c6f07854b88b.js js/components/Home-dd72ae16c6f07854b88b.js.map
+Entrypoint components/Listing = js/components/Listing-104ece46f25487fcc0a2.js js/components/Listing-104ece46f25487fcc0a2.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-1b820bf98155927ad725.js js/components/ListingApp-1b820bf98155927ad725.js.map
+Entrypoint components/ListingDisplay = js/components/ListingDisplay-6aac59ac9e3d5c719add.js js/components/ListingDisplay-6aac59ac9e3d5c719add.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-b8ff39aa54695fcf92d6.js js/components/ListingForm-b8ff39aa54695fcf92d6.js.map
+Entrypoint components/Listings = js/components/Listings-7fa81bc020d8583be2ca.js js/components/Listings-7fa81bc020d8583be2ca.js.map
+Entrypoint components/Nav = js/components/Nav-b50aed6963cc120cc7ed.js js/components/Nav-b50aed6963cc120cc7ed.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} {components/application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} {components/application} [built]
+[./app/javascript/packs/application.js] 938 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/application} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 280 hidden modules
+
+  Rendered shared/_navigation.html.erb (Duration: 1.7ms | Allocations: 479)
+  Rendered shared/_flash.html.erb (Duration: 0.7ms | Allocations: 163)
+Completed 200 OK in 10256ms (Views: 10255.0ms | ActiveRecord: 0.0ms | Allocations: 10893)
+
+
+Started GET "/listing_display" for 127.0.0.1 at 2021-03-04 10:05:21 +0100
+  
+ActionController::RoutingError (uninitialized constant ListingDisplaysController
+Did you mean?  ListingDisplayController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:06:36 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.5ms | Allocations: 76)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 356.3ms | Allocations: 140663)
+Completed 500 Internal Server Error in 367ms (ActiveRecord: 0.0ms | Allocations: 145783)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `listings_path' for #<#<Class:0x0000559f6a9ecbe0>:0x0000559f6a9c81c8>):
+     8:       <ul class="navbar-nav">
+     9:         
+    10:         <li class="nav-item">
+    11:           <%= link_to "Listings", listings_path, class: "nav-link" %>
+    12:         </li>
+    13:         <li class="nav-item">
+    14:           <%= link_to "About", about_path, class: "nav-link" %>
+  
+app/views/shared/_navigation.html.erb:11
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:12:13 +0100
+  
+ArgumentError ('pages#my_listings' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:4:in `block (2 levels) in <main>'
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:12:38 +0100
+  
+ArgumentError ('pages#listings' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:4:in `block (2 levels) in <main>'
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:13:11 +0100
+  
+ArgumentError ('pages#listing_displays' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:5:in `block (2 levels) in <main>'
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:13:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:13:46 +0100
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/fluffle/code/Bunnyhug/bunhug/public/packs
+[Webpacker] Hash: e3ae3666840e2f942188
+Version: webpack 4.44.2
+Time: 7877ms
+Built at: 03/04/2021 10:13:56 AM
+                                                   Asset      Size                     Chunks                         Chunk Names
+                  js/application-b0321f595d6ccc11fbac.js  3.64 MiB                application  [emitted] [immutable]  application
+              js/application-b0321f595d6ccc11fbac.js.map  3.87 MiB                application  [emitted] [dev]        application
+             js/components/About-f727e3667d8bcf12451b.js  3.92 KiB           components/About  [emitted] [immutable]  components/About
+         js/components/About-f727e3667d8bcf12451b.js.map  3.54 KiB           components/About  [emitted] [dev]        components/About
+      js/components/AxiosHeaders-c915910e1659ae3c7fd3.js  62.6 KiB    components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+  js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map  62.1 KiB    components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+           js/components/Contact-7e6653dd8bcf578813c2.js  86.7 KiB         components/Contact  [emitted] [immutable]  components/Contact
+       js/components/Contact-7e6653dd8bcf578813c2.js.map  99.1 KiB         components/Contact  [emitted] [dev]        components/Contact
+             js/components/Error-e8e3e441e8745c473430.js  86.7 KiB           components/Error  [emitted] [immutable]  components/Error
+         js/components/Error-e8e3e441e8745c473430.js.map  99.1 KiB           components/Error  [emitted] [dev]        components/Error
+      js/components/ErrorMessage-ef05e5af42b7f27d6db7.js   660 KiB    components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+  js/components/ErrorMessage-ef05e5af42b7f27d6db7.js.map   780 KiB    components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+              js/components/Home-dd72ae16c6f07854b88b.js  86.7 KiB            components/Home  [emitted] [immutable]  components/Home
+          js/components/Home-dd72ae16c6f07854b88b.js.map  99.1 KiB            components/Home  [emitted] [dev]        components/Home
+           js/components/Listing-104ece46f25487fcc0a2.js   731 KiB         components/Listing  [emitted] [immutable]  components/Listing
+       js/components/Listing-104ece46f25487fcc0a2.js.map   845 KiB         components/Listing  [emitted] [dev]        components/Listing
+        js/components/ListingApp-1b820bf98155927ad725.js  1.72 MiB      components/ListingApp  [emitted] [immutable]  components/ListingApp
+    js/components/ListingApp-1b820bf98155927ad725.js.map  1.97 MiB      components/ListingApp  [emitted] [dev]        components/ListingApp
+    js/components/ListingDisplay-6aac59ac9e3d5c719add.js   1.7 MiB  components/ListingDisplay  [emitted] [immutable]  components/ListingDisplay
+js/components/ListingDisplay-6aac59ac9e3d5c719add.js.map  1.72 MiB  components/ListingDisplay  [emitted] [dev]        components/ListingDisplay
+       js/components/ListingForm-b8ff39aa54695fcf92d6.js   190 KiB     components/ListingForm  [emitted] [immutable]  components/ListingForm
+   js/components/ListingForm-b8ff39aa54695fcf92d6.js.map   202 KiB     components/ListingForm  [emitted] [dev]        components/ListingForm
+          js/components/Listings-7fa81bc020d8583be2ca.js   129 KiB        components/Listings  [emitted] [immutable]  components/Listings
+      js/components/Listings-7fa81bc020d8583be2ca.js.map   141 KiB        components/Listings  [emitted] [dev]        components/Listings
+               js/components/Nav-b50aed6963cc120cc7ed.js  87.5 KiB             components/Nav  [emitted] [immutable]  components/Nav
+           js/components/Nav-b50aed6963cc120cc7ed.js.map  99.3 KiB             components/Nav  [emitted] [dev]        components/Nav
+           js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB         components/Spinner  [emitted] [immutable]  components/Spinner
+       js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB         components/Spinner  [emitted] [dev]        components/Spinner
+       js/components/application-d6fe608570c9dac4d43e.js  3.04 MiB     components/application  [emitted] [immutable]  components/application
+   js/components/application-d6fe608570c9dac4d43e.js.map  3.43 MiB     components/application  [emitted] [dev]        components/application
+           js/components/aroutes-a102b7e7fe6ad27878e1.js   872 KiB         components/aroutes  [emitted] [immutable]  components/aroutes
+       js/components/aroutes-a102b7e7fe6ad27878e1.js.map   972 KiB         components/aroutes  [emitted] [dev]        components/aroutes
+                                           manifest.json  6.16 KiB                             [emitted]              
+Entrypoint application = js/application-b0321f595d6ccc11fbac.js js/application-b0321f595d6ccc11fbac.js.map
+Entrypoint components/About = js/components/About-f727e3667d8bcf12451b.js js/components/About-f727e3667d8bcf12451b.js.map
+Entrypoint components/application = js/components/application-d6fe608570c9dac4d43e.js js/components/application-d6fe608570c9dac4d43e.js.map
+Entrypoint components/aroutes = js/components/aroutes-a102b7e7fe6ad27878e1.js js/components/aroutes-a102b7e7fe6ad27878e1.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-c915910e1659ae3c7fd3.js js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map
+Entrypoint components/Contact = js/components/Contact-7e6653dd8bcf578813c2.js js/components/Contact-7e6653dd8bcf578813c2.js.map
+Entrypoint components/Error = js/components/Error-e8e3e441e8745c473430.js js/components/Error-e8e3e441e8745c473430.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-ef05e5af42b7f27d6db7.js js/components/ErrorMessage-ef05e5af42b7f27d6db7.js.map
+Entrypoint components/Home = js/components/Home-dd72ae16c6f07854b88b.js js/components/Home-dd72ae16c6f07854b88b.js.map
+Entrypoint components/Listing = js/components/Listing-104ece46f25487fcc0a2.js js/components/Listing-104ece46f25487fcc0a2.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-1b820bf98155927ad725.js js/components/ListingApp-1b820bf98155927ad725.js.map
+Entrypoint components/ListingDisplay = js/components/ListingDisplay-6aac59ac9e3d5c719add.js js/components/ListingDisplay-6aac59ac9e3d5c719add.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-b8ff39aa54695fcf92d6.js js/components/ListingForm-b8ff39aa54695fcf92d6.js.map
+Entrypoint components/Listings = js/components/Listings-7fa81bc020d8583be2ca.js js/components/Listings-7fa81bc020d8583be2ca.js.map
+Entrypoint components/Nav = js/components/Nav-b50aed6963cc120cc7ed.js js/components/Nav-b50aed6963cc120cc7ed.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} {components/application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} {components/application} [built]
+[./app/javascript/packs/application.js] 938 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 280 hidden modules
+
+  Rendered shared/_navigation.html.erb (Duration: 230.1ms | Allocations: 140404)
+Completed 500 Internal Server Error in 9940ms (ActiveRecord: 0.0ms | Allocations: 145736)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `listings_path' for #<#<Class:0x00007efdf04d0c20>:0x00007efdf04cb2c0>):
+     8:       <ul class="navbar-nav">
+     9:         
+    10:         <li class="nav-item">
+    11:           <%= link_to "Listings", listings_path, class: "nav-link" %>
+    12:         </li>
+    13:         <li class="nav-item">
+    14:           <%= link_to "About", about_path, class: "nav-link" %>
+  
+app/views/shared/_navigation.html.erb:11
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:14:36 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 258.2ms | Allocations: 140404)
+Completed 500 Internal Server Error in 267ms (ActiveRecord: 0.0ms | Allocations: 144404)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `listings_path' for #<#<Class:0x00007efdf43107b0>:0x00007efdf42f9fd8>):
+     8:       <ul class="navbar-nav">
+     9:         
+    10:         <li class="nav-item">
+    11:           <%= link_to "Listings", listings_path, class: "nav-link" %>
+    12:         </li>
+    13:         <li class="nav-item">
+    14:           <%= link_to "About", about_path, class: "nav-link" %>
+  
+app/views/shared/_navigation.html.erb:11
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:15:52 +0100
+  
+SyntaxError (/home/fluffle/code/Bunnyhug/bunhug/config/routes.rb:12: syntax error, unexpected string literal, expecting `do' or '{' or '('
+...reate, :update, :destroy], as 'user_listing'
+...                              ^
+):
+  
+config/routes.rb:12: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/routes.rb:12: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/routes.rb:12: syntax error, unexpected string literal, expecting `do' or '{' or '('
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:16:13 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.6ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 309.3ms | Allocations: 140734)
+Completed 500 Internal Server Error in 322ms (ActiveRecord: 0.0ms | Allocations: 145866)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_listings_path' for #<#<Class:0x00007efdf03dfe10>:0x00007efdf03de538>
+Did you mean?  user_session_path):
+     8:       <ul class="navbar-nav">
+     9:         
+    10:         <li class="nav-item">
+    11:           <%= link_to "Listings", user_listings_path, class: "nav-link" %>
+    12:         </li>
+    13:         <li class="nav-item">
+    14:           <%= link_to "About", abouts_path, class: "nav-link" %>
+  
+app/views/shared/_navigation.html.erb:11
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:18:13 +0100
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.5ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 244.4ms | Allocations: 140746)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 0.0ms | Allocations: 145828)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `abouts_path' for #<#<Class:0x00007efdf44a88e8>:0x00007efdcc0367b0>
+Did you mean?  about_path):
+    11:           <%= link_to "Listings", root_path, class: "nav-link" %>
+    12:         </li>
+    13:         <li class="nav-item">
+    14:           <%= link_to "About", abouts_path, class: "nav-link" %>
+    15:         </li>
+    16:         <li class="nav-item">
+    17:           <%= link_to "Contact", contacts_path, class: "nav-link" %>
+  
+app/views/shared/_navigation.html.erb:14
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:18:28 +0100
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.7ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 270.8ms | Allocations: 140759)
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.0ms | Allocations: 145827)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ulisting_path' for #<#<Class:0x00007efdf439aed8>:0x00007efdf43992b8>):
+    17:           <%= link_to "Contact", contacts_path, class: "nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:           <%= link_to "My closet", ulisting_path, class: "nav-link" %>
+    21:         </li>
+    22:         <li class="nav-item">
+    23:           <% if user_signed_in? %>
+  
+app/views/shared/_navigation.html.erb:20
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:23:11 +0100
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/fluffle/code/Bunnyhug/bunhug/public/packs
+[Webpacker] Hash: 1567bdabee77cfabac0b
+Version: webpack 4.44.2
+Time: 7028ms
+Built at: 03/04/2021 10:23:19 AM
+                                                   Asset      Size                     Chunks                         Chunk Names
+                  js/application-266733e00b74e601676f.js  3.55 MiB                application  [emitted] [immutable]  application
+              js/application-266733e00b74e601676f.js.map   3.8 MiB                application  [emitted] [dev]        application
+             js/components/About-f727e3667d8bcf12451b.js  3.92 KiB           components/About  [emitted] [immutable]  components/About
+         js/components/About-f727e3667d8bcf12451b.js.map  3.54 KiB           components/About  [emitted] [dev]        components/About
+      js/components/AxiosHeaders-c915910e1659ae3c7fd3.js  62.6 KiB    components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+  js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map  62.1 KiB    components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+           js/components/Contact-7e6653dd8bcf578813c2.js  86.7 KiB         components/Contact  [emitted] [immutable]  components/Contact
+       js/components/Contact-7e6653dd8bcf578813c2.js.map  99.1 KiB         components/Contact  [emitted] [dev]        components/Contact
+             js/components/Error-e8e3e441e8745c473430.js  86.7 KiB           components/Error  [emitted] [immutable]  components/Error
+         js/components/Error-e8e3e441e8745c473430.js.map  99.1 KiB           components/Error  [emitted] [dev]        components/Error
+      js/components/ErrorMessage-ef05e5af42b7f27d6db7.js   660 KiB    components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+  js/components/ErrorMessage-ef05e5af42b7f27d6db7.js.map   780 KiB    components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+              js/components/Home-dd72ae16c6f07854b88b.js  86.7 KiB            components/Home  [emitted] [immutable]  components/Home
+          js/components/Home-dd72ae16c6f07854b88b.js.map  99.1 KiB            components/Home  [emitted] [dev]        components/Home
+           js/components/Listing-104ece46f25487fcc0a2.js   731 KiB         components/Listing  [emitted] [immutable]  components/Listing
+       js/components/Listing-104ece46f25487fcc0a2.js.map   845 KiB         components/Listing  [emitted] [dev]        components/Listing
+        js/components/ListingApp-1b820bf98155927ad725.js  1.72 MiB      components/ListingApp  [emitted] [immutable]  components/ListingApp
+    js/components/ListingApp-1b820bf98155927ad725.js.map  1.97 MiB      components/ListingApp  [emitted] [dev]        components/ListingApp
+    js/components/ListingDisplay-9a3c2f7482605f717436.js  1.61 MiB  components/ListingDisplay  [emitted] [immutable]  components/ListingDisplay
+js/components/ListingDisplay-9a3c2f7482605f717436.js.map  1.64 MiB  components/ListingDisplay  [emitted] [dev]        components/ListingDisplay
+       js/components/ListingForm-b8ff39aa54695fcf92d6.js   190 KiB     components/ListingForm  [emitted] [immutable]  components/ListingForm
+   js/components/ListingForm-b8ff39aa54695fcf92d6.js.map   202 KiB     components/ListingForm  [emitted] [dev]        components/ListingForm
+          js/components/Listings-7fa81bc020d8583be2ca.js   129 KiB        components/Listings  [emitted] [immutable]  components/Listings
+      js/components/Listings-7fa81bc020d8583be2ca.js.map   141 KiB        components/Listings  [emitted] [dev]        components/Listings
+               js/components/Nav-b50aed6963cc120cc7ed.js  87.5 KiB             components/Nav  [emitted] [immutable]  components/Nav
+           js/components/Nav-b50aed6963cc120cc7ed.js.map  99.3 KiB             components/Nav  [emitted] [dev]        components/Nav
+           js/components/Spinner-b45880d0100e7110300b.js  87.1 KiB         components/Spinner  [emitted] [immutable]  components/Spinner
+       js/components/Spinner-b45880d0100e7110300b.js.map  99.3 KiB         components/Spinner  [emitted] [dev]        components/Spinner
+       js/components/application-d6fe608570c9dac4d43e.js  3.04 MiB     components/application  [emitted] [immutable]  components/application
+   js/components/application-d6fe608570c9dac4d43e.js.map  3.43 MiB     components/application  [emitted] [dev]        components/application
+           js/components/aroutes-a102b7e7fe6ad27878e1.js   872 KiB         components/aroutes  [emitted] [immutable]  components/aroutes
+       js/components/aroutes-a102b7e7fe6ad27878e1.js.map   972 KiB         components/aroutes  [emitted] [dev]        components/aroutes
+                                           manifest.json  6.16 KiB                             [emitted]              
+Entrypoint application = js/application-266733e00b74e601676f.js js/application-266733e00b74e601676f.js.map
+Entrypoint components/About = js/components/About-f727e3667d8bcf12451b.js js/components/About-f727e3667d8bcf12451b.js.map
+Entrypoint components/application = js/components/application-d6fe608570c9dac4d43e.js js/components/application-d6fe608570c9dac4d43e.js.map
+Entrypoint components/aroutes = js/components/aroutes-a102b7e7fe6ad27878e1.js js/components/aroutes-a102b7e7fe6ad27878e1.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-c915910e1659ae3c7fd3.js js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map
+Entrypoint components/Contact = js/components/Contact-7e6653dd8bcf578813c2.js js/components/Contact-7e6653dd8bcf578813c2.js.map
+Entrypoint components/Error = js/components/Error-e8e3e441e8745c473430.js js/components/Error-e8e3e441e8745c473430.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-ef05e5af42b7f27d6db7.js js/components/ErrorMessage-ef05e5af42b7f27d6db7.js.map
+Entrypoint components/Home = js/components/Home-dd72ae16c6f07854b88b.js js/components/Home-dd72ae16c6f07854b88b.js.map
+Entrypoint components/Listing = js/components/Listing-104ece46f25487fcc0a2.js js/components/Listing-104ece46f25487fcc0a2.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-1b820bf98155927ad725.js js/components/ListingApp-1b820bf98155927ad725.js.map
+Entrypoint components/ListingDisplay = js/components/ListingDisplay-9a3c2f7482605f717436.js js/components/ListingDisplay-9a3c2f7482605f717436.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-b8ff39aa54695fcf92d6.js js/components/ListingForm-b8ff39aa54695fcf92d6.js.map
+Entrypoint components/Listings = js/components/Listings-7fa81bc020d8583be2ca.js js/components/Listings-7fa81bc020d8583be2ca.js.map
+Entrypoint components/Nav = js/components/Nav-b50aed6963cc120cc7ed.js js/components/Nav-b50aed6963cc120cc7ed.js.map
+Entrypoint components/Spinner = js/components/Spinner-b45880d0100e7110300b.js js/components/Spinner-b45880d0100e7110300b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} {components/application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} {components/application} [built]
+[./app/javascript/packs/application.js] 938 bytes {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {components/application} {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 264 hidden modules
+
+  Rendered shared/_navigation.html.erb (Duration: 254.1ms | Allocations: 140490)
+Completed 500 Internal Server Error in 9060ms (ActiveRecord: 0.0ms | Allocations: 145819)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ulisting_path' for #<#<Class:0x0000559f6a4270c0>:0x0000559f6a402540>):
+    17:           <%= link_to "Contact", contacts_path, class: "nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:           <%= link_to "My closet", ulisting_path, class: "nav-link" %>
+    21:         </li>
+    22:         <li class="nav-item">
+    23:           <% if user_signed_in? %>
+  
+app/views/shared/_navigation.html.erb:20
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:23:39 +0100
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.6ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 232.4ms | Allocations: 140759)
+Completed 500 Internal Server Error in 243ms (ActiveRecord: 0.0ms | Allocations: 145827)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ulistings_path' for #<#<Class:0x00007efdf01de580>:0x00007efdf01dcaa0>):
+    17:           <%= link_to "Contact", contacts_path, class: "nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:           <%= link_to "My closet", ulistings_path, class: "nav-link" %>
+    21:         </li>
+    22:         <li class="nav-item">
+    23:           <% if user_signed_in? %>
+  
+app/views/shared/_navigation.html.erb:20
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:27:26 +0100
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.6ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 1.0ms | Allocations: 498)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 159)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 5961)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-04 10:27:33 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#listing_display as HTML
+  Rendering pages/listing_display.html.erb within layouts/application
+  Rendered pages/listing_display.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 0.7ms | Allocations: 219)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 4140)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-04 10:27:41 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.7ms | Allocations: 128)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 23.2ms | Allocations: 10513)
+Completed 200 OK in 60ms (Views: 21.6ms | ActiveRecord: 11.5ms | Allocations: 18171)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-04 10:27:41 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.4ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 47)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 12.2ms | Allocations: 3536)
+Completed 200 OK in 22ms (Views: 12.4ms | ActiveRecord: 2.1ms | Allocations: 5715)
+
+

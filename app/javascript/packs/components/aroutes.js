@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import Home from './Home';
-import Listings from './ListingDisplay';
+import Listing from './Listing';
 import About from './About';
 import Contact from './Contact';
 import Error from './Error';
@@ -16,7 +16,7 @@ class App extends Component {
           <Navigation />
             <Switch>
              <Route path="/" component={Home} exact/>
-             <Route path="/listings" component={Listings}/>
+             <Route path="/listings" component={Listing}/>
              <Route path="/about" component={About}/>
              <Route path="/contact" component={Contact}/>
             <Route component={Error}/>

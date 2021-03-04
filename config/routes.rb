@@ -9,9 +9,10 @@ Rails.application.routes.draw do
   #data return is json format
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      resources :listings, only: [:index, :show, :create, :update, :destroy]
+      resources :listings, only: [:index, :show, :create, :update, :destroy], as: 'ulistings'
     end
   end
+  
 
   resource :listing_display, only: [:index, :show], as: 'displays'
   resource :about, only:[:show]
