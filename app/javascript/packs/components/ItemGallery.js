@@ -49,7 +49,7 @@ const useStyles = muiBaseTheme => ({
     }
   });
 
-export default function ListingDisplay(){
+export default function ItemGallery(){
     const classes = useStyles();
 
     return (

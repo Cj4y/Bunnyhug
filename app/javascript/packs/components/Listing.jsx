@@ -28,7 +28,13 @@ updateListing = _.debounce(() => {
     axios
         .put(this.path, {
             listing: {
+             
                 title: this.inputRef.current.value,
+                category: this.inputRef.current.value,
+                image_url: this.inputRef.current.value,
+                details: this.inputRef.current.value,
+                colour: this.inputRef.current.value,
+                price: this.inputRef.current.value,
                 active: this.inactiveRef.current.checked,
             },
         })

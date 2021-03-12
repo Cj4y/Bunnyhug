@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   authenticated :user do
-    root "pages#item_gallery", as: :authenticated_root
+    root "pages#my_listings", as: :authenticated_root
   end
   root 'pages#home'
 
@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   #data return is json format
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      resources :listings, only: [:index, :show, :create, :update, :destroy], as: 'ulistings'
+      resources :listings, only: [:index, :show, :create, :update, :destroy], as: 'my_listings'
     end
   end
   

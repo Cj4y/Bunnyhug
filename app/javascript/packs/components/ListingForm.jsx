@@ -8,6 +8,11 @@ class ListingForm extends React.Component {
     super(props)
     this.handleSubmit = this.handleSubmit.bind(this)
     this.titleRef = React.createRef()
+    this.categoryRef = React.createRef()
+    this.image_urlRef = React.createRef()
+    this.detailsRef = React.createRef()
+    this.colourRef = React.createRef()
+    this.priceRef = React.createRef()
   }
 
   handleSubmit(e) {
@@ -15,8 +20,14 @@ class ListingForm extends React.Component {
     setAxiosHeaders()
     axios
       .post('/api/v1/listings', {
+        //json.extract! listing, :id, :user_id,  :title, :category, :image_url, :details, :colour, :price, :active, :flagged, :created_at, :updated_at
         listing: {
           title: this.titleRef.current.value, //create to access input data
+          category: this.categoryRef.current.value, 
+          image_url: this.image_urlRef.current.value, 
+          details: this.detailsRef.current.value, 
+          colour: this.colourRef.current.value, 
+          price: this.priceRef.current.value, 
           active: true, //user will not add an inactive listing 
         },
       })
@@ -49,7 +60,7 @@ class ListingForm extends React.Component {
             <input
               type="text"
               name="category"
-              ref={this.titleRef}
+              ref={this.categoryRef}
               required
               className="form-control"
               id="category"
@@ -58,7 +69,7 @@ class ListingForm extends React.Component {
             <input
               type="text"
               name="image_url"
-              ref={this.titleRef}
+              ref={this.image_urlRef}
               required
               className="form-control"
               id="image_url"
@@ -67,7 +78,7 @@ class ListingForm extends React.Component {
             <input
               type="details"
               name="price"
-              ref={this.titleRef}
+              ref={this.detailsRef}
               required
               className="form-control"
               id="details"
@@ -76,7 +87,7 @@ class ListingForm extends React.Component {
             <input
               type="text"
               name="colour"
-              ref={this.titleRef}
+              ref={this.colourRef}
               required
               className="form-control"
               id="colour"
@@ -85,7 +96,7 @@ class ListingForm extends React.Component {
             <input
               type="text"
               name="price"
-              ref={this.titleRef}
+              ref={this.priceRef}
               required
               className="form-control"
               id="price"

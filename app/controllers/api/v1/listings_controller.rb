@@ -22,7 +22,7 @@ class Api::V1::ListingsController < ApplicationController
     if authorized?
       respond_to do |format|
         if @listing.save
-          format.json { render :show, status: :created, location: api_v1_listing_path(@listing) }
+          format.json { render :show, status: :created, location: api_v1_my_listing_path(@listing) }
         else
           # TODO: Handle errors
           format.json { render json: @listing.errors, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class Api::V1::ListingsController < ApplicationController
     if authorized?
       respond_to do |format|
         if @listing.update(listing_params)
-          format.json { render :show, status: :ok, location: api_v1_listing_path(@listing) }
+          format.json { render :show, status: :ok, location: api_v1_my_listing_path(@listing) }
         else
           # TODO: Handle errors
           format.json { render json: @listing.errors, status: :unprocessable_entity }
@@ -79,6 +79,7 @@ class Api::V1::ListingsController < ApplicationController
     end
 
     def listing_params
-      params.require(:listing).permit(:title, :active)
+      #:id, :user_id, :title, :category, :image_url, :details, :active, :created_at, :updated_at
+      params.require(:listing).permit(:title, :category, :image_url, :details, :colour, :price, :active)
     end    
 end
