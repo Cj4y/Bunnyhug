@@ -6,8 +6,8 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get listing_display" do
-    get pages_listing_display_url
+  test "should get display" do
+    get pages_display_url
     assert_response :success
   end
 
