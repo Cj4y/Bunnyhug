@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   authenticated :user do
-    root "pages#listing_display", as: :authenticated_root
+    root "pages#item_gallery", as: :authenticated_root
   end
   root 'pages#home'
 
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   end
   
 
-  resource :listing_display, only: [:index, :show], as: 'displays'
+  resource :item_gallery, only: [:index, :show], as: 'gallerys'
   resource :about, only:[:show]
   resource :contacts, only:[:show]
 
