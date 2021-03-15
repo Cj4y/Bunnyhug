@@ -10,13 +10,14 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       resources :listings, only: [:index, :show, :create, :update, :destroy], as: 'my_listings'
+      resource :item_gallery, only: [:index, :show], as: 'galleries'
+      resource :about, only:[:show]
+      resource :contacts, only:[:show]
     end
   end
   
 
-  resource :item_gallery, only: [:index, :show], as: 'gallerys'
-  resource :about, only:[:show]
-  resource :contacts, only:[:show]
+  
 
 #  match '/home' => 'pages#home'
 #match '/about' => 'pages#about'

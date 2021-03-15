@@ -7,7 +7,7 @@ function Nav(){
             <h3>logo</h3>
             <ul>
                 <li>About</li>
-                <li>Listingssss</li>
+                <li>Listings</li>
                 <li>Contact</li>
             </ul>
         </nav>

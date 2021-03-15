@@ -1,12 +1,12 @@
 {
-  "application.js": "/packs/js/application-099e14936eb127fa5c5e.js",
-  "application.js.map": "/packs/js/application-099e14936eb127fa5c5e.js.map",
-  "components/About.js": "/packs/js/components/About-f727e3667d8bcf12451b.js",
-  "components/About.js.map": "/packs/js/components/About-f727e3667d8bcf12451b.js.map",
+  "application.js": "/packs/js/application-52cdd69257897300f9fe.js",
+  "application.js.map": "/packs/js/application-52cdd69257897300f9fe.js.map",
+  "components/About.js": "/packs/js/components/About-1e68e8a3c18b8e039c83.js",
+  "components/About.js.map": "/packs/js/components/About-1e68e8a3c18b8e039c83.js.map",
   "components/AxiosHeaders.js": "/packs/js/components/AxiosHeaders-c915910e1659ae3c7fd3.js",
   "components/AxiosHeaders.js.map": "/packs/js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map",
-  "components/Contact.js": "/packs/js/components/Contact-7e6653dd8bcf578813c2.js",
-  "components/Contact.js.map": "/packs/js/components/Contact-7e6653dd8bcf578813c2.js.map",
+  "components/Contact.js": "/packs/js/components/Contact-0f5c7d770dfc493681a2.js",
+  "components/Contact.js.map": "/packs/js/components/Contact-0f5c7d770dfc493681a2.js.map",
   "components/Error.js": "/packs/js/components/Error-e8e3e441e8745c473430.js",
   "components/Error.js.map": "/packs/js/components/Error-e8e3e441e8745c473430.js.map",
   "components/ErrorMessage.js": "/packs/js/components/ErrorMessage-ef05e5af42b7f27d6db7.js",
@@ -15,53 +15,53 @@
   "components/Home.js.map": "/packs/js/components/Home-dd72ae16c6f07854b88b.js.map",
   "components/ItemGallery.js": "/packs/js/components/ItemGallery-1e18c67d55a16881fdee.js",
   "components/ItemGallery.js.map": "/packs/js/components/ItemGallery-1e18c67d55a16881fdee.js.map",
-  "components/Listing.js": "/packs/js/components/Listing-22b79cef9eca68c5fa26.js",
-  "components/Listing.js.map": "/packs/js/components/Listing-22b79cef9eca68c5fa26.js.map",
-  "components/ListingApp.js": "/packs/js/components/ListingApp-9bcc5e64bba7edba4ac1.js",
-  "components/ListingApp.js.map": "/packs/js/components/ListingApp-9bcc5e64bba7edba4ac1.js.map",
+  "components/Listing.js": "/packs/js/components/Listing-2f075d72625d125ac47d.js",
+  "components/Listing.js.map": "/packs/js/components/Listing-2f075d72625d125ac47d.js.map",
+  "components/ListingApp.js": "/packs/js/components/ListingApp-298157bab2e02ec7749d.js",
+  "components/ListingApp.js.map": "/packs/js/components/ListingApp-298157bab2e02ec7749d.js.map",
   "components/ListingForm.js": "/packs/js/components/ListingForm-82c68c76ecd8f8fe680f.js",
   "components/ListingForm.js.map": "/packs/js/components/ListingForm-82c68c76ecd8f8fe680f.js.map",
   "components/Listings.js": "/packs/js/components/Listings-7fa81bc020d8583be2ca.js",
   "components/Listings.js.map": "/packs/js/components/Listings-7fa81bc020d8583be2ca.js.map",
-  "components/Nav.js": "/packs/js/components/Nav-b50aed6963cc120cc7ed.js",
-  "components/Nav.js.map": "/packs/js/components/Nav-b50aed6963cc120cc7ed.js.map",
+  "components/Nav.js": "/packs/js/components/Nav-93c20e829dbfb0353d91.js",
+  "components/Nav.js.map": "/packs/js/components/Nav-93c20e829dbfb0353d91.js.map",
   "components/Spinner.js": "/packs/js/components/Spinner-b45880d0100e7110300b.js",
   "components/Spinner.js.map": "/packs/js/components/Spinner-b45880d0100e7110300b.js.map",
-  "components/application.js": "/packs/js/components/application-a05daea005f8415bbf68.js",
-  "components/application.js.map": "/packs/js/components/application-a05daea005f8415bbf68.js.map",
-  "components/aroutes.js": "/packs/js/components/aroutes-3f67b76373e3e2ddcffd.js",
-  "components/aroutes.js.map": "/packs/js/components/aroutes-3f67b76373e3e2ddcffd.js.map",
+  "components/application.js": "/packs/js/components/application-4eb6481bcc1641257929.js",
+  "components/application.js.map": "/packs/js/components/application-4eb6481bcc1641257929.js.map",
+  "components/aroutes.js": "/packs/js/components/aroutes-ad63f73ebbae9f8bf387.js",
+  "components/aroutes.js.map": "/packs/js/components/aroutes-ad63f73ebbae9f8bf387.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-099e14936eb127fa5c5e.js"
+        "/packs/js/application-52cdd69257897300f9fe.js"
       ],
       "js.map": [
-        "/packs/js/application-099e14936eb127fa5c5e.js.map"
+        "/packs/js/application-52cdd69257897300f9fe.js.map"
       ]
     },
     "components/About": {
       "js": [
-        "/packs/js/components/About-f727e3667d8bcf12451b.js"
+        "/packs/js/components/About-1e68e8a3c18b8e039c83.js"
       ],
       "js.map": [
-        "/packs/js/components/About-f727e3667d8bcf12451b.js.map"
+        "/packs/js/components/About-1e68e8a3c18b8e039c83.js.map"
       ]
     },
     "components/application": {
       "js": [
-        "/packs/js/components/application-a05daea005f8415bbf68.js"
+        "/packs/js/components/application-4eb6481bcc1641257929.js"
       ],
       "js.map": [
-        "/packs/js/components/application-a05daea005f8415bbf68.js.map"
+        "/packs/js/components/application-4eb6481bcc1641257929.js.map"
       ]
     },
     "components/aroutes": {
       "js": [
-        "/packs/js/components/aroutes-3f67b76373e3e2ddcffd.js"
+        "/packs/js/components/aroutes-ad63f73ebbae9f8bf387.js"
       ],
       "js.map": [
-        "/packs/js/components/aroutes-3f67b76373e3e2ddcffd.js.map"
+        "/packs/js/components/aroutes-ad63f73ebbae9f8bf387.js.map"
       ]
     },
     "components/AxiosHeaders": {
@@ -74,10 +74,10 @@
     },
     "components/Contact": {
       "js": [
-        "/packs/js/components/Contact-7e6653dd8bcf578813c2.js"
+        "/packs/js/components/Contact-0f5c7d770dfc493681a2.js"
       ],
       "js.map": [
-        "/packs/js/components/Contact-7e6653dd8bcf578813c2.js.map"
+        "/packs/js/components/Contact-0f5c7d770dfc493681a2.js.map"
       ]
     },
     "components/Error": {
@@ -114,18 +114,18 @@
     },
     "components/Listing": {
       "js": [
-        "/packs/js/components/Listing-22b79cef9eca68c5fa26.js"
+        "/packs/js/components/Listing-2f075d72625d125ac47d.js"
       ],
       "js.map": [
-        "/packs/js/components/Listing-22b79cef9eca68c5fa26.js.map"
+        "/packs/js/components/Listing-2f075d72625d125ac47d.js.map"
       ]
     },
     "components/ListingApp": {
       "js": [
-        "/packs/js/components/ListingApp-9bcc5e64bba7edba4ac1.js"
+        "/packs/js/components/ListingApp-298157bab2e02ec7749d.js"
       ],
       "js.map": [
-        "/packs/js/components/ListingApp-9bcc5e64bba7edba4ac1.js.map"
+        "/packs/js/components/ListingApp-298157bab2e02ec7749d.js.map"
       ]
     },
     "components/ListingForm": {
@@ -146,10 +146,10 @@
     },
     "components/Nav": {
       "js": [
-        "/packs/js/components/Nav-b50aed6963cc120cc7ed.js"
+        "/packs/js/components/Nav-93c20e829dbfb0353d91.js"
       ],
       "js.map": [
-        "/packs/js/components/Nav-b50aed6963cc120cc7ed.js.map"
+        "/packs/js/components/Nav-93c20e829dbfb0353d91.js.map"
       ]
     },
     "components/Spinner": {
