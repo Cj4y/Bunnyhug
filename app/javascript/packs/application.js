@@ -4,8 +4,7 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
-require("turbolinks").start()
-//import('turbolinks').then( t => t.start() )
+import('@hotwired/turbo-rails')//.then( t => t.start() )
 require("@rails/activestorage").start()
 require("channels")
 

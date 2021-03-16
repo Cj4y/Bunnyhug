@@ -4,4 +4,6 @@ class PagesController < ApplicationController
   end
   def my_listings
   end
+  def  item_galleries
+  end 
 end

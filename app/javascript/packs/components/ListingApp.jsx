@@ -111,7 +111,7 @@ class ListingApp extends React.Component {
         )
     }
 }
-document.addEventListener('turbolinks:load', () => {
+document.addEventListener('turbo:load', () => {
     const app = document.getElementById('listing-app')
     app && ReactDOM.render(<ListingApp />, app)
 })

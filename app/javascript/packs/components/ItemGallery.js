@@ -52,7 +52,7 @@ const useStyles = muiBaseTheme => ({
 export default function ItemGallery(){
     const classes = useStyles();
 
-    return (
+  return (
         <Card className={classes.root}>
           <CardHeader
             avatar={
@@ -79,5 +79,9 @@ export default function ItemGallery(){
             </IconButton>
           </CardActions>
         </Card>
-      );
-    }
+  );
+}
+    document.addEventListener('turbo:load', () => {
+      const app = document.getElementById('item_galleries_load')
+      app && ReactDOM.render(<ItemGalley/>, app)
+    })

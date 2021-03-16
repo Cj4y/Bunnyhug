@@ -5,9 +5,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload' %>
     <%= stylesheet_pack_tag 'application' %>
+    <!--Tell Turbo to watch for changes in asset file name and hard reload when they change
+    Good in Rails because CSS and JS typically have a content hash appended to their filenames-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
 

@@ -1,6 +1,6 @@
 {
-  "application.js": "/packs/js/application-0a59086e3271852cb4e4.js",
-  "application.js.map": "/packs/js/application-0a59086e3271852cb4e4.js.map",
+  "application.js": "/packs/js/application-971ea0bfafc56676c8bd.js",
+  "application.js.map": "/packs/js/application-971ea0bfafc56676c8bd.js.map",
   "components/About.js": "/packs/js/components/About-1e68e8a3c18b8e039c83.js",
   "components/About.js.map": "/packs/js/components/About-1e68e8a3c18b8e039c83.js.map",
   "components/AxiosHeaders.js": "/packs/js/components/AxiosHeaders-c915910e1659ae3c7fd3.js",
@@ -13,8 +13,8 @@
   "components/ErrorMessage.js.map": "/packs/js/components/ErrorMessage-ef05e5af42b7f27d6db7.js.map",
   "components/Home.js": "/packs/js/components/Home-dd72ae16c6f07854b88b.js",
   "components/Home.js.map": "/packs/js/components/Home-dd72ae16c6f07854b88b.js.map",
-  "components/ItemGallery.js": "/packs/js/components/ItemGallery-1e18c67d55a16881fdee.js",
-  "components/ItemGallery.js.map": "/packs/js/components/ItemGallery-1e18c67d55a16881fdee.js.map",
+  "components/ItemGallery.js": "/packs/js/components/ItemGallery-cd22112d4b23acb9658f.js",
+  "components/ItemGallery.js.map": "/packs/js/components/ItemGallery-cd22112d4b23acb9658f.js.map",
   "components/Listing.js": "/packs/js/components/Listing-2f075d72625d125ac47d.js",
   "components/Listing.js.map": "/packs/js/components/Listing-2f075d72625d125ac47d.js.map",
   "components/ListingApp.js": "/packs/js/components/ListingApp-298157bab2e02ec7749d.js",
@@ -23,8 +23,6 @@
   "components/ListingForm.js.map": "/packs/js/components/ListingForm-82c68c76ecd8f8fe680f.js.map",
   "components/Listings.js": "/packs/js/components/Listings-7fa81bc020d8583be2ca.js",
   "components/Listings.js.map": "/packs/js/components/Listings-7fa81bc020d8583be2ca.js.map",
-  "components/Nav.js": "/packs/js/components/Nav-93c20e829dbfb0353d91.js",
-  "components/Nav.js.map": "/packs/js/components/Nav-93c20e829dbfb0353d91.js.map",
   "components/Spinner.js": "/packs/js/components/Spinner-b45880d0100e7110300b.js",
   "components/Spinner.js.map": "/packs/js/components/Spinner-b45880d0100e7110300b.js.map",
   "components/application.js": "/packs/js/components/application-4eb6481bcc1641257929.js",
@@ -34,10 +32,10 @@
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-0a59086e3271852cb4e4.js"
+        "/packs/js/application-971ea0bfafc56676c8bd.js"
       ],
       "js.map": [
-        "/packs/js/application-0a59086e3271852cb4e4.js.map"
+        "/packs/js/application-971ea0bfafc56676c8bd.js.map"
       ]
     },
     "components/About": {
@@ -106,10 +104,10 @@
     },
     "components/ItemGallery": {
       "js": [
-        "/packs/js/components/ItemGallery-1e18c67d55a16881fdee.js"
+        "/packs/js/components/ItemGallery-cd22112d4b23acb9658f.js"
       ],
       "js.map": [
-        "/packs/js/components/ItemGallery-1e18c67d55a16881fdee.js.map"
+        "/packs/js/components/ItemGallery-cd22112d4b23acb9658f.js.map"
       ]
     },
     "components/Listing": {
@@ -142,14 +140,6 @@
       ],
       "js.map": [
         "/packs/js/components/Listings-7fa81bc020d8583be2ca.js.map"
-      ]
-    },
-    "components/Nav": {
-      "js": [
-        "/packs/js/components/Nav-93c20e829dbfb0353d91.js"
-      ],
-      "js.map": [
-        "/packs/js/components/Nav-93c20e829dbfb0353d91.js.map"
       ]
     },
     "components/Spinner": {
