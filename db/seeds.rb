@@ -13,7 +13,15 @@ end
 User.all.each do |u|
     10.times do |i|
         u.listings.create(title: "Listing #{i+1}, #{u.email}", category: "Category #{i+1}", image_url: "photo#{i+1}.jpg",
-         details: "Details,Details,Details,Details,Details,Details,Details,Details,Details,Details,Details,Details#{i+1}", 
+         details: "Details,Details,Details,Details,Details,Details#{i+1}", 
          active: true, flagged: false, colour: "Colour #{i+1}", price: 10+i)
     end
 end    
+
+ItemGallery.create! (
+    [
+        {
+            
+        }
+    ]
+)

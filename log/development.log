@@ -10600,3 +10600,65 @@ puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.7) lib/puma/server.rb:472:in `process_client'
 puma (4.3.7) lib/puma/server.rb:328:in `block in run'
 puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (3.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT GET_LOCK('4189196011473094860', 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateActiveStorageTables (20210316032525)
+  [1m[35m (76.9ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`))[0m
+  [1m[35m (53.5ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`), CONSTRAINT `fk_rails_c3b3935057`
+FOREIGN KEY (`blob_id`)
+  REFERENCES `active_storage_blobs` (`id`)
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20210316032525')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4189196011473094860')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-03-16 05:38:05 +0100
+  [1m[35m (3.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#my_listings as HTML
+  Rendering pages/my_listings.html.erb within layouts/application
+  Rendered pages/my_listings.html.erb within layouts/application (Duration: 1.5ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navigation.html.erb (Duration: 1.0ms | Allocations: 534)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 163)
+Completed 200 OK in 151ms (Views: 142.7ms | ActiveRecord: 0.0ms | Allocations: 32248)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2021-03-16 05:38:08 +0100
+Processing by Api::V1::ListingsController#index as JSON
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering api/v1/listings/index.json.jbuilder
+  [1m[36mListing Load (1.8ms)[0m  [1m[34mSELECT `listings`.* FROM `listings` WHERE `listings`.`user_id` = 1 ORDER BY `listings`.`created_at` DESC[0m
+  ↳ app/views/api/v1/listings/index.json.jbuilder:2
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.6ms | Allocations: 128)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 43)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 43)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 45)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.3ms | Allocations: 45)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 45)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 45)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 45)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 45)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 45)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.1ms | Allocations: 45)
+  Rendered api/v1/listings/_listing.json.jbuilder (Duration: 0.2ms | Allocations: 45)
+  Rendered api/v1/listings/index.json.jbuilder (Duration: 25.2ms | Allocations: 10954)
+Completed 200 OK in 51ms (Views: 25.0ms | ActiveRecord: 9.4ms | Allocations: 17897)
+
+
+Started GET "/api/v1/about" for 127.0.0.1 at 2021-03-16 05:38:13 +0100
+Processing by Api::V1::AboutsController#show as JSON
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 361)
+
+
+Started GET "/api/v1/about" for 127.0.0.1 at 2021-03-16 05:38:13 +0100
+Processing by Api::V1::AboutsController#show as JSON
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 310)
+
+
