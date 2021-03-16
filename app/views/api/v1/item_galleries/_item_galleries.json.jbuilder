@@ -1,1 +1,1 @@
-json.extract! listing, :id, :user_id, :title, :category, :image_url, :details, :colour, :price, :active, :created_at, :updated_at
+json.extract! item_gallery, :id, :user_id, :filter
