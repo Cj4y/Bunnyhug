@@ -1,4 +1,4 @@
-class CreateItemGalleries < ActiveRecord::Migration[6.0]
+class CreateItemGalleries < ActiveRecord::Migration[6.1]
   def change
     create_table :item_galleries do |t|
       t.string :filters

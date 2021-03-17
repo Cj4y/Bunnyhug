@@ -1,4 +1,4 @@
-class CreateStarRatings < ActiveRecord::Migration[6.0]
+class CreateStarRatings < ActiveRecord::Migration[6.1]
   def change
     create_table :star_ratings do |t|
       t.integer :buyer_id

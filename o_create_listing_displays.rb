@@ -1,4 +1,4 @@
-class CreateListingDisplays < ActiveRecord::Migration[6.0]
+class CreateListingDisplays < ActiveRecord::Migration[6.1]
   def change
     create_table :listing_displays do |t|
 
@@ -15,7 +15,7 @@ class CreateListingDisplays < ActiveRecord::Migration[6.0]
 end
 
 
-class CreateListings < ActiveRecord::Migration[6.0]
+class CreateListings < ActiveRecord::Migration[6.1]
   def change
     create_table :listings do |t|
       t.string :title
