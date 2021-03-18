@@ -1,6 +1,6 @@
 {
-  "application.js": "/packs/js/application-8fa415b64707b9fa40d8.js",
-  "application.js.map": "/packs/js/application-8fa415b64707b9fa40d8.js.map",
+  "application.js": "/packs/js/application-2d4f76d9e92b5dfb01ef.js",
+  "application.js.map": "/packs/js/application-2d4f76d9e92b5dfb01ef.js.map",
   "components/About.js": "/packs/js/components/About-176ae2a8ecb82b08083f.js",
   "components/About.js.map": "/packs/js/components/About-176ae2a8ecb82b08083f.js.map",
   "components/AxiosHeaders.js": "/packs/js/components/AxiosHeaders-c915910e1659ae3c7fd3.js",
@@ -30,10 +30,10 @@
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-8fa415b64707b9fa40d8.js"
+        "/packs/js/application-2d4f76d9e92b5dfb01ef.js"
       ],
       "js.map": [
-        "/packs/js/application-8fa415b64707b9fa40d8.js.map"
+        "/packs/js/application-2d4f76d9e92b5dfb01ef.js.map"
       ]
     },
     "components/About": {

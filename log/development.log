@@ -14461,3 +14461,93 @@ Processing by Api::V1::ItemGalleriesController#show as JSON
 Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.7ms | Allocations: 662)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-18 06:59:56 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#my_listings as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/my_listings.html.erb within layouts/application
+  Rendered pages/my_listings.html.erb within layouts/application (Duration: 0.7ms | Allocations: 183)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 2dd9063321b8194edfb4
+Version: webpack 4.46.0
+Time: 5098ms
+Built at: 03/18/2021 7:00:03 AM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-2d4f76d9e92b5dfb01ef.js    13 KiB              application  [emitted] [immutable]  application
+            js/application-2d4f76d9e92b5dfb01ef.js.map  12.7 KiB              application  [emitted] [dev]        application
+           js/components/About-176ae2a8ecb82b08083f.js  86.7 KiB         components/About  [emitted] [immutable]  components/About
+       js/components/About-176ae2a8ecb82b08083f.js.map    99 KiB         components/About  [emitted] [dev]        components/About
+    js/components/AxiosHeaders-c915910e1659ae3c7fd3.js  62.6 KiB  components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map  62.1 KiB  components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+         js/components/Contact-06bda22932094f0b32bb.js  86.7 KiB       components/Contact  [emitted] [immutable]  components/Contact
+     js/components/Contact-06bda22932094f0b32bb.js.map    99 KiB       components/Contact  [emitted] [dev]        components/Contact
+           js/components/Error-bdb888dfa212159151c9.js  86.7 KiB         components/Error  [emitted] [immutable]  components/Error
+       js/components/Error-bdb888dfa212159151c9.js.map  99.1 KiB         components/Error  [emitted] [dev]        components/Error
+    js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js   659 KiB  components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map   780 KiB  components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+            js/components/Home-ed8fdbfad213ebc269de.js  86.7 KiB          components/Home  [emitted] [immutable]  components/Home
+        js/components/Home-ed8fdbfad213ebc269de.js.map    99 KiB          components/Home  [emitted] [dev]        components/Home
+     js/components/ItemGallery-72403b66a32e00d5602b.js  1.66 MiB   components/ItemGallery  [emitted] [immutable]  components/ItemGallery
+ js/components/ItemGallery-72403b66a32e00d5602b.js.map  1.69 MiB   components/ItemGallery  [emitted] [dev]        components/ItemGallery
+         js/components/Listing-d2bf1b8e2327dcfea000.js   731 KiB       components/Listing  [emitted] [immutable]  components/Listing
+     js/components/Listing-d2bf1b8e2327dcfea000.js.map   845 KiB       components/Listing  [emitted] [dev]        components/Listing
+      js/components/ListingApp-f4816e0994299a0d7be5.js  1.72 MiB    components/ListingApp  [emitted] [immutable]  components/ListingApp
+  js/components/ListingApp-f4816e0994299a0d7be5.js.map  1.97 MiB    components/ListingApp  [emitted] [dev]        components/ListingApp
+     js/components/ListingForm-83c1db304435cb36e702.js   191 KiB   components/ListingForm  [emitted] [immutable]  components/ListingForm
+ js/components/ListingForm-83c1db304435cb36e702.js.map   202 KiB   components/ListingForm  [emitted] [dev]        components/ListingForm
+        js/components/Listings-624c7d9d243cacb838c7.js   129 KiB      components/Listings  [emitted] [immutable]  components/Listings
+    js/components/Listings-624c7d9d243cacb838c7.js.map   141 KiB      components/Listings  [emitted] [dev]        components/Listings
+         js/components/Spinner-8fc696ff23e9a63b8968.js  87.1 KiB       components/Spinner  [emitted] [immutable]  components/Spinner
+     js/components/Spinner-8fc696ff23e9a63b8968.js.map  99.2 KiB       components/Spinner  [emitted] [dev]        components/Spinner
+         js/components/aroutes-d2a4804a41e0712c08b4.js   856 KiB       components/aroutes  [emitted] [immutable]  components/aroutes
+     js/components/aroutes-d2a4804a41e0712c08b4.js.map   954 KiB       components/aroutes  [emitted] [dev]        components/aroutes
+                                         manifest.json  5.38 KiB                           [emitted]              
+Entrypoint application = js/application-2d4f76d9e92b5dfb01ef.js js/application-2d4f76d9e92b5dfb01ef.js.map
+Entrypoint components/About = js/components/About-176ae2a8ecb82b08083f.js js/components/About-176ae2a8ecb82b08083f.js.map
+Entrypoint components/aroutes = js/components/aroutes-d2a4804a41e0712c08b4.js js/components/aroutes-d2a4804a41e0712c08b4.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-c915910e1659ae3c7fd3.js js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map
+Entrypoint components/Contact = js/components/Contact-06bda22932094f0b32bb.js js/components/Contact-06bda22932094f0b32bb.js.map
+Entrypoint components/Error = js/components/Error-bdb888dfa212159151c9.js js/components/Error-bdb888dfa212159151c9.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map
+Entrypoint components/Home = js/components/Home-ed8fdbfad213ebc269de.js js/components/Home-ed8fdbfad213ebc269de.js.map
+Entrypoint components/ItemGallery = js/components/ItemGallery-72403b66a32e00d5602b.js js/components/ItemGallery-72403b66a32e00d5602b.js.map
+Entrypoint components/Listing = js/components/Listing-d2bf1b8e2327dcfea000.js js/components/Listing-d2bf1b8e2327dcfea000.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-f4816e0994299a0d7be5.js js/components/ListingApp-f4816e0994299a0d7be5.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-83c1db304435cb36e702.js js/components/ListingForm-83c1db304435cb36e702.js.map
+Entrypoint components/Listings = js/components/Listings-624c7d9d243cacb838c7.js js/components/Listings-624c7d9d243cacb838c7.js.map
+Entrypoint components/Spinner = js/components/Spinner-8fc696ff23e9a63b8968.js js/components/Spinner-8fc696ff23e9a63b8968.js.map
+[./app/javascript/packs/application.scss] 663 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss 236 bytes {application} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {components/aroutes} {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+    + 250 hidden modules
+
+ERROR in ./app/javascript/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/sass-loader/dist/index.js:25:24)
+ @ ./app/javascript/packs/application.scss 2:26-227
+
+  Rendered layout layouts/application.html.erb (Duration: 6864.2ms | Allocations: 5474)
+Completed 500 Internal Server Error in 6875ms (ActiveRecord: 0.0ms | Allocations: 8709)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/fluffle/code/Bunnyhug/bunhug/app/views"
+  * "/home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.7.3/app/views"
+  * "/home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-6.1.3/app/views"
+  * "/home/fluffle/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionmailbox-6.1.3/app/views"
+):
+    22: 
+    23:   <body>
+    24:     <section class="py-12 px-6">      
+    25:       <%= render "layouts/nav" %>
+    26:         <div class="container mx-auto">
+    27:           <div class="mt-6">
+    28:             <p class="notice"><%= notice %></p>
+  
+app/views/layouts/application.html.erb:25

@@ -2,14 +2,15 @@
 <html>
   <head>
     <title>Bunnyhug</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_pack_tag(
+    <%= stylesheet_packs_with_chunks_tag(
           'application',
           media: 'all',
           'data-turbo-track': 'reload') %>
-    <%= javascript_pack_tag(
+    <%= javascript_packs_with_chunks_tag(
           'application',
           'data-turbo-track': 'reload') %>
     
@@ -20,10 +21,16 @@
     </head>
 
   <body>
-    <%= render "shared/navigation" %>
-    <%= render "shared/flash" %>
-    <div class="container">
-      <%= yield %>
-    </div>
+    <section class="py-12 px-6">      
+      <%= render "layouts/nav" %>
+        <div class="container mx-auto">
+          <div class="mt-6">
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
+
+            <%= yield %>
+          </div>
+        </div>
+      </section>
   </body>
 </html>
