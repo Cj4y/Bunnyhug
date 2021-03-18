@@ -17,11 +17,3 @@ User.all.each do |u|
          active: true, flagged: false, colour: "Colour #{i+1}", price: 10+i)
     end
 end    
-
-ItemGallery.create! (
-    [
-        {
-            
-        }
-    ]
-)

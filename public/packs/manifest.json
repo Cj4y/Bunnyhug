@@ -1,6 +1,6 @@
 {
-  "application.js": "/packs/js/application-ceb7e797644316292d3e.js",
-  "application.js.map": "/packs/js/application-ceb7e797644316292d3e.js.map",
+  "application.js": "/packs/js/application-8fa415b64707b9fa40d8.js",
+  "application.js.map": "/packs/js/application-8fa415b64707b9fa40d8.js.map",
   "components/About.js": "/packs/js/components/About-176ae2a8ecb82b08083f.js",
   "components/About.js.map": "/packs/js/components/About-176ae2a8ecb82b08083f.js.map",
   "components/AxiosHeaders.js": "/packs/js/components/AxiosHeaders-c915910e1659ae3c7fd3.js",
@@ -13,8 +13,8 @@
   "components/ErrorMessage.js.map": "/packs/js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map",
   "components/Home.js": "/packs/js/components/Home-ed8fdbfad213ebc269de.js",
   "components/Home.js.map": "/packs/js/components/Home-ed8fdbfad213ebc269de.js.map",
-  "components/ItemGallery.js": "/packs/js/components/ItemGallery-d6bdf298d94d523279e4.js",
-  "components/ItemGallery.js.map": "/packs/js/components/ItemGallery-d6bdf298d94d523279e4.js.map",
+  "components/ItemGallery.js": "/packs/js/components/ItemGallery-72403b66a32e00d5602b.js",
+  "components/ItemGallery.js.map": "/packs/js/components/ItemGallery-72403b66a32e00d5602b.js.map",
   "components/Listing.js": "/packs/js/components/Listing-d2bf1b8e2327dcfea000.js",
   "components/Listing.js.map": "/packs/js/components/Listing-d2bf1b8e2327dcfea000.js.map",
   "components/ListingApp.js": "/packs/js/components/ListingApp-f4816e0994299a0d7be5.js",
@@ -30,10 +30,10 @@
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-ceb7e797644316292d3e.js"
+        "/packs/js/application-8fa415b64707b9fa40d8.js"
       ],
       "js.map": [
-        "/packs/js/application-ceb7e797644316292d3e.js.map"
+        "/packs/js/application-8fa415b64707b9fa40d8.js.map"
       ]
     },
     "components/About": {
@@ -94,10 +94,10 @@
     },
     "components/ItemGallery": {
       "js": [
-        "/packs/js/components/ItemGallery-d6bdf298d94d523279e4.js"
+        "/packs/js/components/ItemGallery-72403b66a32e00d5602b.js"
       ],
       "js.map": [
-        "/packs/js/components/ItemGallery-d6bdf298d94d523279e4.js.map"
+        "/packs/js/components/ItemGallery-72403b66a32e00d5602b.js.map"
       ]
     },
     "components/Listing": {

@@ -5,13 +5,13 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag(
-      'application', 
-      media: 'all', 
-      'data-turbo-track': 'reload') %>
-    <%= javascript_pack_tag (
-      'application', 
-      'data-turbo-track': 'reload') %>
+    <%= stylesheet_pack_tag(
+          'application',
+          media: 'all',
+          'data-turbo-track': 'reload') %>
+    <%= javascript_pack_tag(
+          'application',
+          'data-turbo-track': 'reload') %>
     
     <!--Tell Turbo to watch for changes in asset file name and hard reload when they change
     Good in Rails because CSS and JS typically have a content hash appended to their filenames-->

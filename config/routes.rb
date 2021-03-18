@@ -4,8 +4,7 @@ Rails.application.routes.draw do
     root "pages#my_listings", as: :authenticated_root
   end
   root 'pages#home'
-  get '/*path' => 'pages#home'
-
+  
   #route to listings in v1 of api
   #data return is json format
   namespace :api, defaults: { format: :json } do
