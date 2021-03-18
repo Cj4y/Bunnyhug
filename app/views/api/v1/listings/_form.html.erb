@@ -1,0 +1,7 @@
+<%= turbo_frame_tag(dom_id(listing)) do %>
+    <article class="my-4">
+        <%= simple_form_for(@listing) do |f| %>
+            <p>Display the form for a new listing</p>
+        <% end %>
+    </article>
+<% end %>
