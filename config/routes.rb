@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  root 'homepage#index'
   devise_for :users
   authenticated :user do
     root "pages#my_listings", as: :authenticated_root
   end
-  root 'pages#home'
+  #root 'pages#home'
   
   #route to listings in v1 of api
   #data return is json format

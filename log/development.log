@@ -14461,3 +14461,1313 @@ Processing by Api::V1::ItemGalleriesController#show as JSON
 Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.7ms | Allocations: 662)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-18 22:42:41 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by PagesController#my_listings as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/my_listings.html.erb within layouts/application
+  Rendered pages/my_listings.html.erb within layouts/application (Duration: 0.6ms | Allocations: 183)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: cdd86abdc9234f74e78f
+Version: webpack 4.46.0
+Time: 4553ms
+Built at: 03/18/2021 10:42:48 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-2d4f76d9e92b5dfb01ef.js    13 KiB              application  [emitted] [immutable]  application
+            js/application-2d4f76d9e92b5dfb01ef.js.map  12.7 KiB              application  [emitted] [dev]        application
+           js/components/About-176ae2a8ecb82b08083f.js  86.7 KiB         components/About  [emitted] [immutable]  components/About
+       js/components/About-176ae2a8ecb82b08083f.js.map    99 KiB         components/About  [emitted] [dev]        components/About
+    js/components/AxiosHeaders-c915910e1659ae3c7fd3.js  62.6 KiB  components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map  62.1 KiB  components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+         js/components/Contact-06bda22932094f0b32bb.js  86.7 KiB       components/Contact  [emitted] [immutable]  components/Contact
+     js/components/Contact-06bda22932094f0b32bb.js.map    99 KiB       components/Contact  [emitted] [dev]        components/Contact
+           js/components/Error-bdb888dfa212159151c9.js  86.7 KiB         components/Error  [emitted] [immutable]  components/Error
+       js/components/Error-bdb888dfa212159151c9.js.map  99.1 KiB         components/Error  [emitted] [dev]        components/Error
+    js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js   659 KiB  components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map   780 KiB  components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+            js/components/Home-ed8fdbfad213ebc269de.js  86.7 KiB          components/Home  [emitted] [immutable]  components/Home
+        js/components/Home-ed8fdbfad213ebc269de.js.map    99 KiB          components/Home  [emitted] [dev]        components/Home
+           js/components/Index-b9bcf4cbfb39db4715af.js   856 KiB         components/Index  [emitted] [immutable]  components/Index
+       js/components/Index-b9bcf4cbfb39db4715af.js.map   954 KiB         components/Index  [emitted] [dev]        components/Index
+     js/components/ItemGallery-72403b66a32e00d5602b.js  1.66 MiB   components/ItemGallery  [emitted] [immutable]  components/ItemGallery
+ js/components/ItemGallery-72403b66a32e00d5602b.js.map  1.69 MiB   components/ItemGallery  [emitted] [dev]        components/ItemGallery
+         js/components/Listing-d2bf1b8e2327dcfea000.js   731 KiB       components/Listing  [emitted] [immutable]  components/Listing
+     js/components/Listing-d2bf1b8e2327dcfea000.js.map   845 KiB       components/Listing  [emitted] [dev]        components/Listing
+      js/components/ListingApp-f4816e0994299a0d7be5.js  1.72 MiB    components/ListingApp  [emitted] [immutable]  components/ListingApp
+  js/components/ListingApp-f4816e0994299a0d7be5.js.map  1.97 MiB    components/ListingApp  [emitted] [dev]        components/ListingApp
+     js/components/ListingForm-83c1db304435cb36e702.js   191 KiB   components/ListingForm  [emitted] [immutable]  components/ListingForm
+ js/components/ListingForm-83c1db304435cb36e702.js.map   202 KiB   components/ListingForm  [emitted] [dev]        components/ListingForm
+        js/components/Listings-624c7d9d243cacb838c7.js   129 KiB      components/Listings  [emitted] [immutable]  components/Listings
+    js/components/Listings-624c7d9d243cacb838c7.js.map   141 KiB      components/Listings  [emitted] [dev]        components/Listings
+         js/components/Spinner-8fc696ff23e9a63b8968.js  87.1 KiB       components/Spinner  [emitted] [immutable]  components/Spinner
+     js/components/Spinner-8fc696ff23e9a63b8968.js.map  99.2 KiB       components/Spinner  [emitted] [dev]        components/Spinner
+         js/components/aroutes-d2a4804a41e0712c08b4.js   856 KiB       components/aroutes  [emitted] [immutable]  components/aroutes
+     js/components/aroutes-d2a4804a41e0712c08b4.js.map   954 KiB       components/aroutes  [emitted] [dev]        components/aroutes
+                                         manifest.json  5.75 KiB                           [emitted]              
+Entrypoint application = js/application-2d4f76d9e92b5dfb01ef.js js/application-2d4f76d9e92b5dfb01ef.js.map
+Entrypoint components/About = js/components/About-176ae2a8ecb82b08083f.js js/components/About-176ae2a8ecb82b08083f.js.map
+Entrypoint components/aroutes = js/components/aroutes-d2a4804a41e0712c08b4.js js/components/aroutes-d2a4804a41e0712c08b4.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-c915910e1659ae3c7fd3.js js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map
+Entrypoint components/Contact = js/components/Contact-06bda22932094f0b32bb.js js/components/Contact-06bda22932094f0b32bb.js.map
+Entrypoint components/Error = js/components/Error-bdb888dfa212159151c9.js js/components/Error-bdb888dfa212159151c9.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map
+Entrypoint components/Home = js/components/Home-ed8fdbfad213ebc269de.js js/components/Home-ed8fdbfad213ebc269de.js.map
+Entrypoint components/Index = js/components/Index-b9bcf4cbfb39db4715af.js js/components/Index-b9bcf4cbfb39db4715af.js.map
+Entrypoint components/ItemGallery = js/components/ItemGallery-72403b66a32e00d5602b.js js/components/ItemGallery-72403b66a32e00d5602b.js.map
+Entrypoint components/Listing = js/components/Listing-d2bf1b8e2327dcfea000.js js/components/Listing-d2bf1b8e2327dcfea000.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-f4816e0994299a0d7be5.js js/components/ListingApp-f4816e0994299a0d7be5.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-83c1db304435cb36e702.js js/components/ListingForm-83c1db304435cb36e702.js.map
+Entrypoint components/Listings = js/components/Listings-624c7d9d243cacb838c7.js js/components/Listings-624c7d9d243cacb838c7.js.map
+Entrypoint components/Spinner = js/components/Spinner-8fc696ff23e9a63b8968.js js/components/Spinner-8fc696ff23e9a63b8968.js.map
+[./app/javascript/packs/application.scss] 663 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss 236 bytes {application} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {components/aroutes} {components/ErrorMessage} {components/Index} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {components/aroutes} {components/ErrorMessage} {components/Index} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {components/aroutes} {components/ErrorMessage} {components/Index} {components/Listing} {components/ListingApp} [built]
+    + 251 hidden modules
+
+ERROR in ./app/javascript/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/sass-loader/dist/index.js:25:24)
+ @ ./app/javascript/packs/application.scss 2:26-227
+
+  Rendered shared/_navigation.html.erb (Duration: 2.1ms | Allocations: 568)
+  Rendered shared/_flash.html.erb (Duration: 0.8ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 6460.2ms | Allocations: 5052)
+Completed 200 OK in 6471ms (Views: 6463.5ms | ActiveRecord: 0.0ms | Allocations: 8321)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 22:52:05 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 196)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_navigation.html.erb:23
+  Rendered shared/_navigation.html.erb (Duration: 27.4ms | Allocations: 5512)
+  Rendered shared/_flash.html.erb (Duration: 0.8ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 8871)
+Completed 200 OK in 46ms (Views: 34.7ms | ActiveRecord: 7.8ms | Allocations: 11502)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:16:36 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 196)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 8db0b45fdbb29ae4c100
+Version: webpack 4.46.0
+Time: 5740ms
+Built at: 03/18/2021 11:16:44 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-2d4f76d9e92b5dfb01ef.js    13 KiB              application  [emitted] [immutable]  application
+            js/application-2d4f76d9e92b5dfb01ef.js.map  12.7 KiB              application  [emitted] [dev]        application
+           js/components/About-176ae2a8ecb82b08083f.js  86.7 KiB         components/About  [emitted] [immutable]  components/About
+       js/components/About-176ae2a8ecb82b08083f.js.map    99 KiB         components/About  [emitted] [dev]        components/About
+             js/components/App-594508494bd3da70725d.js  1.57 MiB           components/App  [emitted] [immutable]  components/App
+         js/components/App-594508494bd3da70725d.js.map  1.82 MiB           components/App  [emitted] [dev]        components/App
+    js/components/AxiosHeaders-c915910e1659ae3c7fd3.js  62.6 KiB  components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map  62.1 KiB  components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+         js/components/Contact-06bda22932094f0b32bb.js  86.7 KiB       components/Contact  [emitted] [immutable]  components/Contact
+     js/components/Contact-06bda22932094f0b32bb.js.map    99 KiB       components/Contact  [emitted] [dev]        components/Contact
+           js/components/Error-bdb888dfa212159151c9.js  86.7 KiB         components/Error  [emitted] [immutable]  components/Error
+       js/components/Error-bdb888dfa212159151c9.js.map  99.1 KiB         components/Error  [emitted] [dev]        components/Error
+    js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js   659 KiB  components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map   780 KiB  components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+            js/components/Home-6ae4a3f53ef225d828f4.js   238 KiB          components/Home  [emitted] [immutable]  components/Home
+        js/components/Home-6ae4a3f53ef225d828f4.js.map   248 KiB          components/Home  [emitted] [dev]        components/Home
+           js/components/Index-d2264affe707cc66af27.js  1.57 MiB         components/Index  [emitted] [immutable]  components/Index
+       js/components/Index-d2264affe707cc66af27.js.map  1.82 MiB         components/Index  [emitted] [dev]        components/Index
+     js/components/ItemGallery-72403b66a32e00d5602b.js  1.66 MiB   components/ItemGallery  [emitted] [immutable]  components/ItemGallery
+ js/components/ItemGallery-72403b66a32e00d5602b.js.map  1.69 MiB   components/ItemGallery  [emitted] [dev]        components/ItemGallery
+         js/components/Listing-d2bf1b8e2327dcfea000.js   731 KiB       components/Listing  [emitted] [immutable]  components/Listing
+     js/components/Listing-d2bf1b8e2327dcfea000.js.map   845 KiB       components/Listing  [emitted] [dev]        components/Listing
+      js/components/ListingApp-f4816e0994299a0d7be5.js  1.72 MiB    components/ListingApp  [emitted] [immutable]  components/ListingApp
+  js/components/ListingApp-f4816e0994299a0d7be5.js.map  1.97 MiB    components/ListingApp  [emitted] [dev]        components/ListingApp
+     js/components/ListingForm-83c1db304435cb36e702.js   191 KiB   components/ListingForm  [emitted] [immutable]  components/ListingForm
+ js/components/ListingForm-83c1db304435cb36e702.js.map   202 KiB   components/ListingForm  [emitted] [dev]        components/ListingForm
+        js/components/Listings-624c7d9d243cacb838c7.js   129 KiB      components/Listings  [emitted] [immutable]  components/Listings
+    js/components/Listings-624c7d9d243cacb838c7.js.map   141 KiB      components/Listings  [emitted] [dev]        components/Listings
+         js/components/Spinner-8fc696ff23e9a63b8968.js  87.1 KiB       components/Spinner  [emitted] [immutable]  components/Spinner
+     js/components/Spinner-8fc696ff23e9a63b8968.js.map  99.2 KiB       components/Spinner  [emitted] [dev]        components/Spinner
+                                         manifest.json  5.72 KiB                           [emitted]              
+Entrypoint application = js/application-2d4f76d9e92b5dfb01ef.js js/application-2d4f76d9e92b5dfb01ef.js.map
+Entrypoint components/About = js/components/About-176ae2a8ecb82b08083f.js js/components/About-176ae2a8ecb82b08083f.js.map
+Entrypoint components/App = js/components/App-594508494bd3da70725d.js js/components/App-594508494bd3da70725d.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-c915910e1659ae3c7fd3.js js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map
+Entrypoint components/Contact = js/components/Contact-06bda22932094f0b32bb.js js/components/Contact-06bda22932094f0b32bb.js.map
+Entrypoint components/Error = js/components/Error-bdb888dfa212159151c9.js js/components/Error-bdb888dfa212159151c9.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map
+Entrypoint components/Home = js/components/Home-6ae4a3f53ef225d828f4.js js/components/Home-6ae4a3f53ef225d828f4.js.map
+Entrypoint components/Index = js/components/Index-d2264affe707cc66af27.js js/components/Index-d2264affe707cc66af27.js.map
+Entrypoint components/ItemGallery = js/components/ItemGallery-72403b66a32e00d5602b.js js/components/ItemGallery-72403b66a32e00d5602b.js.map
+Entrypoint components/Listing = js/components/Listing-d2bf1b8e2327dcfea000.js js/components/Listing-d2bf1b8e2327dcfea000.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-f4816e0994299a0d7be5.js js/components/ListingApp-f4816e0994299a0d7be5.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-83c1db304435cb36e702.js js/components/ListingForm-83c1db304435cb36e702.js.map
+Entrypoint components/Listings = js/components/Listings-624c7d9d243cacb838c7.js js/components/Listings-624c7d9d243cacb838c7.js.map
+Entrypoint components/Spinner = js/components/Spinner-8fc696ff23e9a63b8968.js js/components/Spinner-8fc696ff23e9a63b8968.js.map
+[./app/javascript/packs/application.scss] 663 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss 236 bytes {application} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {components/App} {components/ErrorMessage} {components/Home} {components/Index} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {components/App} {components/ErrorMessage} {components/Index} {components/Listing} {components/ListingApp} [built]
+    + 256 hidden modules
+
+ERROR in ./app/javascript/packs/components/App.jsx 6:64-70
+"export 'default' (imported as 'Routes') was not found in './Index'
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-146
+ @ ./app/javascript/packs/components/Index.jsx
+
+ERROR in ./app/javascript/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/sass-loader/dist/index.js:25:24)
+ @ ./app/javascript/packs/application.scss 2:26-227
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7420.2ms | Allocations: 7218)
+Completed 500 Internal Server Error in 7427ms (ActiveRecord: 0.0ms | Allocations: 9815)
+
+
+  
+ActionView::Template::Error (Webpacker can't find Index in /home/fluffle/code/Bunnyhug/bunhug/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-2d4f76d9e92b5dfb01ef.js",
+  "application.js.map": "/packs/js/application-2d4f76d9e92b5dfb01ef.js.map",
+  "components/About.js": "/packs/js/components/About-176ae2a8ecb82b08083f.js",
+  "components/About.js.map": "/packs/js/components/About-176ae2a8ecb82b08083f.js.map",
+  "components/App.js": "/packs/js/components/App-594508494bd3da70725d.js",
+  "components/App.js.map": "/packs/js/components/App-594508494bd3da70725d.js.map",
+  "components/AxiosHeaders.js": "/packs/js/components/AxiosHeaders-c915910e1659ae3c7fd3.js",
+  "components/AxiosHeaders.js.map": "/packs/js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map",
+  "components/Contact.js": "/packs/js/components/Contact-06bda22932094f0b32bb.js",
+  "components/Contact.js.map": "/packs/js/components/Contact-06bda22932094f0b32bb.js.map",
+  "components/Error.js": "/packs/js/components/Error-bdb888dfa212159151c9.js",
+  "components/Error.js.map": "/packs/js/components/Error-bdb888dfa212159151c9.js.map",
+  "components/ErrorMessage.js": "/packs/js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js",
+  "components/ErrorMessage.js.map": "/packs/js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map",
+  "components/Home.js": "/packs/js/components/Home-6ae4a3f53ef225d828f4.js",
+  "components/Home.js.map": "/packs/js/components/Home-6ae4a3f53ef225d828f4.js.map",
+  "components/Index.js": "/packs/js/components/Index-d2264affe707cc66af27.js",
+  "components/Index.js.map": "/packs/js/components/Index-d2264affe707cc66af27.js.map",
+  "components/ItemGallery.js": "/packs/js/components/ItemGallery-72403b66a32e00d5602b.js",
+  "components/ItemGallery.js.map": "/packs/js/components/ItemGallery-72403b66a32e00d5602b.js.map",
+  "components/Listing.js": "/packs/js/components/Listing-d2bf1b8e2327dcfea000.js",
+  "components/Listing.js.map": "/packs/js/components/Listing-d2bf1b8e2327dcfea000.js.map",
+  "components/ListingApp.js": "/packs/js/components/ListingApp-f4816e0994299a0d7be5.js",
+  "components/ListingApp.js.map": "/packs/js/components/ListingApp-f4816e0994299a0d7be5.js.map",
+  "components/ListingForm.js": "/packs/js/components/ListingForm-83c1db304435cb36e702.js",
+  "components/ListingForm.js.map": "/packs/js/components/ListingForm-83c1db304435cb36e702.js.map",
+  "components/Listings.js": "/packs/js/components/Listings-624c7d9d243cacb838c7.js",
+  "components/Listings.js.map": "/packs/js/components/Listings-624c7d9d243cacb838c7.js.map",
+  "components/Spinner.js": "/packs/js/components/Spinner-8fc696ff23e9a63b8968.js",
+  "components/Spinner.js.map": "/packs/js/components/Spinner-8fc696ff23e9a63b8968.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-2d4f76d9e92b5dfb01ef.js"
+      ],
+      "js.map": [
+        "/packs/js/application-2d4f76d9e92b5dfb01ef.js.map"
+      ]
+    },
+    "components/About": {
+      "js": [
+        "/packs/js/components/About-176ae2a8ecb82b08083f.js"
+      ],
+      "js.map": [
+        "/packs/js/components/About-176ae2a8ecb82b08083f.js.map"
+      ]
+    },
+    "components/App": {
+      "js": [
+        "/packs/js/components/App-594508494bd3da70725d.js"
+      ],
+      "js.map": [
+        "/packs/js/components/App-594508494bd3da70725d.js.map"
+      ]
+    },
+    "components/AxiosHeaders": {
+      "js": [
+        "/packs/js/components/AxiosHeaders-c915910e1659ae3c7fd3.js"
+      ],
+      "js.map": [
+        "/packs/js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map"
+      ]
+    },
+    "components/Contact": {
+      "js": [
+        "/packs/js/components/Contact-06bda22932094f0b32bb.js"
+      ],
+      "js.map": [
+        "/packs/js/components/Contact-06bda22932094f0b32bb.js.map"
+      ]
+    },
+    "components/Error": {
+      "js": [
+        "/packs/js/components/Error-bdb888dfa212159151c9.js"
+      ],
+      "js.map": [
+        "/packs/js/components/Error-bdb888dfa212159151c9.js.map"
+      ]
+    },
+    "components/ErrorMessage": {
+      "js": [
+        "/packs/js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js"
+      ],
+      "js.map": [
+        "/packs/js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map"
+      ]
+    },
+    "components/Home": {
+      "js": [
+        "/packs/js/components/Home-6ae4a3f53ef225d828f4.js"
+      ],
+      "js.map": [
+        "/packs/js/components/Home-6ae4a3f53ef225d828f4.js.map"
+      ]
+    },
+    "components/Index": {
+      "js": [
+        "/packs/js/components/Index-d2264affe707cc66af27.js"
+      ],
+      "js.map": [
+        "/packs/js/components/Index-d2264affe707cc66af27.js.map"
+      ]
+    },
+    "components/ItemGallery": {
+      "js": [
+        "/packs/js/components/ItemGallery-72403b66a32e00d5602b.js"
+      ],
+      "js.map": [
+        "/packs/js/components/ItemGallery-72403b66a32e00d5602b.js.map"
+      ]
+    },
+    "components/Listing": {
+      "js": [
+        "/packs/js/components/Listing-d2bf1b8e2327dcfea000.js"
+      ],
+      "js.map": [
+        "/packs/js/components/Listing-d2bf1b8e2327dcfea000.js.map"
+      ]
+    },
+    "components/ListingApp": {
+      "js": [
+        "/packs/js/components/ListingApp-f4816e0994299a0d7be5.js"
+      ],
+      "js.map": [
+        "/packs/js/components/ListingApp-f4816e0994299a0d7be5.js.map"
+      ]
+    },
+    "components/ListingForm": {
+      "js": [
+        "/packs/js/components/ListingForm-83c1db304435cb36e702.js"
+      ],
+      "js.map": [
+        "/packs/js/components/ListingForm-83c1db304435cb36e702.js.map"
+      ]
+    },
+    "components/Listings": {
+      "js": [
+        "/packs/js/components/Listings-624c7d9d243cacb838c7.js"
+      ],
+      "js.map": [
+        "/packs/js/components/Listings-624c7d9d243cacb838c7.js.map"
+      ]
+    },
+    "components/Spinner": {
+      "js": [
+        "/packs/js/components/Spinner-8fc696ff23e9a63b8968.js"
+      ],
+      "js.map": [
+        "/packs/js/components/Spinner-8fc696ff23e9a63b8968.js.map"
+      ]
+    }
+  }
+}
+):
+    16:     <%# <!--Tell Turbo to watch for changes in asset file name and hard reload when they change
+    17:     Good in Rails because CSS and JS typically have a content hash appended to their filenames--> %>
+    18:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    19:     <%= javascript_pack_tag 'Index' %>
+    20:     </head>
+    21: 
+    22:   <body>
+  
+app/views/layouts/application.html.erb:19
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:20:01 +0100
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: a3bfab5f6af7cb1df854
+Version: webpack 4.46.0
+Time: 5065ms
+Built at: 03/18/2021 11:20:08 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                      js/Index-2a4adc32626fadfbc6a4.js  1.57 MiB                    Index  [emitted] [immutable]  Index
+                  js/Index-2a4adc32626fadfbc6a4.js.map  1.82 MiB                    Index  [emitted] [dev]        Index
+                js/application-2d4f76d9e92b5dfb01ef.js    13 KiB              application  [emitted] [immutable]  application
+            js/application-2d4f76d9e92b5dfb01ef.js.map  12.7 KiB              application  [emitted] [dev]        application
+           js/components/About-176ae2a8ecb82b08083f.js  86.7 KiB         components/About  [emitted] [immutable]  components/About
+       js/components/About-176ae2a8ecb82b08083f.js.map    99 KiB         components/About  [emitted] [dev]        components/About
+             js/components/App-5d9d5e989148c11741da.js  1.57 MiB           components/App  [emitted] [immutable]  components/App
+         js/components/App-5d9d5e989148c11741da.js.map  1.82 MiB           components/App  [emitted] [dev]        components/App
+    js/components/AxiosHeaders-c915910e1659ae3c7fd3.js  62.6 KiB  components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map  62.1 KiB  components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+         js/components/Contact-06bda22932094f0b32bb.js  86.7 KiB       components/Contact  [emitted] [immutable]  components/Contact
+     js/components/Contact-06bda22932094f0b32bb.js.map    99 KiB       components/Contact  [emitted] [dev]        components/Contact
+           js/components/Error-bdb888dfa212159151c9.js  86.7 KiB         components/Error  [emitted] [immutable]  components/Error
+       js/components/Error-bdb888dfa212159151c9.js.map  99.1 KiB         components/Error  [emitted] [dev]        components/Error
+    js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js   659 KiB  components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map   780 KiB  components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+            js/components/Home-6ae4a3f53ef225d828f4.js   238 KiB          components/Home  [emitted] [immutable]  components/Home
+        js/components/Home-6ae4a3f53ef225d828f4.js.map   248 KiB          components/Home  [emitted] [dev]        components/Home
+     js/components/ItemGallery-72403b66a32e00d5602b.js  1.66 MiB   components/ItemGallery  [emitted] [immutable]  components/ItemGallery
+ js/components/ItemGallery-72403b66a32e00d5602b.js.map  1.69 MiB   components/ItemGallery  [emitted] [dev]        components/ItemGallery
+         js/components/Listing-d2bf1b8e2327dcfea000.js   731 KiB       components/Listing  [emitted] [immutable]  components/Listing
+     js/components/Listing-d2bf1b8e2327dcfea000.js.map   845 KiB       components/Listing  [emitted] [dev]        components/Listing
+      js/components/ListingApp-f4816e0994299a0d7be5.js  1.72 MiB    components/ListingApp  [emitted] [immutable]  components/ListingApp
+  js/components/ListingApp-f4816e0994299a0d7be5.js.map  1.97 MiB    components/ListingApp  [emitted] [dev]        components/ListingApp
+     js/components/ListingForm-83c1db304435cb36e702.js   191 KiB   components/ListingForm  [emitted] [immutable]  components/ListingForm
+ js/components/ListingForm-83c1db304435cb36e702.js.map   202 KiB   components/ListingForm  [emitted] [dev]        components/ListingForm
+        js/components/Listings-624c7d9d243cacb838c7.js   129 KiB      components/Listings  [emitted] [immutable]  components/Listings
+    js/components/Listings-624c7d9d243cacb838c7.js.map   141 KiB      components/Listings  [emitted] [dev]        components/Listings
+         js/components/Spinner-8fc696ff23e9a63b8968.js  87.1 KiB       components/Spinner  [emitted] [immutable]  components/Spinner
+     js/components/Spinner-8fc696ff23e9a63b8968.js.map  99.2 KiB       components/Spinner  [emitted] [dev]        components/Spinner
+                                         manifest.json  5.65 KiB                           [emitted]              
+Entrypoint application = js/application-2d4f76d9e92b5dfb01ef.js js/application-2d4f76d9e92b5dfb01ef.js.map
+Entrypoint components/About = js/components/About-176ae2a8ecb82b08083f.js js/components/About-176ae2a8ecb82b08083f.js.map
+Entrypoint components/App = js/components/App-5d9d5e989148c11741da.js js/components/App-5d9d5e989148c11741da.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-c915910e1659ae3c7fd3.js js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map
+Entrypoint components/Contact = js/components/Contact-06bda22932094f0b32bb.js js/components/Contact-06bda22932094f0b32bb.js.map
+Entrypoint components/Error = js/components/Error-bdb888dfa212159151c9.js js/components/Error-bdb888dfa212159151c9.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map
+Entrypoint components/Home = js/components/Home-6ae4a3f53ef225d828f4.js js/components/Home-6ae4a3f53ef225d828f4.js.map
+Entrypoint components/ItemGallery = js/components/ItemGallery-72403b66a32e00d5602b.js js/components/ItemGallery-72403b66a32e00d5602b.js.map
+Entrypoint components/Listing = js/components/Listing-d2bf1b8e2327dcfea000.js js/components/Listing-d2bf1b8e2327dcfea000.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-f4816e0994299a0d7be5.js js/components/ListingApp-f4816e0994299a0d7be5.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-83c1db304435cb36e702.js js/components/ListingForm-83c1db304435cb36e702.js.map
+Entrypoint components/Listings = js/components/Listings-624c7d9d243cacb838c7.js js/components/Listings-624c7d9d243cacb838c7.js.map
+Entrypoint components/Spinner = js/components/Spinner-8fc696ff23e9a63b8968.js js/components/Spinner-8fc696ff23e9a63b8968.js.map
+Entrypoint Index = js/Index-2a4adc32626fadfbc6a4.js js/Index-2a4adc32626fadfbc6a4.js.map
+[./app/javascript/packs/Index.jsx] 651 bytes {Index} {components/App} [built]
+[./app/javascript/packs/application.scss] 663 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss 236 bytes {application} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {components/App} {components/ErrorMessage} {components/Home} {components/Listing} {components/ListingApp} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {components/App} {components/ErrorMessage} {components/Listing} {components/ListingApp} {Index} [built]
+    + 255 hidden modules
+
+ERROR in ./app/javascript/packs/components/App.jsx 6:64-70
+"export 'default' (imported as 'Routes') was not found in '../Index'
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-146
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./app/javascript/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/sass-loader/dist/index.js:25:24)
+ @ ./app/javascript/packs/application.scss 2:26-227
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7197.2ms | Allocations: 5959)
+Completed 200 OK in 7204ms (Views: 7201.4ms | ActiveRecord: 0.0ms | Allocations: 7124)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:22:51 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 196)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 4757)
+Completed 200 OK in 24ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 7388)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:24:28 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 196)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 9e0af8c968c8e26bb35a
+Version: webpack 4.46.0
+Time: 4327ms
+Built at: 03/18/2021 11:24:34 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                      js/Index-e7fb226ca26f6a74198d.js  1.57 MiB                    Index  [emitted] [immutable]  Index
+                  js/Index-e7fb226ca26f6a74198d.js.map  1.82 MiB                    Index  [emitted] [dev]        Index
+                js/application-2d4f76d9e92b5dfb01ef.js    13 KiB              application  [emitted] [immutable]  application
+            js/application-2d4f76d9e92b5dfb01ef.js.map  12.7 KiB              application  [emitted] [dev]        application
+           js/components/About-176ae2a8ecb82b08083f.js  86.7 KiB         components/About  [emitted] [immutable]  components/About
+       js/components/About-176ae2a8ecb82b08083f.js.map    99 KiB         components/About  [emitted] [dev]        components/About
+             js/components/App-92ed0423c0ea9721302a.js  86.6 KiB           components/App  [emitted] [immutable]  components/App
+         js/components/App-92ed0423c0ea9721302a.js.map    99 KiB           components/App  [emitted] [dev]        components/App
+    js/components/AxiosHeaders-c915910e1659ae3c7fd3.js  62.6 KiB  components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map  62.1 KiB  components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+         js/components/Contact-06bda22932094f0b32bb.js  86.7 KiB       components/Contact  [emitted] [immutable]  components/Contact
+     js/components/Contact-06bda22932094f0b32bb.js.map    99 KiB       components/Contact  [emitted] [dev]        components/Contact
+           js/components/Error-bdb888dfa212159151c9.js  86.7 KiB         components/Error  [emitted] [immutable]  components/Error
+       js/components/Error-bdb888dfa212159151c9.js.map  99.1 KiB         components/Error  [emitted] [dev]        components/Error
+    js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js   659 KiB  components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map   780 KiB  components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+            js/components/Home-6ae4a3f53ef225d828f4.js   238 KiB          components/Home  [emitted] [immutable]  components/Home
+        js/components/Home-6ae4a3f53ef225d828f4.js.map   248 KiB          components/Home  [emitted] [dev]        components/Home
+     js/components/ItemGallery-72403b66a32e00d5602b.js  1.66 MiB   components/ItemGallery  [emitted] [immutable]  components/ItemGallery
+ js/components/ItemGallery-72403b66a32e00d5602b.js.map  1.69 MiB   components/ItemGallery  [emitted] [dev]        components/ItemGallery
+         js/components/Listing-d2bf1b8e2327dcfea000.js   731 KiB       components/Listing  [emitted] [immutable]  components/Listing
+     js/components/Listing-d2bf1b8e2327dcfea000.js.map   845 KiB       components/Listing  [emitted] [dev]        components/Listing
+      js/components/ListingApp-f4816e0994299a0d7be5.js  1.72 MiB    components/ListingApp  [emitted] [immutable]  components/ListingApp
+  js/components/ListingApp-f4816e0994299a0d7be5.js.map  1.97 MiB    components/ListingApp  [emitted] [dev]        components/ListingApp
+     js/components/ListingForm-83c1db304435cb36e702.js   191 KiB   components/ListingForm  [emitted] [immutable]  components/ListingForm
+ js/components/ListingForm-83c1db304435cb36e702.js.map   202 KiB   components/ListingForm  [emitted] [dev]        components/ListingForm
+        js/components/Listings-624c7d9d243cacb838c7.js   129 KiB      components/Listings  [emitted] [immutable]  components/Listings
+    js/components/Listings-624c7d9d243cacb838c7.js.map   141 KiB      components/Listings  [emitted] [dev]        components/Listings
+         js/components/Spinner-8fc696ff23e9a63b8968.js  87.1 KiB       components/Spinner  [emitted] [immutable]  components/Spinner
+     js/components/Spinner-8fc696ff23e9a63b8968.js.map  99.2 KiB       components/Spinner  [emitted] [dev]        components/Spinner
+                                         manifest.json  5.65 KiB                           [emitted]              
+Entrypoint application = js/application-2d4f76d9e92b5dfb01ef.js js/application-2d4f76d9e92b5dfb01ef.js.map
+Entrypoint components/About = js/components/About-176ae2a8ecb82b08083f.js js/components/About-176ae2a8ecb82b08083f.js.map
+Entrypoint components/App = js/components/App-92ed0423c0ea9721302a.js js/components/App-92ed0423c0ea9721302a.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-c915910e1659ae3c7fd3.js js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map
+Entrypoint components/Contact = js/components/Contact-06bda22932094f0b32bb.js js/components/Contact-06bda22932094f0b32bb.js.map
+Entrypoint components/Error = js/components/Error-bdb888dfa212159151c9.js js/components/Error-bdb888dfa212159151c9.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map
+Entrypoint components/Home = js/components/Home-6ae4a3f53ef225d828f4.js js/components/Home-6ae4a3f53ef225d828f4.js.map
+Entrypoint components/ItemGallery = js/components/ItemGallery-72403b66a32e00d5602b.js js/components/ItemGallery-72403b66a32e00d5602b.js.map
+Entrypoint components/Listing = js/components/Listing-d2bf1b8e2327dcfea000.js js/components/Listing-d2bf1b8e2327dcfea000.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-f4816e0994299a0d7be5.js js/components/ListingApp-f4816e0994299a0d7be5.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-83c1db304435cb36e702.js js/components/ListingForm-83c1db304435cb36e702.js.map
+Entrypoint components/Listings = js/components/Listings-624c7d9d243cacb838c7.js js/components/Listings-624c7d9d243cacb838c7.js.map
+Entrypoint components/Spinner = js/components/Spinner-8fc696ff23e9a63b8968.js js/components/Spinner-8fc696ff23e9a63b8968.js.map
+Entrypoint Index = js/Index-e7fb226ca26f6a74198d.js js/Index-e7fb226ca26f6a74198d.js.map
+[./app/javascript/packs/Index.jsx] 651 bytes {Index} [built]
+[./app/javascript/packs/application.scss] 663 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss 236 bytes {application} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {components/ErrorMessage} {components/Home} {components/Listing} {components/ListingApp} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {components/ErrorMessage} {components/Listing} {components/ListingApp} {Index} [built]
+    + 255 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-146
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./app/javascript/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/sass-loader/dist/index.js:25:24)
+ @ ./app/javascript/packs/application.scss 2:26-227
+
+ERROR in ./app/javascript/packs/components/App.jsx
+Module not found: Error: Can't resolve '..routes/Index' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/App.jsx 2:0-36 6:64-70
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5981.4ms | Allocations: 6108)
+Completed 200 OK in 5989ms (Views: 5985.0ms | ActiveRecord: 0.0ms | Allocations: 8739)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:25:29 +0100
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: ce4311d09b6e7202d4de
+Version: webpack 4.46.0
+Time: 4314ms
+Built at: 03/18/2021 11:25:35 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                      js/Index-fa3402c0fea51c86d14e.js  1.57 MiB                    Index  [emitted] [immutable]  Index
+                  js/Index-fa3402c0fea51c86d14e.js.map  1.82 MiB                    Index  [emitted] [dev]        Index
+                js/application-2d4f76d9e92b5dfb01ef.js    13 KiB              application  [emitted] [immutable]  application
+            js/application-2d4f76d9e92b5dfb01ef.js.map  12.7 KiB              application  [emitted] [dev]        application
+           js/components/About-176ae2a8ecb82b08083f.js  86.7 KiB         components/About  [emitted] [immutable]  components/About
+       js/components/About-176ae2a8ecb82b08083f.js.map    99 KiB         components/About  [emitted] [dev]        components/About
+             js/components/App-92ed0423c0ea9721302a.js  86.6 KiB           components/App  [emitted] [immutable]  components/App
+         js/components/App-92ed0423c0ea9721302a.js.map    99 KiB           components/App  [emitted] [dev]        components/App
+    js/components/AxiosHeaders-c915910e1659ae3c7fd3.js  62.6 KiB  components/AxiosHeaders  [emitted] [immutable]  components/AxiosHeaders
+js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map  62.1 KiB  components/AxiosHeaders  [emitted] [dev]        components/AxiosHeaders
+         js/components/Contact-06bda22932094f0b32bb.js  86.7 KiB       components/Contact  [emitted] [immutable]  components/Contact
+     js/components/Contact-06bda22932094f0b32bb.js.map    99 KiB       components/Contact  [emitted] [dev]        components/Contact
+           js/components/Error-bdb888dfa212159151c9.js  86.7 KiB         components/Error  [emitted] [immutable]  components/Error
+       js/components/Error-bdb888dfa212159151c9.js.map  99.1 KiB         components/Error  [emitted] [dev]        components/Error
+    js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js   659 KiB  components/ErrorMessage  [emitted] [immutable]  components/ErrorMessage
+js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map   780 KiB  components/ErrorMessage  [emitted] [dev]        components/ErrorMessage
+            js/components/Home-6ae4a3f53ef225d828f4.js   238 KiB          components/Home  [emitted] [immutable]  components/Home
+        js/components/Home-6ae4a3f53ef225d828f4.js.map   248 KiB          components/Home  [emitted] [dev]        components/Home
+     js/components/ItemGallery-72403b66a32e00d5602b.js  1.66 MiB   components/ItemGallery  [emitted] [immutable]  components/ItemGallery
+ js/components/ItemGallery-72403b66a32e00d5602b.js.map  1.69 MiB   components/ItemGallery  [emitted] [dev]        components/ItemGallery
+         js/components/Listing-d2bf1b8e2327dcfea000.js   731 KiB       components/Listing  [emitted] [immutable]  components/Listing
+     js/components/Listing-d2bf1b8e2327dcfea000.js.map   845 KiB       components/Listing  [emitted] [dev]        components/Listing
+      js/components/ListingApp-f4816e0994299a0d7be5.js  1.72 MiB    components/ListingApp  [emitted] [immutable]  components/ListingApp
+  js/components/ListingApp-f4816e0994299a0d7be5.js.map  1.97 MiB    components/ListingApp  [emitted] [dev]        components/ListingApp
+     js/components/ListingForm-83c1db304435cb36e702.js   191 KiB   components/ListingForm  [emitted] [immutable]  components/ListingForm
+ js/components/ListingForm-83c1db304435cb36e702.js.map   202 KiB   components/ListingForm  [emitted] [dev]        components/ListingForm
+        js/components/Listings-624c7d9d243cacb838c7.js   129 KiB      components/Listings  [emitted] [immutable]  components/Listings
+    js/components/Listings-624c7d9d243cacb838c7.js.map   141 KiB      components/Listings  [emitted] [dev]        components/Listings
+         js/components/Spinner-8fc696ff23e9a63b8968.js  87.1 KiB       components/Spinner  [emitted] [immutable]  components/Spinner
+     js/components/Spinner-8fc696ff23e9a63b8968.js.map  99.2 KiB       components/Spinner  [emitted] [dev]        components/Spinner
+                                         manifest.json  5.65 KiB                           [emitted]              
+Entrypoint application = js/application-2d4f76d9e92b5dfb01ef.js js/application-2d4f76d9e92b5dfb01ef.js.map
+Entrypoint components/About = js/components/About-176ae2a8ecb82b08083f.js js/components/About-176ae2a8ecb82b08083f.js.map
+Entrypoint components/App = js/components/App-92ed0423c0ea9721302a.js js/components/App-92ed0423c0ea9721302a.js.map
+Entrypoint components/AxiosHeaders = js/components/AxiosHeaders-c915910e1659ae3c7fd3.js js/components/AxiosHeaders-c915910e1659ae3c7fd3.js.map
+Entrypoint components/Contact = js/components/Contact-06bda22932094f0b32bb.js js/components/Contact-06bda22932094f0b32bb.js.map
+Entrypoint components/Error = js/components/Error-bdb888dfa212159151c9.js js/components/Error-bdb888dfa212159151c9.js.map
+Entrypoint components/ErrorMessage = js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js js/components/ErrorMessage-046c5f31e6b81e0d3dcf.js.map
+Entrypoint components/Home = js/components/Home-6ae4a3f53ef225d828f4.js js/components/Home-6ae4a3f53ef225d828f4.js.map
+Entrypoint components/ItemGallery = js/components/ItemGallery-72403b66a32e00d5602b.js js/components/ItemGallery-72403b66a32e00d5602b.js.map
+Entrypoint components/Listing = js/components/Listing-d2bf1b8e2327dcfea000.js js/components/Listing-d2bf1b8e2327dcfea000.js.map
+Entrypoint components/ListingApp = js/components/ListingApp-f4816e0994299a0d7be5.js js/components/ListingApp-f4816e0994299a0d7be5.js.map
+Entrypoint components/ListingForm = js/components/ListingForm-83c1db304435cb36e702.js js/components/ListingForm-83c1db304435cb36e702.js.map
+Entrypoint components/Listings = js/components/Listings-624c7d9d243cacb838c7.js js/components/Listings-624c7d9d243cacb838c7.js.map
+Entrypoint components/Spinner = js/components/Spinner-8fc696ff23e9a63b8968.js js/components/Spinner-8fc696ff23e9a63b8968.js.map
+Entrypoint Index = js/Index-fa3402c0fea51c86d14e.js js/Index-fa3402c0fea51c86d14e.js.map
+[./app/javascript/packs/Index.jsx] 652 bytes {Index} [built]
+[./app/javascript/packs/application.scss] 663 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss 236 bytes {application} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {components/ErrorMessage} {components/Listing} {components/ListingApp} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {components/ErrorMessage} {components/Home} {components/Listing} {components/ListingApp} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {components/ErrorMessage} {components/Listing} {components/ListingApp} {Index} [built]
+    + 255 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-146
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./app/javascript/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/sass-loader/dist/index.js:25:24)
+ @ ./app/javascript/packs/application.scss 2:26-227
+
+ERROR in ./app/javascript/packs/Index.jsx
+Module not found: Error: Can't resolve '../components/App' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs'
+ @ ./app/javascript/packs/Index.jsx 10:0-36 12:43-46
+
+ERROR in ./app/javascript/packs/components/App.jsx
+Module not found: Error: Can't resolve '..routes/Index' in '/home/fluffle/code/Bunnyhug/bunhug/app/javascript/packs/components'
+ @ ./app/javascript/packs/components/App.jsx 2:0-36 6:64-70
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6058.4ms | Allocations: 5508)
+Completed 200 OK in 6060ms (Views: 6059.6ms | ActiveRecord: 0.0ms | Allocations: 5774)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:31:28 +0100
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 90.8ms | Allocations: 29966)
+Completed 500 Internal Server Error in 97ms (Allocations: 31017)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+    11:           media: 'all',
+    12:           'data-turbo-track': 'reload') %>
+    13:     <%# <%= javascript_pack_tag( %>
+    14:     <%= javascript_include_tag(
+    15:           'application',
+    16:           'data-turbo-track': 'reload') %>
+    17:     
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:32:37 +0100
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 76)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4629)
+Completed 200 OK in 20ms (Views: 18.0ms | Allocations: 5782)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:32:50 +0100
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4190)
+Completed 200 OK in 15ms (Views: 14.3ms | Allocations: 4451)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:33:08 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4781)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 7412)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:36:15 +0100
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 76)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 10103)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.0ms | Allocations: 11178)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:39:40 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 13754)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.0ms | Allocations: 16385)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:40:19 +0100
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 5684)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 5950)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:43:38 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 149.3ms | Allocations: 43991)
+Completed 200 OK in 158ms (Views: 153.1ms | ActiveRecord: 0.0ms | Allocations: 46621)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:47:10 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4782)
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 7413)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:47:18 +0100
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 4555)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 5630)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:55:04 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 171)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: d232f12711bf0a7e6035
+Version: webpack 4.46.0
+Time: 3282ms
+Built at: 03/18/2021 11:55:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-57d0e9825643354aa56e.js   2.32 MiB        Index  [emitted] [immutable]  Index
+      js/Index-57d0e9825643354aa56e.js.map   2.66 MiB        Index  [emitted] [dev]        Index
+    js/application-2d4f76d9e92b5dfb01ef.js     13 KiB  application  [emitted] [immutable]  application
+js/application-2d4f76d9e92b5dfb01ef.js.map   12.7 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-2d4f76d9e92b5dfb01ef.js js/application-2d4f76d9e92b5dfb01ef.js.map
+Entrypoint Index = js/Index-57d0e9825643354aa56e.js js/Index-57d0e9825643354aa56e.js.map
+[./app/javascript/packs/Index.jsx] 652 bytes {Index} [built]
+[./app/javascript/packs/application.scss] 663 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 5.21 KiB {Index} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss 236 bytes {application} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 72 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-146
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./app/javascript/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/sass-loader/dist/index.js:25:24)
+ @ ./app/javascript/packs/application.scss 2:26-227
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5049.1ms | Allocations: 5794)
+Completed 200 OK in 5058ms (Views: 5053.1ms | ActiveRecord: 0.0ms | Allocations: 8425)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-18 23:59:59 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 171)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: c2c0e3829103d846d04c
+Version: webpack 4.46.0
+Time: 3985ms
+Built at: 03/19/2021 12:00:05 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-57d0e9825643354aa56e.js   2.32 MiB        Index  [emitted] [immutable]  Index
+      js/Index-57d0e9825643354aa56e.js.map   2.66 MiB        Index  [emitted] [dev]        Index
+    js/application-a4633d4e8b4893d74a5c.js     13 KiB  application  [emitted] [immutable]  application
+js/application-a4633d4e8b4893d74a5c.js.map   12.7 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-a4633d4e8b4893d74a5c.js js/application-a4633d4e8b4893d74a5c.js.map
+Entrypoint Index = js/Index-57d0e9825643354aa56e.js js/Index-57d0e9825643354aa56e.js.map
+[./app/javascript/packs/Index.jsx] 652 bytes {Index} [built]
+[./app/javascript/packs/application.scss] 663 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 5.21 KiB {Index} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss 242 bytes {application} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 72 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-146
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./app/javascript/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./app/javascript/packs/application.scss 2:26-227
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6082.5ms | Allocations: 5798)
+Completed 200 OK in 6090ms (Views: 6085.9ms | ActiveRecord: 0.0ms | Allocations: 8429)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 00:06:27 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 171)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: c2c0e3829103d846d04c
+Version: webpack 4.46.0
+Time: 2857ms
+Built at: 03/19/2021 12:06:32 AM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-57d0e9825643354aa56e.js   2.32 MiB        Index  [emitted] [immutable]  Index
+      js/Index-57d0e9825643354aa56e.js.map   2.66 MiB        Index  [emitted] [dev]        Index
+    js/application-a4633d4e8b4893d74a5c.js     13 KiB  application  [emitted] [immutable]  application
+js/application-a4633d4e8b4893d74a5c.js.map   12.7 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-a4633d4e8b4893d74a5c.js js/application-a4633d4e8b4893d74a5c.js.map
+Entrypoint Index = js/Index-57d0e9825643354aa56e.js js/Index-57d0e9825643354aa56e.js.map
+[./app/javascript/packs/Index.jsx] 652 bytes {Index} [built]
+[./app/javascript/packs/application.scss] 663 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 5.21 KiB {Index} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss 242 bytes {application} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 72 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-146
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./app/javascript/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/dist/cjs.js??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/application.scss)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./app/javascript/packs/application.scss 2:26-227
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4605.6ms | Allocations: 5805)
+Completed 200 OK in 4613ms (Views: 4608.6ms | ActiveRecord: 0.0ms | Allocations: 8436)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 00:09:17 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 171)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: dc09fb8c75c64866154c
+Version: webpack 4.46.0
+Time: 5454ms
+Built at: 03/19/2021 12:09:25 AM
+                                     Asset       Size       Chunks                         Chunk Names
+        js/0-cdc0b7333b8832904bc5.chunk.js   35.5 KiB            0  [emitted] [immutable]  
+    js/0-cdc0b7333b8832904bc5.chunk.js.map     32 KiB            0  [emitted] [dev]        
+          js/Index-57d0e9825643354aa56e.js   2.32 MiB        Index  [emitted] [immutable]  Index
+      js/Index-57d0e9825643354aa56e.js.map   2.66 MiB        Index  [emitted] [dev]        Index
+    js/application-ba4b5d0d73cbe05d10c3.js   3.02 MiB  application  [emitted] [immutable]  application
+js/application-ba4b5d0d73cbe05d10c3.js.map   3.25 MiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-ba4b5d0d73cbe05d10c3.js js/application-ba4b5d0d73cbe05d10c3.js.map
+Entrypoint Index = js/Index-57d0e9825643354aa56e.js js/Index-57d0e9825643354aa56e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 652 bytes {Index} [built]
+[./app/javascript/packs/application.js] 893 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 5.21 KiB {Index} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 275 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-146
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.css 2:26-142
+ @ ./app/javascript/packs/application.js
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7205.0ms | Allocations: 5765)
+Completed 200 OK in 7215ms (Views: 7209.4ms | ActiveRecord: 0.0ms | Allocations: 8396)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 00:11:52 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 171)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 2b40b6e33d00003e2d1b
+Version: webpack 4.46.0
+Time: 4671ms
+Built at: 03/19/2021 12:11:58 AM
+                                     Asset       Size       Chunks                         Chunk Names
+        js/0-cdc0b7333b8832904bc5.chunk.js   35.5 KiB            0  [emitted] [immutable]  
+    js/0-cdc0b7333b8832904bc5.chunk.js.map     32 KiB            0  [emitted] [dev]        
+          js/Index-57d0e9825643354aa56e.js   2.32 MiB        Index  [emitted] [immutable]  Index
+      js/Index-57d0e9825643354aa56e.js.map   2.66 MiB        Index  [emitted] [dev]        Index
+    js/application-6285e3f9f07a194cd4f9.js    2.6 MiB  application  [emitted] [immutable]  application
+js/application-6285e3f9f07a194cd4f9.js.map   2.72 MiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-6285e3f9f07a194cd4f9.js js/application-6285e3f9f07a194cd4f9.js.map
+Entrypoint Index = js/Index-57d0e9825643354aa56e.js js/Index-57d0e9825643354aa56e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 652 bytes {Index} [built]
+[./app/javascript/packs/application.js] 924 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 5.21 KiB {application} {Index} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 272 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-146
+ @ ./app/javascript/packs/Index.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6251.0ms | Allocations: 5771)
+Completed 200 OK in 6259ms (Views: 6254.3ms | ActiveRecord: 0.0ms | Allocations: 8402)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 00:26:14 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 171)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 6a4d9387fa351734ff3d
+Version: webpack 4.46.0
+Time: 4892ms
+Built at: 03/19/2021 12:26:20 AM
+                                     Asset       Size       Chunks                         Chunk Names
+        js/0-cdc0b7333b8832904bc5.chunk.js   35.5 KiB            0  [emitted] [immutable]  
+    js/0-cdc0b7333b8832904bc5.chunk.js.map     32 KiB            0  [emitted] [dev]        
+          js/Index-57d0e9825643354aa56e.js   2.32 MiB        Index  [emitted] [immutable]  Index
+      js/Index-57d0e9825643354aa56e.js.map   2.66 MiB        Index  [emitted] [dev]        Index
+    js/application-9a03cd14354c04174b80.js   3.14 MiB  application  [emitted] [immutable]  application
+js/application-9a03cd14354c04174b80.js.map   3.35 MiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-9a03cd14354c04174b80.js js/application-9a03cd14354c04174b80.js.map
+Entrypoint Index = js/Index-57d0e9825643354aa56e.js js/Index-57d0e9825643354aa56e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 652 bytes {Index} [built]
+[./app/javascript/packs/application.js] 924 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 5.21 KiB {application} {Index} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 275 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-146
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+TypeError: this.getOptions is not a function
+    at Object.loader (/home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/dist/index.js:38:24)
+ @ ./node_modules/bootstrap/dist/css/bootstrap.css 2:26-142
+ @ ./app/javascript/packs/application.js
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6647.1ms | Allocations: 5768)
+Completed 200 OK in 6655ms (Views: 6650.6ms | ActiveRecord: 0.0ms | Allocations: 8399)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 00:34:16 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 171)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 8612114b396c81458355
+Version: webpack 4.46.0
+Time: 5094ms
+Built at: 03/19/2021 12:34:23 AM
+                                     Asset       Size       Chunks                         Chunk Names
+        js/0-cdc0b7333b8832904bc5.chunk.js   35.5 KiB            0  [emitted] [immutable]  
+    js/0-cdc0b7333b8832904bc5.chunk.js.map     32 KiB            0  [emitted] [dev]        
+          js/Index-24d7a560dffe1a648a3e.js   2.33 MiB        Index  [emitted] [immutable]  Index
+      js/Index-24d7a560dffe1a648a3e.js.map   2.66 MiB        Index  [emitted] [dev]        Index
+    js/application-cdf639760467335357ed.js   3.14 MiB  application  [emitted] [immutable]  application
+js/application-cdf639760467335357ed.js.map   3.35 MiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-cdf639760467335357ed.js js/application-cdf639760467335357ed.js.map
+Entrypoint Index = js/Index-24d7a560dffe1a648a3e.js js/Index-24d7a560dffe1a648a3e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 652 bytes {Index} [built]
+[./app/javascript/packs/application.js] 924 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 5.21 KiB {application} {Index} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 275 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/postcss-loader/src/index.js):
+Error: Cannot find module 'tailwindcss'
+Require stack:
+- /home/fluffle/code/Bunnyhug/bunhug/postcss.config.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/import-fresh/index.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/loaders.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/createExplorer.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/index.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-load-config/src/index.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/src/index.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/loader-runner/lib/loadLoader.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/loader-runner/lib/LoaderRunner.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/lib/NormalModule.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/lib/NormalModuleFactory.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/lib/Compiler.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/lib/webpack.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/utils/validate-options.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/cli.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (/home/fluffle/code/Bunnyhug/bunhug/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/fluffle/code/Bunnyhug/bunhug/postcss.config.js:11:5)
+    at Module._compile (/home/fluffle/code/Bunnyhug/bunhug/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (/home/fluffle/code/Bunnyhug/bunhug/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at module.exports (/home/fluffle/code/Bunnyhug/bunhug/node_modules/import-fresh/index.js:28:9)
+    at loadJs (/home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/loaders.js:9:18)
+    at Explorer.loadFileContent (/home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/createExplorer.js:230:12)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/createExplorer.js:252:21
+ @ ./node_modules/bootstrap/dist/css/bootstrap.min.css 2:26-147
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./node_modules/bootstrap/dist/css/bootstrap.css (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/bootstrap/dist/css/bootstrap.css)
+Module build failed (from ./node_modules/postcss-loader/src/index.js):
+Error: Cannot find module 'tailwindcss'
+Require stack:
+- /home/fluffle/code/Bunnyhug/bunhug/postcss.config.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/import-fresh/index.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/loaders.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/createExplorer.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/index.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-load-config/src/index.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/postcss-loader/src/index.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/loader-runner/lib/loadLoader.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/loader-runner/lib/LoaderRunner.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/lib/NormalModule.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/lib/NormalModuleFactory.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/lib/Compiler.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/lib/webpack.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/utils/validate-options.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/cli.js
+- /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (/home/fluffle/code/Bunnyhug/bunhug/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/fluffle/code/Bunnyhug/bunhug/postcss.config.js:11:5)
+    at Module._compile (/home/fluffle/code/Bunnyhug/bunhug/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (/home/fluffle/code/Bunnyhug/bunhug/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at module.exports (/home/fluffle/code/Bunnyhug/bunhug/node_modules/import-fresh/index.js:28:9)
+    at loadJs (/home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/loaders.js:9:18)
+    at Explorer.loadFileContent (/home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/createExplorer.js:230:12)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/cosmiconfig/dist/createExplorer.js:252:21
+ @ ./node_modules/bootstrap/dist/css/bootstrap.css 2:26-143
+ @ ./app/javascript/packs/application.js
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6984.1ms | Allocations: 5723)
+Completed 200 OK in 6992ms (Views: 6987.5ms | ActiveRecord: 0.0ms | Allocations: 8354)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 00:40:59 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 171)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4400)
+Completed 200 OK in 35ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 7031)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 01:11:48 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 171)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+ReferenceError: webpack is not defined
+    at Object.<anonymous> (/home/fluffle/code/Bunnyhug/bunhug/config/webpack/environment.js:3:43)
+    at Module._compile (/home/fluffle/code/Bunnyhug/bunhug/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (/home/fluffle/code/Bunnyhug/bunhug/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/fluffle/code/Bunnyhug/bunhug/config/webpack/development.js:3:21)
+    at Module._compile (/home/fluffle/code/Bunnyhug/bunhug/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (/home/fluffle/code/Bunnyhug/bunhug/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/home/fluffle/code/Bunnyhug/bunhug/node_modules/yargs/yargs.js:576:18)
+    at /home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/home/fluffle/code/Bunnyhug/bunhug/node_modules/webpack/bin/webpack.js:156:2)
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1788.9ms | Allocations: 30444)
+Completed 200 OK in 1803ms (Views: 1795.6ms | ActiveRecord: 0.0ms | Allocations: 33074)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 01:13:44 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 171)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 66fe9fc9d777b2205de7
+Version: webpack 4.46.0
+Time: 5600ms
+Built at: 03/19/2021 1:13:52 AM
+                                     Asset       Size       Chunks                         Chunk Names
+        js/0-cdc0b7333b8832904bc5.chunk.js   35.5 KiB            0  [emitted] [immutable]  
+    js/0-cdc0b7333b8832904bc5.chunk.js.map     32 KiB            0  [emitted] [dev]        
+          js/Index-4400da6c9a59232096b0.js   2.33 MiB        Index  [emitted] [immutable]  Index
+      js/Index-4400da6c9a59232096b0.js.map   2.67 MiB        Index  [emitted] [dev]        Index
+    js/application-06400720ab35b725550a.js   3.15 MiB  application  [emitted] [immutable]  application
+js/application-06400720ab35b725550a.js.map   3.36 MiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-06400720ab35b725550a.js js/application-06400720ab35b725550a.js.map
+Entrypoint Index = js/Index-4400da6c9a59232096b0.js js/Index-4400da6c9a59232096b0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 652 bytes {Index} [built]
+[./app/javascript/packs/application.js] 1.1 KiB {application} [built]
+[./app/javascript/routes/Index.jsx] 5.21 KiB {application} {Index} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 274 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'postcss-loader' in '/home/fluffle/code/Bunnyhug/bunhug'
+ @ ./app/javascript/packs/application.js 14:0-36
+
+ERROR in ./app/javascript/packs/Index.jsx
+Module not found: Error: Can't resolve 'postcss-loader' in '/home/fluffle/code/Bunnyhug/bunhug'
+ @ ./app/javascript/packs/Index.jsx 6:0-46
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7461.6ms | Allocations: 15041)
+Completed 200 OK in 7471ms (Views: 7465.4ms | ActiveRecord: 0.0ms | Allocations: 17672)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-19 01:52:55 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 171)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 486e984451a12ebaadbe
+Version: webpack 4.46.0
+Time: 4571ms
+Built at: 03/19/2021 1:53:02 AM
+                                     Asset       Size       Chunks                         Chunk Names
+        js/0-cdc0b7333b8832904bc5.chunk.js   35.5 KiB            0  [emitted] [immutable]  
+    js/0-cdc0b7333b8832904bc5.chunk.js.map     32 KiB            0  [emitted] [dev]        
+          js/Index-92ab7792a903724101f3.js   2.33 MiB        Index  [emitted] [immutable]  Index
+      js/Index-92ab7792a903724101f3.js.map   2.67 MiB        Index  [emitted] [dev]        Index
+    js/application-06400720ab35b725550a.js   3.15 MiB  application  [emitted] [immutable]  application
+js/application-06400720ab35b725550a.js.map   3.36 MiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-06400720ab35b725550a.js js/application-06400720ab35b725550a.js.map
+Entrypoint Index = js/Index-92ab7792a903724101f3.js js/Index-92ab7792a903724101f3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 635 bytes {Index} [built]
+[./app/javascript/packs/application.js] 1.1 KiB {application} [built]
+[./app/javascript/routes/Index.jsx] 5.21 KiB {application} {Index} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 274 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'postcss-loader' in '/home/fluffle/code/Bunnyhug/bunhug'
+ @ ./app/javascript/packs/application.js 14:0-36
+
+ERROR in ./app/javascript/packs/Index.jsx
+Module not found: Error: Can't resolve 'postcss-loader' in '/home/fluffle/code/Bunnyhug/bunhug'
+ @ ./app/javascript/packs/Index.jsx 4:0-46
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6252.0ms | Allocations: 15048)
+Completed 200 OK in 6262ms (Views: 6256.0ms | ActiveRecord: 0.0ms | Allocations: 17679)
+
+

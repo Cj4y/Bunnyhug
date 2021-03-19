@@ -5,25 +5,36 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%# <%= stylesheet_pack_tag( %>
+    <%= stylesheet_link_tag(
+          'application',
+          media: 'all',
+          'data-turbo-track': 'reload') %>
     <%= stylesheet_pack_tag(
           'application',
           media: 'all',
           'data-turbo-track': 'reload') %>
+<%# Uses this a single js development mode%>
+    <%# <%= javascript_include_tag( %>
     <%= javascript_pack_tag(
           'application',
           'data-turbo-track': 'reload') %>
     
-    <!--Tell Turbo to watch for changes in asset file name and hard reload when they change
-    Good in Rails because CSS and JS typically have a content hash appended to their filenames-->
+    <%# <!--Tell Turbo to watch for changes in asset file name and hard reload when they change
+    Good in Rails because CSS and JS typically have a content hash appended to their filenames--> %>
+    <%= javascript_pack_tag 'Index' %>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     </head>
 
   <body>
-    <%= render "shared/navigation" %>
-    <%= render "shared/flash" %>
-    <div class="container">
+    <%# <%= render "shared/navigation" %>
+    <%# <%= render "shared/flash" %>
+    <%# <div class="container"> %>
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on top
+    </button>
       <%= yield %>
-    </div>
+    <%# </div> %>
   </body>
 </html>
