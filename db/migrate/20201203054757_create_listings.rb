@@ -1,15 +1,16 @@
-class CreateListings < ActiveRecord::Migration[6.0]
+class CreateListings < ActiveRecord::Migration[6.1]
   def change
     create_table :listings do |t|
       t.string :title
-      t.references :user, null: false, foreign_key: true
+      t.string :slug
       t.string :category
       t.string :image_url
       t.text :details
-      t.boolean :active, default: true
-      t.boolean :flagged, default: false
+      t.boolean :active
+      t.boolean :flagged
       t.string :colour
       t.decimal :price, precision: 8, scale: 2
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end

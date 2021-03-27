@@ -10,10 +10,10 @@ class CreateOrders < ActiveRecord::Migration[6.0]
     # create_table :users do |t|
     #   t.belongs_to :order
     #   t.integer :order_id
-    #   t.integer :user_id 
+    #   t.integer :user_id
     # end
-    #transaction has_one :order :through => :user 
-    #includes transaction, order and through table here 
+    #transaction has_one :order :through => :user
+    #includes transaction, order and through table here
     create_table: transactions do |t|
       t.integer :transaction_id
       t.timestamps
