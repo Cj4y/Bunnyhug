@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :carts
   devise_for :users
   authenticated :user do
     root "pages#listing_display", as: :authenticated_root
