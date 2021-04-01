@@ -22,10 +22,10 @@ const Wrapper = styled.div`
   margin-right: auto;
 `
 
-const Column = styled.div`
+const ItemColumn = styled.div`
   background: #fff;
-  max-width: 50%;
-  width: 50%;
+  max-width: 80%;
+  width: 80%;
   float: left;
   height: 100vh;
   overflow-x: scroll;
@@ -35,13 +35,22 @@ const Column = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-
-  &:last-child {
-    background: black;
-    border-top: 1px solid rgba(255,255,255,0.5);
-  }
 `
 
+const SellerColumn = styled.div`
+  background: #fff;
+  max-width: 20%;
+  width: 20%;
+  float: left;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`
 const Main = styled.div`
   padding-left: 60px;
 `
@@ -51,45 +60,38 @@ const Listing = (props) => {
   const [loaded, setLoaded] = useState(false)
 
   useEffect(()=>{
-    const slug = props.match.params.slug
-    const url = `/api/v1/listings/${slug}`
-    console.log(slug)
-    axios.get(url)
-    .then(resp=>{
-      setListing(resp.data)
-      //data is now loaded
-      setLoaded(true)
-    })
-    .catch(resp => console.log(resp))
+     const slug = props.match.params.slug
+     const url = `/api/v1/listings/${slug}`
+    // console.log(slug)
+     axios.get(url)
+     .then(resp=>{
+        console.log(resp)
+        setListing(resp.data.data)
+    //   //data is now loaded
+        setLoaded(true)
+     })
+     .catch(data => console.log('Error', data))
+    //console.log(props)
   }, [])
 
   return(
 
     <Wrapper>
-
+      <p>hi</p>
         {/* //make sure the requested data is loaded before rendering */}
-      {/* //  loaded && */}
-        {/* <Fragment> */}
-          <Column>
-            {/* <Main> */}
-
-
-
-            {loaded &&
+        {  loaded &&
+          <Fragment>
+            <ItemColumn>
               <ListingPlate
-                attributes={listing.data.attributes}
-
+                attributes={listing.attributes}
               />
-            }
-
-            {/* </Main> */}
-          </Column>
-          <Column>
-          {/* attributes={listing.data.attributes} average={average}> */}
-            Seller info
-          </Column>
-        {/* </Fragment> */}
-      {/* } */}
+            </ItemColumn>
+            <SellerColumn>
+            {/* attributes={listing.data.attributes} average={average}> */}
+            <h3>Seller info</h3>
+            </SellerColumn>
+          </Fragment>
+        }
       {/* TODO add "listing not found if error*/}
     </Wrapper>
   )

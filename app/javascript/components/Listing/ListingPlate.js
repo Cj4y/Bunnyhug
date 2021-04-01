@@ -9,8 +9,6 @@ const Wrapper = styled.div`
     margin-right: 10px;
     height: 60px;
     width: 60px;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 100%;
     margin-bottom: -8px;
   }
 `
@@ -27,14 +25,16 @@ const ScoreOutOf = styled.div`
 `
 
 const ListingPlate = ({attributes, ...props}) => {
-  const { image_url, title, price } = attributes
+  const { title, slug, image_url, price, user_id } = attributes
 
   return (
     <Wrapper>
         {/* clickable images section */}
         <h1><img src={image_url} height="50" width="50" alt={title} /> {title}</h1>
         <h2>{price}</h2>
+        <button className="btn btn-outline-success btn-block" to={"/listings/" + slug}>Add to cart</button>
         {/* TODO description and tag section */}
+        <h3>Posted by: {user_id}</h3>
     </Wrapper>
   )
 }

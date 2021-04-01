@@ -14,8 +14,8 @@ class Api::V1::ListingsController < ApplicationController
     else
       handle_unauthorized
     end
-  end    
-  
+  end
+
   def create
     @listing= current_user.listings.build(listing_params)
 
@@ -31,9 +31,9 @@ class Api::V1::ListingsController < ApplicationController
     else
       handle_unauthorized
     end
-    
+
   end
-  
+
   def update
     if authorized?
       respond_to do |format|
@@ -61,7 +61,7 @@ class Api::V1::ListingsController < ApplicationController
   end
 
   private
-    
+
     def set_listing
       @listing= Listing.find(params[:id])
     end
@@ -80,5 +80,5 @@ class Api::V1::ListingsController < ApplicationController
 
     def listing_params
       params.require(:listing).permit(:title, :active)
-    end    
+    end
 end

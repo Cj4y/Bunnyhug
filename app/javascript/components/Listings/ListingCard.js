@@ -13,8 +13,6 @@ const ListingImage = styled.div`
   img {
     height: 50px;
     width: 50px;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 100%;
   }
 `
 
