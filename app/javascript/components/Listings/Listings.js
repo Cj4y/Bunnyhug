@@ -36,28 +36,29 @@ const Header = styled.div`
 
 
 const Listings = () => {
-const [listings, setListings] = useState([]);
+  // use react hook "useState" for listings
+  const [listings, setListings] = useState([]);
 
-useEffect(() => {
-  //GET points this path of Rails api
-  axios.get('/api/v1/listings.json')
-    //successful
-    .then( function(resp){
-      setListings(resp.data.data)
-    })
-    //error state
-    .catch( function(resp){console.log(resp)})
-    //effect only fired if number of listings changes
-}, [listings.length])
+  useEffect(() => {
+    //GET points this path of Rails api
+    axios.get('/api/v1/listings.json')
+      //successful
+      .then( function(resp){
+        setListings(resp.data.data)
+      })
+      //error state
+      .catch( function(resp){console.log(resp)})
+      //effect only fired if number of listings changes
+  }, [listings.length])
 
-const grid = listings.map(items=>{
-  return(
-  <ListingCard
-  key={items.attributes.title}
-  attributes={items.attributes}
-  />
-  )
-})
+  const grid = listings.map(items=>{
+    return(
+    <ListingCard
+    key={items.attributes.title}
+    attributes={items.attributes}
+    />
+    )
+  })
 
   return(
     <Fragment>

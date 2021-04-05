@@ -92,11 +92,11 @@ const Navbar = (props) => {
                   isAuth ?
                   <Fragment>
                     <li className="nav-item"><Link to="/">Home</Link></li>
-                    <li className="nav-item"><a onClick={logout} >Log Out</a></li>
+                    <li className="nav-item"><a onClick={logout} >Log out</a></li>
                   </Fragment> :
                   <Fragment>
                     <li className="nav-item"><Link to="/login">Login</Link></li>
-                    <li className="nav-item"><Link to="/register">Signup</Link></li>
+                    <li className="nav-item"><Link to="/register">Sign up</Link></li>
                   </Fragment>
                 }
                 </ul>
