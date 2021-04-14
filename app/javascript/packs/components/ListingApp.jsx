@@ -30,11 +30,11 @@ class ListingApp extends React.Component {
     }
     //request items at index /api/v1/listings
     getListings() {
-      
+
     //if successful, load data into state
         axios
             .get('/api/v1/listings') //or "/broken-end-point"
-            .then(response => { 
+            .then(response => {
                 this.clearErrors()
                 this.setState({ isLoading: true })
                 const listings = response.data  //bind to the data
@@ -78,7 +78,7 @@ class ListingApp extends React.Component {
                 )}
                 {!this.state.isLoading && (
                     <>
-                        <ListingForm 
+                        <ListingForm
                             createListing={this.createListing}
                             handleErrors={this.handleErrors}
                             clearErrors={this.clearErrors}

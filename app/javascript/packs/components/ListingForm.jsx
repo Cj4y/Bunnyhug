@@ -17,7 +17,7 @@ class ListingForm extends React.Component {
       .post('/api/v1/listings', {
         listing: {
           title: this.titleRef.current.value, //create to access input data
-          active: true, //user will not add an inactive listing 
+          active: true, //user will not add an inactive listing
         },
       })
       .then(response => {
@@ -33,7 +33,7 @@ class ListingForm extends React.Component {
 
   render() {
     return (
-        //try to subit before create
+        //try to submit before create
       <form onSubmit={this.handleSubmit} className="my-3">
         <div className="form-row">
           <div className="form-group col-md-8">
@@ -81,7 +81,7 @@ class ListingForm extends React.Component {
               className="form-control"
               id="colour"
               placeholder="Colour"
-            /> 
+            />
             <input
               type="text"
               name="price"
@@ -99,7 +99,7 @@ class ListingForm extends React.Component {
           </div>
         </div>
       </form>
-      
+
     )
   }
 }
