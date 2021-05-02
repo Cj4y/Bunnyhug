@@ -13,7 +13,6 @@ const Header = props =>{
 
 
             </div>
-            <h1>hi!!!!!!</h1>
         </header>
     );
 };
