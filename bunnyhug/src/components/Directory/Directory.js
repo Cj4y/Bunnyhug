@@ -1,7 +1,8 @@
 import React from 'react';
 import './styles.scss';
+
 import explore from '../../assets/explore.png';
-import consign from '../../assets/consign.jpg';
+import consign from '../../assets/consign2.jpg';
 
 const Directory = props =>{
     return (
