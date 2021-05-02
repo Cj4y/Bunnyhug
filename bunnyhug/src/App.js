@@ -2,8 +2,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/Header'
-import './default.css';
+import Header from './components/Header/Header'
+import './default.scss';
 function App() {
   return (
     <div className="App">
