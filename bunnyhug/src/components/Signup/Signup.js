@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, Link } from 'react-router-dom';
+
+import FormInput from './../forms/FormInput';
+import Button from './../forms/Button';
+
 import './styles.scss';
 
 const Signup = props => {
@@ -9,21 +13,22 @@ const Signup = props => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [errors, setErrors] = useState([]);
-    useEffect(() => {
-        if (currentUser) {
-          reset();
-          history.push('/');
-        }
 
-      }, []);
+    // useEffect(() => {
+    //     if (currentUser) {
+    //       reset();
+    //       history.push('/');
+    //     }
 
-      useEffect(() => {
-        if (Array.isArray(userErr) && userErr.length > 0) {
-          setErrors(userErr);
-        }
+    //   }, []);
 
-      }, []);
+    //   useEffect(() => {
+    //     if (Array.isArray(userErr) && userErr.length > 0) {
+    //       setErrors(userErr);
+    //     }
 
+    //   }, []);
+// TODO handleFormSubmit()
 
     return (
         <div className="formWrapper">
@@ -38,7 +43,7 @@ const Signup = props => {
                     })}
                 </ul>
             )}
-            <form onSubmit={handleFormSubmit}>
+            <form>
                 <FormInput
                     type="text"
                     name="displayName"
