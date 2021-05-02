@@ -26,7 +26,18 @@ const Signup = props => {
 
 
     return (
-        <div className="formWrap">
+        <div className="formWrapper">
+            {errors.length > 0 && (
+                <ul>
+                    {errors.map((err, index) => {
+                    return (
+                        <li key={index}>
+                        {err}
+                        </li>
+                    );
+                    })}
+                </ul>
+            )}
             <form onSubmit={handleFormSubmit}>
                 <FormInput
                     type="text"
