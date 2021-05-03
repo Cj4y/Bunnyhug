@@ -1,6 +1,7 @@
 //import react hooks
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+//import react  router dom hook
 import { useHistory, Link } from 'react-router-dom';
 import { resetPasswordStart, resetUserState } from './../../redux/User/user.actions';
 import './styles.scss';
@@ -18,6 +19,7 @@ const mapState = ({ user }) => ({
 const EmailPassword = props => {
   //dispatch is a redux hook to dispatch the redux action
   const dispatch = useDispatch();
+  //use to redirect the user
   const history = useHistory();
   //grab the state case (see user.types) using redux useSelector hook
   const { resetPasswordSuccess, userErr } = useSelector(mapState);
@@ -35,7 +37,7 @@ const EmailPassword = props => {
     }
   }, [resetPasswordSuccess]);
 
-  //add error state
+  //check if array contains an error, pass the value of the error
   useEffect(() => {
     if (Array.isArray(userErr) && userErr.length > 0) {
       setErrors(userErr);

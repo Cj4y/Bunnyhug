@@ -1,13 +1,17 @@
+//all effect allows to resolve effects in parallel, and call is for a single function
 import { takeLatest, call, all, put } from 'redux-saga/effects';
+//import helper functions from firebase utils file
 import { auth, handleUserProfile, getCurrentUser, GoogleProvider } from './../../firebase/utils';
 import userTypes from './user.types';
 import { signInSuccess, signOutUserSuccess, resetPasswordSuccess, userError } from './user.actions';
 import { handleResetPasswordAPI } from './user.helpers';
 
+//helper function is get snapshot connects to firebase utils file
 export function* getSnapshotFromUserAuth(user, additionalData = {}) {
   try {
     const userRef = yield call(handleUserProfile, { userAuth: user, additionalData });
     const snapshot = yield userRef.get();
+    //pass sagas in array
     yield put(
       signInSuccess({
         id: snapshot.id,
@@ -21,9 +25,11 @@ export function* getSnapshotFromUserAuth(user, additionalData = {}) {
 }
 
 //sign in type is regular email and pasword
+//payload is from the Signin.js component, submitted by user
 export function* emailSignIn({ payload: { email, password } }) {
   try {
     const { user } = yield auth.signInWithEmailAndPassword(email, password);
+    //grab user from helper function
     yield getSnapshotFromUserAuth(user);
 
   } catch (err) {
@@ -31,6 +37,7 @@ export function* emailSignIn({ payload: { email, password } }) {
   }
 }
 
+//emailSignIn then called to root saga
 export function* onEmailSignInStart() {
   yield takeLatest(userTypes.EMAIL_SIGN_IN_START, emailSignIn);
 }
@@ -97,6 +104,7 @@ export function* onSignUpUserStart() {
 }
 
 export function* resetPassword({ payload: { email }}) {
+  //allow promise to resolve or reect with error using user.helpers
   try {
     yield call(handleResetPasswordAPI, email);
     yield put(
@@ -129,7 +137,7 @@ export function* onGoogleSignInStart() {
   yield takeLatest(userTypes.GOOGLE_SIGN_IN_START, googleSignIn);
 }
 
-
+//call actions
 export default function* userSagas() {
   yield all([
     call(onEmailSignInStart),

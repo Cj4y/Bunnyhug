@@ -17,6 +17,7 @@ const mapState = ({ user }) => ({
 const SignIn = props => {
   //dispatch is a redux hook to dispatch the redux action
   const dispatch = useDispatch();
+  //use to redirect the user
   const history = useHistory();
   //grab the state case (see user.types) using redux useSelector hook
   const { currentUser } = useSelector(mapState);

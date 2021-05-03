@@ -1,5 +1,6 @@
 //import react hooks
 import React, { useState, useEffect } from 'react';
+//import redux hooks
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory, Link } from 'react-router-dom';
 import { signUpUserStart } from './../../redux/User/user.actions';
@@ -17,6 +18,7 @@ const mapState = ({ user }) => ({
 const Signup = props => {
   //dispatch is a redux hook to dispatch the redux action
   const dispatch = useDispatch();
+  //use to redirect the user
   const history = useHistory();
   //grab the state case (see user.types) using redux useSelector hook
   const { currentUser, userErr } = useSelector(mapState);
@@ -38,7 +40,8 @@ const Signup = props => {
 
   }, [currentUser]);
 
-  //set errors array if it does not already exist
+  //is the array valid?
+  //check if array contains an error, pass the value of the error
   useEffect(() => {
     if (Array.isArray(userErr) && userErr.length > 0) {
       setErrors(userErr);

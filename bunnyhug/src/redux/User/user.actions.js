@@ -4,6 +4,7 @@ import userTypes from './user.types';
 //actions are objects with type and payload
 //use to update the state
 
+//
 export const emailSignInStart = userCredentials => ({
   type: userTypes.EMAIL_SIGN_IN_START,
   payload: userCredentials
@@ -11,6 +12,7 @@ export const emailSignInStart = userCredentials => ({
 
 export const signInSuccess = user => ({
   type: userTypes.SIGN_IN_SUCCESS,
+  //payload returns from firebase
   payload: user
 });
 

@@ -9,7 +9,9 @@ import { persistStore } from 'redux-persist';
 import rootReducer from './rootReducer';
 import rootSaga from './rootSaga';
 
+//create instance of saga that updates the store
 const sagaMiddleware = createSagaMiddle();
+//add thunk and saga to middle wares
 export const middlewares = [thunk, sagaMiddleware, logger];
 
 //create store with root reducer and middlewares
