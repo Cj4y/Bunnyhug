@@ -1,12 +1,15 @@
 import userTypes from './user.types';
 
+//set initial user state
 const INITIAL_STATE = {
   currentUser: null,
   resetPasswordSuccess: false,
   userErr: []
 };
 
+//create user reducer that accepts state and action
 const userReducer = (state = INITIAL_STATE, action) => {
+  //four possibilites of type
   switch (action.type) {
     case userTypes.SIGN_IN_SUCCESS:
       return {

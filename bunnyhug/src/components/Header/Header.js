@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation  } from 'react-router-dom';
+//use redux for user state
 import { useSelector, useDispatch } from 'react-redux';
 import { signOutUserStart } from './../../redux/User/user.actions';
 import { selectCartItemsCount } from './../../redux/Cart/cart.selectors';
@@ -7,6 +8,8 @@ import './styles.scss';
 
 import Logo from './../../assets/logo.png';
 
+//map the state (no props needed) from userReducer object (only works if there is a user payload)
+//currentUser then uses the redux hook "useSelector"
 const mapState = (state) => ({
   currentUser: state.user.currentUser,
   totalNumCartItems: selectCartItemsCount(state)
@@ -14,9 +17,9 @@ const mapState = (state) => ({
 
 //props to access current user information
 const Header = props => {
-
     const [activeMenu, setActiveMenu] = useState(false);
     const dispatch = useDispatch();
+    //grab user state as inital value from mapState
     const { currentUser, totalNumCartItems } = useSelector(mapState);
     const location = useLocation();
 

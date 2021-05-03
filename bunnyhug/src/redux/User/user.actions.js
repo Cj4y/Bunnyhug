@@ -1,6 +1,8 @@
 import userTypes from './user.types';
 
 //user actions/ events to do with authentication
+//actions are objects with type and payload
+//use to update the state
 
 export const emailSignInStart = userCredentials => ({
   type: userTypes.EMAIL_SIGN_IN_START,
