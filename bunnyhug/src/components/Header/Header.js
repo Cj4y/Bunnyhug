@@ -3,6 +3,7 @@ import { Link, useLocation  } from 'react-router-dom';
 //use redux for user state
 import { useSelector, useDispatch } from 'react-redux';
 import { signOutUserStart } from './../../redux/User/user.actions';
+//import cart items selector to display in top bar
 import { selectCartItemsCount } from './../../redux/Cart/cart.selectors';
 import './styles.scss';
 
@@ -50,7 +51,7 @@ const Header = props => {
                     <ul>
                         <li>
                             <Link to="/cart"> Cart
-                                {/* Cart ({totalNumCartItems}) */}
+                                Cart ({totalNumCartItems})
                                 <i class="fas fa-shopping-basket"></i>
                             </Link>
                         </li>
