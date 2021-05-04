@@ -16,10 +16,10 @@ const VerticalNav = ({ children }) => {
 
   return (
     <div className="verticalNav">
-
+    {/* show the user name and profile picture associated */}
       <UserProfile {...configUserProfile} />
-
       <div className="menu">
+      {/* add the menu items from AdminLayout*/}
         {children}
       </div>
     </div>

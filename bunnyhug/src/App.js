@@ -12,11 +12,13 @@ import WithAuth from './highOrderComponent/withAuth';
 import WithAdminAuth from './highOrderComponent/withAdminAuth';
 
 //import components
-import Homepage from './components/Pages/Homepage/Homepage'
-import Register from './components/Pages/Register/Register'
-import Login from './components/Pages/Login/Login'
+import Homepage from './Pages/Homepage/Homepage'
+import Register from './Pages/Register/Register'
+import Login from './Pages/Login/Login'
 import Signin from './components/Signin'
 import RecoverAccount from './pages/RecoverAccount';
+import Search from './pages/Search';
+import ProductDetails from './pages/ProductDetails';
 
 //import layouts
 import MainLayout from './layouts/MainLayout';
@@ -77,24 +79,40 @@ const App = props => {
         )} />
         <Route path="/dashboard" render={() => (
           <WithAuth>
-            {/* <DashboardLayout>
+            <DashboardLayout>
               <Dashboard />
-            </DashboardLayout> */}
+            </DashboardLayout>
           </WithAuth>
         )} />
         <Route path="/order/:orderID" render={() => (
           <WithAuth>
-            {/* <DashboardLayout>
+            <DashboardLayout>
               <Order />
-            </DashboardLayout> */}
+            </DashboardLayout>
           </WithAuth>
         )} />
         <Route path="/admin" render={() => (
           <WithAdminAuth>
-            {/* <AdminLayout>
+            <AdminLayout>
               <Admin />
-            </AdminLayout> */}
+            </AdminLayout>
           </WithAdminAuth>
+        )} />
+        <Route exact path="/search" render={() => (
+          <MainLayout>
+            <Search />
+          </MainLayout>
+        )} />
+        {/* dynamically apply the filter name as :filterType */}
+        <Route path="/search/:filterType" render={() => (
+          <MainLayout>
+            <Search />
+          </MainLayout>
+        )} />
+        <Route path="/product/:productID" render={() => (
+          <MainLayout>
+            <ProductDetails />
+          </MainLayout>
         )} />
       </Switch>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 
-const FormSelector = ({ options, defaultValue, handleChange, label, ...otherProps }) => {
+const FormSelecter = ({ options, defaultValue, handleChange, label, ...otherProps }) => {
   if (!Array.isArray(options) || options.length < 1) return null;
 
   return (
@@ -12,7 +12,7 @@ const FormSelector = ({ options, defaultValue, handleChange, label, ...otherProp
         </label>
       )}
 
-      <select className="formSelector" value={defaultValue} onChange={handleChange} {...otherProps}>
+      <select className="formSelecter" value={defaultValue} onChange={handleChange} {...otherProps}>
         {options.map((option, index) => {
           const { value, name } = option;
 
@@ -25,4 +25,4 @@ const FormSelector = ({ options, defaultValue, handleChange, label, ...otherProp
   );
 }
 
-export default FormSelector;
+export default FormSelecter;

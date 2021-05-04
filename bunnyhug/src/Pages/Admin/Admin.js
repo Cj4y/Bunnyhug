@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addProductStart, fetchProductsStart, deleteProductStart } from './../../redux/Products/products.actions';
-import Modal from './../../components/Modal';
+import Tile from './../../components/ProductTile';
 import FormInput from './../../components/forms/FormInput';
-import FormSelect from './../../components/forms/FormSelect';
+import FormSelector from './../../components/forms/FormSelector';
 import Button from './../../components/forms/Button';
 import LoadMore from './../../components/LoadMore';
 import CKEditor from 'ckeditor4-react';
@@ -18,30 +18,33 @@ const Admin = props => {
   //dispatch is a redux hook to dispatch the redux action
   const dispatch = useDispatch();
   //set react hooks for manipulating an object
-  const [hideModal, setHideModal] = useState(true);
+  const [hideTile, setHideTile] = useState(true);
   const [productCategory, setProductCategory] = useState('mens');
   const [productName, setProductName] = useState('');
   const [productThumbnail, setProductThumbnail] = useState('');
   const [productPrice, setProductPrice] = useState(0);
+  //for CKeditor
   const [productDesc, setProductDesc] = useState('');
 
   const { data, queryDoc, isLastPage } = products;
 
+  //dispatch action that takes latest from products.saga
   useEffect(() => {
     dispatch(
       fetchProductsStart()
     );
   }, []);
 
-  const toggleModal = () => setHideModal(!hideModal);
+  const toggleTile = () => setHideTile(!hideTile);
 
-  const configModal = {
-    hideModal,
-    toggleModal
+  const configTile = {
+    hideTile,
+    toggleTile
   };
 
+  //reset form inputs to blank default
   const resetForm = () => {
-    setHideModal(true);
+    setHideTile(true);
     setProductCategory('mens');
     setProductName('');
     setProductThumbnail('');
@@ -49,6 +52,7 @@ const Admin = props => {
     setProductDesc('');
   };
 
+  //submit with payload of inputted data by user
   const handleSubmit = e => {
     e.preventDefault();
 
@@ -84,14 +88,14 @@ const Admin = props => {
       <div className="callToActions">
         <ul>
           <li>
-            <Button onClick={() => toggleModal()}>
+            <Button onClick={() => toggleTile()}>
               Add new product
             </Button>
           </li>
         </ul>
       </div>
 
-      <Modal {...configModal}>
+      <Tile {...configTile}>
         <div className="addNewProductForm">
           <form onSubmit={handleSubmit}>
 
@@ -99,32 +103,24 @@ const Admin = props => {
               Add new product
             </h2>
 
-            <FormSelect
+            <FormSelector
               label="Category"
-              options={[{
-                value: "mens",
-                name: "Mens"
-              }, {
-                value: "womens",
-                name: "Womens"
-              }]}
+              options={[{value: "mens", name: "Mens"},
+              {value: "womens", name: "Womens"}]}
               handleChange={e => setProductCategory(e.target.value)}
             />
-
             <FormInput
               label="Name"
               type="text"
               value={productName}
               handleChange={e => setProductName(e.target.value)}
             />
-
             <FormInput
               label="Main image URL"
               type="url"
               value={productThumbnail}
               handleChange={e => setProductThumbnail(e.target.value)}
             />
-
             <FormInput
               label="Price"
               type="number"
@@ -134,7 +130,7 @@ const Admin = props => {
               value={productPrice}
               handleChange={e => setProductPrice(e.target.value)}
             />
-
+            {/* wysiwyg editor */}
             <CKEditor
               onChange={evt => setProductDesc(evt.editor.getData())}
             />
@@ -147,7 +143,7 @@ const Admin = props => {
 
           </form>
         </div>
-      </Modal>
+      </Tile>
 
       <div className="manageProducts">
 
@@ -181,7 +177,7 @@ const Admin = props => {
                             {productName}
                           </td>
                           <td>
-                            £{productPrice}
+                            ${productPrice}
                           </td>
                           <td>
                             <Button onClick={() => dispatch(deleteProductStart(documentID))}>
