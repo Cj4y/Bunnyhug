@@ -81,7 +81,7 @@ export function* signUpUser({ payload: {
 } }) {
 
   if (password !== confirmPassword) {
-    const err = ['Password Don\'t match'];
+    const err = ['Passwords don\'t match'];
     yield put(
       userError(err)
     );

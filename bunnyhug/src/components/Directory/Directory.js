@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss';
+import { Link } from 'react-router-dom';
 
 import explore from '../../assets/explore.png';
 import consign from '../../assets/consign2.jpg';
@@ -13,7 +14,9 @@ const Directory = props =>{
                         backgroundImage: `url(${explore})`
                     }}
                 >
-                    <a>Explore</a>
+                <Link to="/search/">
+                    Explore
+                </Link>
                 </div>
 
                 <div className="pathway"
@@ -22,7 +25,9 @@ const Directory = props =>{
                     }}
 
                 >
-                    <a>Sell</a>
+                <Link to="/admin/">
+                    Sell
+                </Link>
                 </div>
 
             </div>

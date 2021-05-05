@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-//import userIMG from './../../assets/user.png';
+import userIMG from './../../assets/profile.png';
 
 const UserProfile = props => {
   const { currentUser } = props;

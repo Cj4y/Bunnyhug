@@ -66,6 +66,7 @@ const Signup = props => {
       password,
       confirmPassword
     }));
+    history.push('/');
   }
 
   //set the headline in this reusable component
@@ -125,7 +126,7 @@ const Signup = props => {
                 <div className="links">
                     <Link to="/login">Log in</Link>
                     {` | `}
-                    <Link to="/recovery">Reset Password</Link>
+                    <Link to="/recover-account">Reset Password</Link>
                 </div>
             </div>
         </AuthWrapper>

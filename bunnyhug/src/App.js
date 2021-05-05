@@ -81,7 +81,7 @@ const App = props => {
         <Route path="/payment" render={() => (
           <WithAuth>
             <MainLayout>
-              {/* <Payment /> */}
+              <Payment />
             </MainLayout>
           </WithAuth>
         )} />
@@ -120,6 +120,11 @@ const App = props => {
         <Route path="/product/:productID" render={() => (
           <MainLayout>
             <ProductDetails />
+          </MainLayout>
+        )} />
+        <Route path="/cart" render={() => (
+          <MainLayout>
+            <Cart />
           </MainLayout>
         )} />
       </Switch>

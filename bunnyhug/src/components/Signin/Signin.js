@@ -99,7 +99,7 @@ const Signin = props => {
               Register
             </Link>
             {` | `}
-            <Link to="/recovery">
+            <Link to="/recover-account">
               Reset Password
             </Link>
           </div>

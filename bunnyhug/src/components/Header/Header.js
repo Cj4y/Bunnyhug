@@ -44,13 +44,13 @@ const Header = props => {
                 <nav className={`mainMenu ${activeMenu ? 'active' : ''}`}>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/search">Search</Link></li>
+                        <li><Link to="/search">Explore</Link></li>
                     </ul>
                 </nav>
                 <div className="accountAction">
                     <ul>
                         <li>
-                            <Link to="/cart"> Cart
+                            <Link to="/cart">
                                 Cart ({totalNumCartItems})
                                 <i class="fas fa-shopping-basket"></i>
                             </Link>

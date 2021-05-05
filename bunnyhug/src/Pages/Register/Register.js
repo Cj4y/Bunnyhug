@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Signup from '../../components/Signup/Signup';
 
 
-const Registration = props => {
+const Register = props => {
   return <Signup />;
 };
 
-export default Registration;
+export default Register;
