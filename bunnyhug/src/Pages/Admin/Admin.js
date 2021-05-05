@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addProductStart, fetchProductsStart, deleteProductStart } from './../../redux/Products/products.actions';
-import Tile from './../../components/ProductTile';
+import Tile from './../../components/ProductTile/ProductTile';
 import FormInput from './../../components/forms/FormInput';
 import FormSelector from './../../components/forms/FormSelector';
 import Button from './../../components/forms/Button';
-import LoadMore from './../../components/LoadMore';
+import LoadMore from './../../components/LoadMore/LoadMore';
 import CKEditor from 'ckeditor4-react';
 import './styles.scss';
 

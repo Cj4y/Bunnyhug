@@ -7,12 +7,14 @@ import storage from 'redux-persist/lib/storage';
 import userReducer from './User/user.reducer';
 import productsReducer from './Products/products.reducer';
 import cartReducer from './Cart/cart.reducer';
+import ordersReducer from './Orders/orders.reducer';
 
 //combine all reducers
 export const rootReducer = combineReducers({
   user: userReducer,
   productsData: productsReducer,
   cartData: cartReducer,
+  ordersData: ordersReducer,
 });
 
 const configStorage = {
@@ -21,4 +23,4 @@ const configStorage = {
   whitelist: ['cartData']
 };
 
-export default persistReducer(rootReducer);
+export default persistReducer(configStorage, rootReducer);

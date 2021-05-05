@@ -8,6 +8,7 @@ export const checkUserIsAdmin = currentUser => {
   return false;
 }
 
+//create instance of api
 export const apiInstance = axios.create({
   baseURL: ''
 });

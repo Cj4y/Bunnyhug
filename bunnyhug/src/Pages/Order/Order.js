@@ -1,23 +1,26 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getOrderDetails } from './../../redux/Orders/orders.actions';
-import OrderDetails from './../../components/OrderDetails';
+//TODO test
+import { getOrderDetailsStart } from './../../redux/Orders/orders.actions';
+import OrderDetails from './../../components/OrderDetails/OrderDetails';
 
+//grab data from redux store
 const mapState = ({ ordersData }) => ({
   orderDetails: ordersData.orderDetails
 });
 
 const Order = () => {
-
+  //dispatcher of action
   const dispatch = useDispatch();
   const { orderID } = useParams();
   const { orderDetails } = useSelector(mapState);
   const { orderTotal } = orderDetails;
 
+  //dispatch action from orders.action
   useEffect(() => {
       dispatch(
-        getOrderDetails(orderID)
+        getOrderDetailsStart(orderID)
       );
   }, []);
 

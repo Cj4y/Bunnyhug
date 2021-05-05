@@ -6,7 +6,7 @@ import { useHistory, Link } from 'react-router-dom';
 import { resetPasswordStart, resetUserState } from './../../redux/User/user.actions';
 import './styles.scss';
 
-import AuthWrapper from './../AuthWrapper';
+import AuthWrapper from './../AuthWrapper/AuthWrapper';
 import FormInput from './../forms/FormInput';
 import Button from './../forms/Button';
 
@@ -16,7 +16,7 @@ const mapState = ({ user }) => ({
   userErr: user.userErr
 });
 
-const EmailPassword = props => {
+const RecoverEmail = props => {
   //dispatch is a redux hook to dispatch the redux action
   const dispatch = useDispatch();
   //use to redirect the user
@@ -94,4 +94,4 @@ const EmailPassword = props => {
   );
 }
 
-export default EmailPassword;
+export default RecoverEmail;

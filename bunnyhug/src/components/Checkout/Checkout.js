@@ -5,7 +5,7 @@ import { selectCartItems, selectCartTotal } from './../../redux/Cart/cart.select
 import { createStructuredSelector } from 'reselect';
 import './styles.scss';
 import Button from './../forms/Button';
-import Item from './Item';
+import Item from './Item/Item';
 
 const mapState = createStructuredSelector({
   cartItems: selectCartItems,
@@ -16,6 +16,7 @@ const Checkout = ({ }) => {
   const history = useHistory();
   const { cartItems, total } = useSelector(mapState);
 
+  //Notify user if there are no items in their cart
   const errMsg = 'You have no items in your cart.';
 
   return (

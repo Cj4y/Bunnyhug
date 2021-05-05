@@ -7,7 +7,7 @@ import { signOutUserStart } from './../../redux/User/user.actions';
 import { selectCartItemsCount } from './../../redux/Cart/cart.selectors';
 import './styles.scss';
 
-import Logo from './../../assets/logo.png';
+import logo from './../../assets/cover.png';
 
 //map the state (no props needed) from userReducer object (only works if there is a user payload)
 //currentUser then uses the redux hook "useSelector"

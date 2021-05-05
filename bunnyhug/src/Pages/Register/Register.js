@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Signup from '../../Signup/Signup';
+import Signup from '../../components/Signup/Signup';
 
 
 const Registration = props => {

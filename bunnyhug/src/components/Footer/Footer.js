@@ -7,7 +7,6 @@ const Footer = props => {
         <footer className="footer">
             <div className="wrapper">
                 © Bunnyhug 2021
-
             </div>
 
         </footer>

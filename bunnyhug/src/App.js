@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+
 //import react hook
 import React, { useEffect } from 'react';
 import {Switch, Route} from 'react-router-dom';
@@ -15,12 +15,20 @@ import WithAdminAuth from './highOrderComponent/withAdminAuth';
 import Homepage from './Pages/Homepage/Homepage'
 import Register from './Pages/Register/Register'
 import Login from './Pages/Login/Login'
-import Signin from './components/Signin'
-import RecoverAccount from './pages/RecoverAccount';
-import Search from './pages/Search';
-import ProductDetails from './pages/ProductDetails';
+import Signin from './components/Signin/Signin'
+import RecoverAccount from './Pages/RecoverAccount/RecoverAccount';
+import Search from './Pages/Search/Search';
+import ProductDetails from './Pages/ProductDetails/ProductDetails';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import Admin from './Pages/Admin/Admin';
+import Cart from './Pages/Cart/Cart';
+import Payment from './Pages/Payment/Payment';
+import Order from './Pages/Order/Order';
+
 
 //import layouts
+import AdminLayout from './layouts/AdminLayout';
+import DashboardLayout from './layouts/DashboardLayout';
 import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout'
 

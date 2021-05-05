@@ -6,7 +6,7 @@ import { emailSignInStart, googleSignInStart } from './../../redux/User/user.act
 
 import './styles.scss';
 
-import AuthWrapper from './../AuthWrapper';
+import AuthWrapper from '../AuthWrapper/AuthWrapper';
 import FormInput from './../forms/FormInput';
 import Button from './../forms/Button';
 
@@ -14,7 +14,7 @@ const mapState = ({ user }) => ({
   currentUser: user.currentUser
 });
 
-const SignIn = props => {
+const Signin = props => {
   //dispatch is a redux hook to dispatch the redux action
   const dispatch = useDispatch();
   //use to redirect the user
@@ -110,4 +110,4 @@ const SignIn = props => {
   );
 }
 
-export default SignIn;
+export default Signin;

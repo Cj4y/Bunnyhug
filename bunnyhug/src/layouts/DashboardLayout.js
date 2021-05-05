@@ -5,9 +5,9 @@ import { useDispatch } from 'react-redux';
 import { signOutUserStart } from './../redux/User/user.actions';
 
 //add components
-import Header from './../components/Header';
-import VerticalNav from './../components/VerticalNav';
-import Footer from './../components/Footer';
+import Header from './../components/Header/Header';
+import VerticalNav from './../components/VerticalNavBar/VerticalNavBar';
+import Footer from './../components/Footer/Footer';
 
 const DashBoardLayout = props => {
   const dispatch = useDispatch();

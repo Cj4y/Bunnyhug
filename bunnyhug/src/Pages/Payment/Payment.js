@@ -1,8 +1,12 @@
 import React from 'react';
-import PaymentDetails from './../../components/PaymentDetails';
+
+//import stripe API key
+import { publishableKey } from './../../stripe/config';
+//import stripe dependencies
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
-import { publishableKey } from './../../stripe/config';
+import PaymentDetails from './../../components/PaymentDetails/PaymentDetails';
+
 
 const stripePromise = loadStripe(publishableKey);
 

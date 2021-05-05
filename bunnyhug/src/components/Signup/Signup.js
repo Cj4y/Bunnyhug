@@ -6,7 +6,7 @@ import { useHistory, Link } from 'react-router-dom';
 import { signUpUserStart } from './../../redux/User/user.actions';
 import './styles.scss';
 
-import AuthWrapper from './../AuthWrapper';
+import AuthWrapper from './../AuthWrapper/AuthWrapper';
 import FormInput from './../forms/FormInput';
 import Button from './../forms/Button';
 

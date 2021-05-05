@@ -1,6 +1,6 @@
 import React from 'react';
 //import './styles.scss';
-import Directory from '../components/Header/Header';
+import Header from '../components/Header/Header';
 
 //props to access current user information
 const MainLayout= props =>{
