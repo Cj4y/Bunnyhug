@@ -19,6 +19,10 @@ const columns = [
   {
     id: 'productPrice',
     label: 'Price'
+  },
+  {
+    id: 'quantity',
+    label: 'Quantity'
   }
 ]
 
