@@ -57,9 +57,9 @@ const Checkout = ({ }) => {
                 <td>
                   <table border="0" cellSpacing="0" cellPadding="0">
                     <tbody>
-                      {cartItems.map((item, pos) => {
+                      {cartItems.map((item, position) => {
                         return (
-                          <tr key={pos}>
+                          <tr key={position}>
                             <td>
                               <Item {...item} />
                             </td>
@@ -81,7 +81,7 @@ const Checkout = ({ }) => {
                               <tr>
                                 <td>
                                 <h3>
-                                  Total: £{total}
+                                  Total: ${total}
                                 </h3>
                                 </td>
                               </tr>

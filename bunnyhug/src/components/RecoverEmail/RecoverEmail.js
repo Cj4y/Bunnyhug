@@ -58,7 +58,7 @@ const RecoverEmail = props => {
   return (
     //pass props to AuthWrapper component
     <AuthWrapper {...configAuthWrapper}>
-      <div className="formWrap">
+      <div className="formWrapper">
         {/* render errors if in error state  */}
         {errors.length > 0 && (
           <ul>

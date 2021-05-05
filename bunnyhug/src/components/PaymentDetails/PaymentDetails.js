@@ -118,14 +118,13 @@ const PaymentDetails = () => {
             orderTotal: total,
             orderItems: cartItems.map(item => {
               const { documentID, productThumbnail, productName,
-                productPrice, quantity } = item;
+                productPrice } = item;
 
               return {
                 documentID,
                 productThumbnail,
                 productName,
                 productPrice,
-                quantity
               };
             })
           }
@@ -286,7 +285,7 @@ const PaymentDetails = () => {
           <CardElement options={configCardElement} />
         </div>
 
-        <Button type="submit">Pay Now</Button>
+        <Button type="submit">Pay now</Button>
       </form>
     </div>
   );

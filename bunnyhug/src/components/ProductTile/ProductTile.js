@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.scss';
 
-const Tile = ({ hideTile, toggleTile, children }) => {
+const ProductTile = ({ hideTile, toggleTile, children }) => {
   if (hideTile) return null;
 
   return [
@@ -14,4 +14,4 @@ const Tile = ({ hideTile, toggleTile, children }) => {
   ];
 }
 
-export default Tile;
+export default ProductTile;

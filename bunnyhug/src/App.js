@@ -26,8 +26,9 @@ import Payment from './Pages/Payment/Payment';
 import Order from './Pages/Order/Order';
 
 
-//import layouts
+//import layouts and admin tool bar
 import AdminLayout from './layouts/AdminLayout';
+import AdminToolbar from './components/AdminToolbar/AdminToolbar';
 import DashboardLayout from './layouts/DashboardLayout';
 import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout'
@@ -36,7 +37,7 @@ import './default.scss';
 
 const App = props => {
 
-  //
+  // dispatch actions
   const dispatch = useDispatch();
 
   //check state of the current user
@@ -48,6 +49,7 @@ const App = props => {
   return (
     // use react-router to link page paths in browser and render expected components
     <div className="App">
+    <AdminToolbar />
       <Switch>
         <Route exact path="/" render={() => (
             <HomepageLayout>
@@ -99,7 +101,7 @@ const App = props => {
             </DashboardLayout>
           </WithAuth>
         )} />
-        <Route path="/admin" render={() => (
+        <Route path="/sell" render={() => (
           <WithAdminAuth>
             <AdminLayout>
               <Admin />

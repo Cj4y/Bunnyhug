@@ -25,7 +25,7 @@ const Directory = props =>{
                     }}
 
                 >
-                <Link to="/admin/">
+                <Link to="/sell/">
                     Sell
                 </Link>
                 </div>

@@ -43,20 +43,12 @@ const Item = (product) => {
             {productName}
           </td>
           <td>
-            <span className="cartBtn"
-              onClick={() => handleReduceItem(product)}>
-              {`< `}
-            </span>
             <span>
               {quantity}
             </span>
-            <span className="cartBtn"
-              onClick={() => handleAddProduct(product)}>
-              {` >`}
-            </span>
           </td>
           <td>
-            £{productPrice}
+            ${productPrice}
           </td>
           <td align="center">
             <span className="cartBtn remove" onClick={() => handleRemoveCartItem(documentID)}>

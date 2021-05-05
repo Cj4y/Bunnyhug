@@ -1,8 +1,8 @@
 import React from 'react';
-import EmailPassword from './../../components/RecoverEmail/RecoverEmail';
+import RecoverEmail from './../../components/RecoverEmail/RecoverEmail';
 
 const RecoverAccount = props => {
-  return <EmailPassword />
+  return <RecoverEmail />
 }
 
 export default RecoverAccount;

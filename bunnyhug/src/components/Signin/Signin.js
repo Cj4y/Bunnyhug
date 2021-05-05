@@ -56,7 +56,7 @@ const Signin = props => {
 
   //set the headline in this reusable component
   const configAuthWrapper = {
-    headline: 'LogIn'
+    headline: 'Log in'
   };
 
   return (

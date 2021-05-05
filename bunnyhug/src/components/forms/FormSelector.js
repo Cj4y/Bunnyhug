@@ -1,18 +1,18 @@
 import React from 'react';
 import './styles.scss';
 
-const FormSelecter = ({ options, defaultValue, handleChange, label, ...otherProps }) => {
+const FormSelector = ({ options, defaultValue, handleChange, label, ...otherProps }) => {
   if (!Array.isArray(options) || options.length < 1) return null;
 
   return (
-    <div className="formRowSelect">
+    <div className="formRowSelector">
       {label && (
         <label>
           {label}
         </label>
       )}
 
-      <select className="formSelecter" value={defaultValue} onChange={handleChange} {...otherProps}>
+      <select className="formSelector" value={defaultValue} onChange={handleChange} {...otherProps}>
         {options.map((option, index) => {
           const { value, name } = option;
 
@@ -25,4 +25,4 @@ const FormSelecter = ({ options, defaultValue, handleChange, label, ...otherProp
   );
 }
 
-export default FormSelecter;
+export default FormSelector;

@@ -13,6 +13,7 @@ const mapState = ({ productsData }) => ({
   products: productsData.products
 });
 
+//user adding or deleting their product listings
 const Admin = props => {
   const { products } = useSelector(mapState);
   //dispatch is a redux hook to dispatch the redux action
@@ -99,9 +100,7 @@ const Admin = props => {
         <div className="addNewProductForm">
           <form onSubmit={handleSubmit}>
 
-            <h2>
-              Add new product
-            </h2>
+            <h2>Add new product</h2>
 
             <FormSelector
               label="Category"
