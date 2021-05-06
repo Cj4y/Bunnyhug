@@ -1,4 +1,9 @@
 import axios from 'axios';
+import { applyMiddleware, createStore } from 'redux';
+import rootReducer from './../redux/rootReducer';
+import { middlewares } from './../redux/createStore';
+
+
 
 export const checkUserIsAdmin = currentUser => {
   if (!currentUser || !Array.isArray(currentUser.userRoles)) return false;
@@ -21,3 +26,15 @@ export const findByTestAttr=(component, attr)=>{
   return wrapper;
 }
 
+//test props
+// export const checkProps = (component, expectedProps) => {
+//   const propsErr = checkPropTypes(component.propTypes, expectedProps, 'props', component.name);
+//   return propsErr;
+// };
+
+//test reducers, actions
+//test store
+export const testStore = (initialState) => {
+  const createStoreWithMiddleware = applyMiddleware(...middlewares)(createStore);
+  return createStoreWithMiddleware(rootReducer, initialState);
+};
