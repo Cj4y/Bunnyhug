@@ -58,7 +58,7 @@ const RecoverEmail = props => {
   return (
     //pass props to AuthWrapper component
     <AuthWrapper {...configAuthWrapper}>
-      <div className="formWrapper">
+      <div className="formWrapper" data-type="formWrapper">
         {/* render errors if in error state  */}
         {errors.length > 0 && (
           <ul>
@@ -76,6 +76,7 @@ const RecoverEmail = props => {
           <FormInput
             type="email"
             name="email"
+            data-type="email"
             value={email}
             placeholder="Email"
             handleChange={e => setEmail(e.target.value)}
@@ -84,7 +85,7 @@ const RecoverEmail = props => {
           <Button type="submit">Email your password</Button>
         </form>
 
-        <div className="links">
+        <div className="links" data-type="links">
           <Link to="/login">Log in</Link>
           {` | `}
           <Link to="/register">Register</Link>

@@ -19,12 +19,24 @@ describe('ProductCard Component',() =>{
 
 
     it('Should render without errors',()=>{
-        const header = findByTestAttr(component, '.header');
-        expect(header.length).toBe(1);
+        const productCard = findByTestAttr(component, 'productCard');
+        expect(productCard.length).toBe(1);
     });
-    it('Should a logo',()=>{
-        const logo = findByTestAttr(component, '.logo');
-        expect(logo.length).toBe(1);
+    it('Should render a hero',()=>{
+        const hero = findByTestAttr(component, 'hero');
+        expect(hero.length).toBe(1);
+    });
+    it('Should render product details',()=>{
+        const productDetails = findByTestAttr(component, 'productDetails');
+        expect(productDetails.length).toBe(1);
+    });
+    it('Should render a add to cart button',()=>{
+        const hero = findByTestAttr(component, 'addToCart');
+        expect(hero.length).toBe(1);
+    });
+    it('Should render a description',()=>{
+        const hero = findByTestAttr(component, 'desc');
+        expect(hero.length).toBe(1);
     });
 
 });

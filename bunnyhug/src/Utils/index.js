@@ -11,7 +11,7 @@ export const checkUserIsAdmin = currentUser => {
 
 //create instance of api
 export const apiInstance = axios.create({
-  baseURL: ''
+  baseURL: 'https://us-central1-bunnyhug-f68c7.cloudfunctions.net/api'
 });
 
 

@@ -1,8 +1,8 @@
 const functions = require("firebase-functions");
 const cors = require('cors');
 const express = require('express');
-const stripe = require('stripe')('');
-const client_secret = 'null'; //TODO
+const stripe = require('stripe')('sk_test_51InTyiCRxOaxQ5LOJSjhkpwGj8uc3PybKKYcODfKCchhEhhdiPOKCNCfUEFdu3DAxMqChGQAdg7fN4YRLe6Xi3GT00AOyN0mFR');
+
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions

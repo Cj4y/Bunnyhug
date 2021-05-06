@@ -49,11 +49,11 @@ const OrderHistory = ({ orders }) => {
   const history = useHistory();
 
   return (
-    <TableContainer>
+    <TableContainer data-type="orderHist">
       <Table>
 
         <TableHead>
-          <TableRow>
+          <TableRow data-type="row">
             {columns.map((column, position) => {
               const { label } = column;
 

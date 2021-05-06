@@ -75,13 +75,13 @@ const ProductResults = ({ }) => {
   };
 
   return (
-    <div className="products">
+    <div className="products" data-type="products">
       <h1>Explore</h1>
 
       <FormSelector {...configFilters} />
 
       {/* render products with applied restrictions */}
-      <div className="productResults">
+      <div className="productResults" data-type="productResults">
         {data.map((product, pos) => {
           const { productThumbnail, productName, productSize, productBrand, productPrice } = product;
           //if product does not contain the required fields, return an error
@@ -100,7 +100,7 @@ const ProductResults = ({ }) => {
 
       {/* load more products if not on last page  */}
       {!isLastPage && (
-        <LoadMore {...configLoadMore} />
+        <LoadMore data-type="loadBtn" {...configLoadMore} />
       )}
 
     </div>

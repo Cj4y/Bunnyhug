@@ -78,7 +78,7 @@ const Signup = props => {
     return (
         //pass props to AuthWrapper component
         <AuthWrapper {...configAuthWrapper}>
-            <div className="formWrapper">
+            <div className="formWrapper" data-type="formWrapper">
             {/* render any error messages in sign up form as li */}
                 {errors.length > 0 && (
                     <ul>
@@ -95,6 +95,7 @@ const Signup = props => {
                     <FormInput
                         type="text"
                         name="displayName"
+                        data-type="displayName"
                         value={displayName}
                         placeholder="Full name"
                         // take the event, and grab the value inputted by user
@@ -103,6 +104,7 @@ const Signup = props => {
                     <FormInput
                         type="email"
                         name="email"
+                        data-type="email"
                         value={email}
                         placeholder="Email"
                         handleChange={e => setEmail(e.target.value)}
@@ -110,6 +112,7 @@ const Signup = props => {
                     <FormInput
                         type="password"
                         name="password"
+                        data-type="password"
                         value={password}
                         placeholder="Password"
                         handleChange={e => setPassword(e.target.value)}
@@ -117,13 +120,14 @@ const Signup = props => {
                     <FormInput
                         type="password"
                         name="confirmPassword"
+                        data-type="confirmPassword"
                         value={confirmPassword}
                         placeholder="Confirm your Password"
                         handleChange={e => setConfirmPassword(e.target.value)}
                     />
                     <Button type="submit">Register</Button>
                 </form>
-                <div className="links">
+                <div className="links" data-type="links">
                     <Link to="/login">Log in</Link>
                     {` | `}
                     <Link to="/recover-account">Reset Password</Link>

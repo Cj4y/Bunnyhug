@@ -56,10 +56,10 @@ const OrderDetails = ({ order }) => {
   }, []);
 
   return (
-    <TableContainer>
+    <TableContainer data-type="orderDetails">
       <Table>
         <TableHead>
-          <TableRow>
+          <TableRow data-type="row">
             {columns.map((col, position) => {
               return (
                 <TableCell

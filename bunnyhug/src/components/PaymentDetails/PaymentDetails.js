@@ -148,15 +148,16 @@ const PaymentDetails = () => {
   };
 
   return (
-    <div className="paymentDetails">
+    <div className="paymentDetails" data-type="paymentDetails">
       <form onSubmit={handleFormSubmit}>
-        <div className="group">
+        <div className="group" data-type="group">
           <h2>Shipping Address</h2>
 
           <FormInput
             required //require prevents submission without data in the input field
             placeholder="Recipient Name"
             name="recipientName"
+            data-type="recipientName"
             handleChange={evt => setRecipientName(evt.target.value)}
             value={recipientName}
             type="text"
@@ -165,6 +166,7 @@ const PaymentDetails = () => {
             required
             placeholder="Line 1"
             name="line1"
+            data-type="line1"
             handleChange={evt => handleShipping(evt)}
             value={shippingAddress.line1}
             type="text"
@@ -180,14 +182,16 @@ const PaymentDetails = () => {
             required
             placeholder="City"
             name="city"
+            data-type="city"
             handleChange={evt => handleShipping(evt)}
             value={shippingAddress.city}
             type="text"
           />
           <FormInput
             required
-            placeholder="State"
+            placeholder="Province"
             name="state"
+            data-type="state"
             handleChange={evt => handleShipping(evt)}
             value={shippingAddress.state}
             type="text"
@@ -196,6 +200,7 @@ const PaymentDetails = () => {
             required
             placeholder="Postal Code"
             name="postal_code"
+            data-type="postal_code"
             handleChange={evt => handleShipping(evt)}
             value={shippingAddress.postal_code}
             type="text"
@@ -203,6 +208,7 @@ const PaymentDetails = () => {
           <div className="formRow checkoutInput">
             <CountryDropdown
               required
+              data-type="country"
               onChange={val => handleShipping({
                 target: {
                   name: 'country',
@@ -222,6 +228,7 @@ const PaymentDetails = () => {
             required
             placeholder="Name on Card"
             name="nameOnCard"
+            data-type="nameOnCard"
             handleChange={evt => setNameOnCard(evt.target.value)}
             value={nameOnCard}
             type="text"
@@ -280,12 +287,12 @@ const PaymentDetails = () => {
           </div>
         </div>
 
-        <div className="group">
+        <div className="group" data-type="group">
           <h2>Card Details</h2>
           <CardElement options={configCardElement} />
         </div>
 
-        <Button type="submit">Pay now</Button>
+        <Button type="submit" data-type="payBtn">Pay now</Button>
       </form>
     </div>
   );

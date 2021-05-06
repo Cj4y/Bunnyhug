@@ -15,7 +15,7 @@ const VerticalNav = ({ children }) => {
   }
 
   return (
-    <div className="verticalNav">
+    <div className="verticalNav" data-type="verticalNav">
     {/* show the user name and profile picture associated */}
       <UserProfile {...configUserProfile} />
       <div className="menu">

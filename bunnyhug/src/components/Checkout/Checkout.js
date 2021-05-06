@@ -23,13 +23,13 @@ const Checkout = ({ }) => {
     <div className="checkout">
       <h1>Checkout</h1>
 
-      <div className="cart">
+      <div className="cart" data-type="cart">
         {cartItems.length > 0 ? (
           <table border="0" cellPadding="0" cellSpacing="0">
             <tbody>
               <tr>
                 <td>
-                  <table className="checkoutHeader" border="0" cellPadding="10" cellSpacing="0">
+                  <table className="checkoutHeader" data-test="checkoutHeader" border="0" cellPadding="10" cellSpacing="0">
                     <tbody>
                       <tr>
                         <th>
@@ -80,7 +80,7 @@ const Checkout = ({ }) => {
                             <tbody>
                               <tr>
                                 <td>
-                                <h3>
+                                <h3 data-type="total">
                                   Total: ${total}
                                 </h3>
                                 </td>
@@ -95,12 +95,12 @@ const Checkout = ({ }) => {
                             <tbody>
                               <tr>
                                 <td>
-                                  <Button onClick={() => history.goBack()}>
+                                  <Button data-test="continueShop" onClick={() => history.goBack()}>
                                     Continue Shopping
                                   </Button>
                                 </td>
                                 <td>
-                                  <Button onClick={() => history.push('/payment')}>
+                                  <Button data-test="checkoutbtn" onClick={() => history.push('/payment')}>
                                     Checkout
                                   </Button>
                                 </td>
