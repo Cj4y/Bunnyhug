@@ -83,7 +83,7 @@ const ProductResults = ({ }) => {
       {/* render products with applied restrictions */}
       <div className="productResults">
         {data.map((product, pos) => {
-          const { productThumbnail, productName, productPrice } = product;
+          const { productThumbnail, productName, productSize, productBrand, productPrice } = product;
           //if product does not contain the required fields, return an error
           if (!productThumbnail || !productName ||
             typeof productPrice === 'undefined') return null;

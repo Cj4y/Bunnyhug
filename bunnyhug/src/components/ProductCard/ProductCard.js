@@ -19,6 +19,8 @@ const ProductCard = ({}) => {
   const {
     productThumbnail,
     productName,
+    productSize,
+    productBrand,
     productPrice,
     productDesc,
   } = product;
@@ -58,6 +60,11 @@ const ProductCard = ({}) => {
           <li>
             <h1>
               {productName}
+            </h1>
+          </li>
+          <li>
+            <h1>
+              {productSize}
             </h1>
           </li>
           <li>

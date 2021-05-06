@@ -34,8 +34,8 @@ const Header = props => {
 
     return (
         <header className="header">
-            <div className="wrapper">
-                <div className="logo">
+            <div className="wrapper" data-test="wrapper">
+                <div className="logo" data-test="logo">
                     <Link to="/">
                         <img src={logo} alt="Bunnyhug logo"/>
                     </Link>

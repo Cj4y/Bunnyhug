@@ -22,6 +22,8 @@ const Admin = props => {
   const [hideTile, setHideTile] = useState(true);
   const [productCategory, setProductCategory] = useState('mens');
   const [productName, setProductName] = useState('');
+  const [productSize, setProductSize] = useState('M');
+  const [productBrand, setProductBrand] = useState('Adidas');
   const [productThumbnail, setProductThumbnail] = useState('');
   const [productPrice, setProductPrice] = useState(0);
   //for CKeditor
@@ -48,6 +50,8 @@ const Admin = props => {
     setHideTile(true);
     setProductCategory('mens');
     setProductName('');
+    setProductSize('M');
+    setProductBrand('Adidas');
     setProductThumbnail('');
     setProductPrice(0);
     setProductDesc('');
@@ -63,6 +67,8 @@ const Admin = props => {
         productName,
         productThumbnail,
         productPrice,
+        productSize,
+        productBrand,
         productDesc,
       })
     );
@@ -108,6 +114,7 @@ const Admin = props => {
               {value: "womens", name: "Womens"}]}
               handleChange={e => setProductCategory(e.target.value)}
             />
+            
             <FormInput
               label="Name"
               type="text"

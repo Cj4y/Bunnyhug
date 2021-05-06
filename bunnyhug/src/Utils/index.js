@@ -13,3 +13,11 @@ export const checkUserIsAdmin = currentUser => {
 export const apiInstance = axios.create({
   baseURL: ''
 });
+
+
+//utils for testing
+exportc const findByTestAttr=(component, attr)=>{
+  const wrapper = component.find(`[data-test='${attr}']`);
+  return wrapper;
+}
+

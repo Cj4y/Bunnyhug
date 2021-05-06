@@ -11,6 +11,8 @@ const Product = (product) => {
     documentID,
     productThumbnail,
     productName,
+    productSize,
+    productBrand,
     productPrice
   } = product;
   if (!documentID || !productThumbnail || !productName ||
@@ -43,6 +45,11 @@ const Product = (product) => {
               <Link to={`/product/${documentID}`}>
                 {productName}
               </Link>
+            </span>
+          </li>
+          <li>
+            <span className="size">
+              {productSize}
             </span>
           </li>
           <li>
