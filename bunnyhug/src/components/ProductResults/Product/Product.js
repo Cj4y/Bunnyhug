@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import Button from './../../forms/Button';
 import { useDispatch } from 'react-redux';
 import { addProduct } from './../../../redux/Cart/cart.actions';
+import FavoriteTwoToneIcon from '@material-ui/icons/FavoriteTwoTone';
 
 const Product = (product) => {
   const dispatch = useDispatch();

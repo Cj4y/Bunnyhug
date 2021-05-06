@@ -63,9 +63,14 @@ const ProductCard = ({}) => {
             </h1>
           </li>
           <li>
-            <h1>
+            <h2>
               {productSize}
-            </h1>
+            </h2>
+          </li>
+          <li>
+            <h2>
+            {productBrand}
+            </h2>
           </li>
           <li>
             <span>
