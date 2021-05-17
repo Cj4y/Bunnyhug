@@ -12,7 +12,7 @@
 * [More details available on the Wiki](https://github.com/Cj4y/Bunnyhug/wiki)
 
 #### Important to note:*** 
-The original application with Ruby language with a PostgreSQL database using Rails and ReactJS was rewritten due to the numerous difficulties and complexity of writing an API between Rails and ReactJS. It had a different authentication method.
+The original application with Ruby language with a PostgreSQL database using Rails and ReactJS was rewritten due to the numerous difficulties and complexity of writing an API between Rails and ReactJS. It had a different authentication method, awt tokens.
 
 #### The most recent version built with ReactJS, Firebase is on branch [**rewrite**](https://github.com/Cj4y/Bunnyhug/tree/rewrite)
 #### The version built with ReactJS and Ruby on Rails in on branch [**featureItem**](https://github.com/Cj4y/Bunnyhug/tree/featureItem)
