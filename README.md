@@ -1,6 +1,6 @@
-## Please read the WIKI for deployment instructions 
+## Please read the [WIKI](https://github.com/Cj4y/Bunnyhug/wiki) for deployment instructions 
 
-[View the website Bunnyhug](https://github.com/Cj4y/Bunnyhug/wiki/How-to-view-the-application)
+[View the website here](https://github.com/Cj4y/Bunnyhug/wiki/How-to-view-the-application)
 
 ***See code on the [rewrite](https://github.com/Cj4y/Bunnyhug/tree/rewrite) branch
 
